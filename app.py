@@ -87,11 +87,11 @@ def get_conversation_chain(vectorstore,option):
     llm = None
     print(option)
     if option=="xgen-7b-8k-base":
-        llm = HuggingFaceHub(repo_id="Salesforce/xgen-7b-8k-base",model_kwargs={"temperature":0.2, "max_length":250},huggingfacehub_api_token="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")
+        llm = HuggingFaceHub(repo_id="Salesforce/xgen-7b-8k-base",model_kwargs={"temperature":0.2, "max_length":250})
     if option=="Falcon-7b":
-        llm = HuggingFaceHub(repo_id="tiiuae/falcon-7b",model_kwargs={"temperature":0.1, "max_length":570},huggingfacehub_api_token="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")
+        llm = HuggingFaceHub(repo_id="tiiuae/falcon-7b",model_kwargs={"temperature":0.1, "max_length":570})
     if option=="google/flan-t5-large":
-        llm = HuggingFaceHub(repo_id="google/flan-t5-large", model_kwargs={"temperature":0.2, "max_length":570},huggingfacehub_api_token="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")   
+        llm = HuggingFaceHub(repo_id="google/flan-t5-large", model_kwargs={"temperature":0.2, "max_length":570})   
     
     memory = ConversationBufferMemory(
         memory_key='chat_history', return_messages=True)

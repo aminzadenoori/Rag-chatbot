@@ -1,80 +1,248 @@
-Introduction to the Module Main Functionality:
-The BDPI software (Bus Drivers Preferences Interface) aims to provide an interface (referred to as Totem or Kiosk) to deliver information to personnel, take drivers' requests, and acknowledge them simply and automatically in BDROP, the rostering - assignment module.
-
-Accessing BDPI:
-
-
-
-Accessing BDPI:
-Upon login, drivers are prompted to enter their ID and password. Initially, the password is set to the driver's birth-date, and after successful access, they are asked to modify it. Furthermore, the login page features a panel for displaying any communications sent by the Assignment Office to all personnel.
-
-
-
-After login and during all BDPI usage phases, to ensure privacy, if the authenticated user is inactive for 3 minutes, the system will automatically log off and return to the login page. This auto log-off can be interrupted by clicking a button that appears in the last 5 seconds.
-
-Home Page:
-The home page displays the last access time and date; from here, users can navigate to all available sections.
-
-Requests:
-In this section, users can:
+Amin zadenoori Ph.d.
+Florence, Italy Metropolitan Area
+amin.zadenoori@gmail.com +393397825862
+linkedin.com/in/mohammad-amin-
+zadenoori-4b9980abhttps://github.com/aminzadenoori
+Summary
+- Expertise in leveraging Large Language Models (LLMs) for a broad range of applications, encompassing text
+generation, comprehension, summarization, and conversation. Proficient in fine-tuning and deploying models like
+GPT-3, and BERT.
 
 
 
-In this section, users can:
-
-View the Requests List with details on the date, description, submission date and time, and request outcome.
-Submit requests for a Long Vacation period, suitable for summer holidays. The company offers many fixed periods to be taken as whole, with optional additional days before and/or after. Preferential access is given to those who schedule holidays in this manner.
-
-
-
-Submit requests for the Next 30 Days: Rostering data from Bdrop is displayed for up to 29 days ahead. Each day shows any existing requests (with color changes according to request type) and a traffic light indicating the request outcome:
-Off – The request is in stand-by, awaiting Assignment Staff validation.
-Yellow – A duty exchange agreement is submitted, pending confirmation from the other driver.
-Red – The request was not accepted. Clicking reveals the reasons.
+GPT-3, and BERT.
+-Proficient in MLOps practices to streamline and automate the machine learning lifecycle, from data preparation to
+model deployment and monitoring in production environments.
+-Proficiency in data preprocessing, including handling missing data, normalization, and encoding categorical data.
+-Expertise in machine learning algorithms such as linear regression, logistic regression, decision trees, SVM, and
+ensemble methods like Random Forests and Gradient Boosting Machines.
 
 
 
-Green – The request was accepted, showing the actual service.
-Request details are viewable by clicking on them, with an option to withdraw if not yet received and validated by the Assignment Office.
-
-Duty Exchange:
-For those knowing with whom they want to exchange shifts. It begins with selecting the number of people involved and entering the IDs for the exchange. Bdpi ensures compliance with rest period and division constraints.
-
-Time-Range Requests:
-
-
-
-Time-Range Requests:
-Used when desiring to work in a different time slot than the assigned shift without knowing the specific agent or turn desired. Requests are posted on a virtual notice board, and an algorithm attempts to accommodate them, subject to legislation and shift availability.
-
-Leaves/Permissions:
-Requests are communicated to the Assignment Staff, who may accept or deny them based on service needs.
-
-Communications:
+-Understanding of advanced machine learning concepts like hyperparameter tuning, cross-validation, feature
+selection, and dimensionality reduction techniques (e.g., PCA).
+-Familiarity with deep learning architectures beyond CNNs and RNNs, such as Autoencoders, GANs (Generative
+Adversarial Networks), and -Transformer models beyond BERT and GPT, like T5 and XLNet.
+-Knowledge of advanced NLP techniques and frameworks such as spaCy, NLTK, and the use of word
+embeddings like Word2Vec and GloVe.
 
 
 
-Communications:
-Drivers can inform the Assignment Staff of their Availability to Overtime by selecting individual days of the current month to change their availability status.
-
-Service:
-This section displays the week's service details, including upcoming vacations and rest days, past, planned, and remaining, up to year-end.
-
-Personal Area:
-Drivers can change their password at any time, adhering to specific criteria. If forgotten, passwords can be reset to the date of birth by the Bdrop operator.
-
-Info:
+-Experience with big data technologies like Hadoop, Spark, and their ecosystems for handling large-scale data
+processing.
+-Proficiency in SQL and NoSQL databases for data storage and retrieval.
+-Understanding of model interpretability and explainability techniques, like SHAP and LIME.
+-Knowledge of best practices in data science and machine learning project management, including Agile
+methodologies.
 
 
 
-Info:
-(Optional) This section can be customized to display information to drivers, such as schedules, performance evaluation results, and other relevant data.
+methodologies.
+-Familiarity with A/B testing, metric selection, and experiment design for model evaluation in real-world settings.
+-Awareness of ethical considerations, bias, fairness, and privacy issues in machine learning models and data
+handling.
+-Continuous learning mindset to keep up with the rapidly evolving field of machine learning and artificial
+intelligence.
+Experience
+Senior Computer Vision Engineer (Freelancer)
+Sodi Scientifica Srl
+Nov 2022 - May 2023 (7 months)
 
-Clothings:
-(Optional) Drivers can access their annual clothing allocation points and order necessary items in a guided manner.
 
-Help:
-Accessible from any screen by clicking the M logo at the top left, providing useful tips on using BDPI.
+
+Nov 2022 - May 2023 (7 months)
+As a Computer Vision Engineer Freelancer at Sodi Scientifica, my role revolves around harnessing
+cutting-edge technologies to enhance roadway safety through advanced traffic monitoring systems.
+Leveraging 3D point clouds captured by LIDAR technology, our team develops robust algorithms for
+the classification and tracking of vehicles on highways. By meticulously analyzing the intricate details
+
+
+
+of these point clouds, we discern distinct object features and trajectories, enabling precise identification
+and tracking of vehicles in real-time. This intricate process forms the backbone of our speed detection
+system, allowing for accurate measurement of vehicle velocities on the highway. Through our efforts,
+we aim to contribute significantly to the improvement of road safety and traffic management strategies.
+Amin zadenoori Ph.d. - page 1Senior Machine Learning Engineer
+M.A.I.O.R.
+
+
+
+M.A.I.O.R.
+Jul 2022 - Present (1 year 10 months)
+During my tenure as a Machine Learning Engineer at MAIOR (https://www.maior.it/), a prominent Italian
+company specializing in software solutions, I led two significant projects, each leveraging machine
+learning techniques to address distinct challenges in different sectors.
+ 
+Project 1: Modelling Unoperated Trips in Transportation
+Focus: Analyzed historical data to model unoperated trips, aiming to enhance planning for local
+transport firms and airlines.
+
+
+
+transport firms and airlines.
+Tools: Utilized Scikit-learn, TensorFlow, and PyTorch during development.
+Outcome: Developed and deployed a Flask web application, optimizing operational processes for
+transportation firms.
+ 
+Project 2: Predictive Maintenance for Bus Fleets
+Role: Data Scientist and AI Developer
+Focus: Developed a predictive maintenance system for bus fleets, leveraging advanced analytics and
+machine learning models.
+
+
+
+machine learning models.
+Tools: Utilized TensorFlow, PyTorch, and GPT API for predictive analytics and fault diagnosis.
+Outcome: Significantly enhanced fleet reliability and operational efficiency, leading to reduced downtime
+and maintenance costs.
+ 
+Project 3: Design and Implementation of the "RAG driven chat bot" System
+Focus: Spearheaded the development of the "Talk to PDF" project, a sophisticated system designed to
+
+
+
+extract, analyze, and interpret information from PDF documents through natural language queries.
+Tools and Technologies: The project leveraged a combination of open-source tools and advanced
+machine learning models, including Python for backend development, Streamlit for the web interface,
+PyPDF2 for PDF text extraction, and LangChain for text processing and embeddings. A pivotal part
+of the system was the integration of state-of-the-art Large Language Models (LLMs) such as GPT-3,
+
+
+
+BERT, and T5 from the Hugging Face library.
+Research Assistant
+STLAB (Software Technologies LAB)
+Feb 2022 - Jul 2022 (6 months)
+Machine Learning Researcher
+Università degli Studi di Firenze
+Nov 2018 - Jan 2022 (3 years 3 months)
+I was a PhD candidate in machine learning, supervised by Paolo Frasconi and Enrico Vicario,
+working on a project that focused on applying machine learning techniques to stochastic modeling of
+
+
+
+systems. As a member of this research team, my main objective was to utilize my expertise in machine
+learning and artificial intelligence in order to develop and enhance algorithms and models for systems
+characterized by randomness and uncertainty.
+ 
+Throughout my PhD, I worked closely with my supervisors and fellow researchers, contributing to
+the development of novel methods for analyzing complex stochastic systems. This collaborative
+
+
+
+Amin zadenoori Ph.d. - page 2environment allowed me to deepen my understanding of machine learning and its applications,
+ultimately resulting in the production of high-quality research and the advancement of the field.
+Data Scientist
+Ghateh chain stores
+Dec 2017 - Sep 2018 (10 months)
+As the data scientist, I did Data visualization to Viuslize purchases in different branches of the store
+alongside predictive modeling on the purchase amount of different Items by data-driven modeling by
+
+
+
+different groups of customers.
+ 
+Tools:
+Microsoft Power Bi
+Python
+SciKit learn
+Machine learning
+Designing and developing E-learning mobile apps
+Dr.words Project
+Dec 2016 - Dec 2017 (1 year 1 month)
+Dr. Words is the best mobile application awarded startup established in 2016 by me in Iran with a focus
+on teaching the English language in an innovative way by the usage of games and attractive UI.
+This mobile application was developed by Android SDK and SQLite in java.
+
+
+
+It was planned to utilize NLP techniques to reorder the selected words to select a personalized teaching
+methodology based on users' learning curves.
+Access link: https://cafebazaar.ir/app/com.example.amin.howmanywordsdoyouknow?l=en
+Junior Java Developer
+Farsi WordNet Project
+Nov 2011 - May 2012 (7 months)
+During my bachelor's, I was in the Farsi wordnet project as the senior Java developer.
+WordNet is a lexical database for the English language. It groups words into sets of synonyms called
+
+
+
+synsets, provides short definitions and usage examples, and records a number of relations among
+these synonym sets or their members.
+Education
+Università degli Studi di Firenze
+PhD in Computer engineering. , Computer science with Specialization in Machine
+Learning
+2018 - 2021
+Qazvin Islamic Azad University
+Master's Degree, Artificial Intelligence
+2013 - 2017
+Thesis Title: Face recognition via manifold learning and contourlet transform
+
+
+
+Amin zadenoori Ph.d. - page 3Supervisor: Prof. Amir Masoud Eftekhari Moghadam
+Hamedan university of Technology (HUT)
+Bachelor's Degree, Information Technology
+2008 - 2012
+Final Project: Designing a distributed web mining system 20/20
+Udacity
+Data Scientist Nanodegree, data scientist
+Skills Learned and improved:
+• Apply CRISP-DM process to communicate findings of a Data Science project to respective
+stakeholders
+
+
+
+stakeholders
+• Basics of Python Object-Oriented Programming and Web Development using Flask, Bootstrap, Plotly.
+• Data Engineering skills to build efficient ETL, NLP, and Machine Learning Pipelines using Python
+NumPy, Pandas, Scikit-Learn.
+• Concepts in Experiment Design, Statistical Considerations in Testing, A/B Testing.
+• Various Recommendation engines such as Rank Based /Knowledge-based recommendation, User-
+
+
+
+User Based Collaborative Filtering, Content-Based Filtering, and Matrix Factorization technique for
+Recommendations using Python.
+• Data Visualization using Python Matplotlib, seaborn.
+• Version control: Git and GitHub
+• Python for Data Analysis
+• Basics of Machine Learning (Scikit-Learn), Linear Algebra and Statistics
+• Basics of Natural language Processing
+• Linux Shell commands
+• SQL
+• Pyspark
+• Churn prediction
+Licenses & Certifications
+Neural Networks and Deep Learning  - Coursera
+Y5DNX9UM66UB
+
+
+
+Y5DNX9UM66UB
+Improving Deep Neural Networks: Hyperparameter tuning, Regularization and
+Optimization  - Coursera
+K49ELQRBH9CA
+Structuring Machine Learning Projects  - Coursera
+C7RQQMMCGMKE
+Convolutional Neural Networks  - Coursera
+C3VYD4DUU8PQ
+Introduction to Machine Learning in Production  - Coursera
+Amin zadenoori Ph.d. - page 4HAWGTL7C7CGW
+Skills
+Oracle Cloud Infrastructure (OCI)    •   Scikit-Learn    •   Object Detection    •   Bioinformatics    •   Medical Retina    •
+
+
+
+Reinforcement Learning    •   Formal Methods    •   Data Analysis    •   Machine Learning    •   Deep Learning
+Honors & Awards
+Winner of Pegasus scholarship(by Tuscany region of Italy)for PhD program.
+Nov 2018
+Best mobile application of the day  - Caffe Bazar
+Dr.words awarded the best language teaching mobile application with regards to its innovative UI and
+methodology.
+Amin zadenoori Ph.d. - page 5
 
 
 
