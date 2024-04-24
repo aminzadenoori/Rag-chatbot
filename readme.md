@@ -60,9 +60,6 @@ To use the ChatBot, follow these steps:
 4. Provide feedback on the responses you receive by using the "faces" scoring system, directly influencing future improvements and updates.
 5. Save your chat history to a CSV file for future reference or analysis.
 
-## Contributing
-------------
-This repository is intended for educational purposes and does not accept further contributions. It serves as supporting material for a YouTube tutorial that demonstrates how to build this project. Feel free to utilize and enhance the app based on your own requirements.
 
 ## License
 -------

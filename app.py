@@ -19,9 +19,6 @@ from transformers import AutoModel
 import csv
 import io
 
-
-
-
 global llm
 
 def get_pdf_text(pdf_docs):
