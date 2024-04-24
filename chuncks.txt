@@ -1,0 +1,80 @@
+Introduction to the Module Main Functionality:
+The BDPI software (Bus Drivers Preferences Interface) aims to provide an interface (referred to as Totem or Kiosk) to deliver information to personnel, take drivers' requests, and acknowledge them simply and automatically in BDROP, the rostering - assignment module.
+
+Accessing BDPI:
+
+
+
+Accessing BDPI:
+Upon login, drivers are prompted to enter their ID and password. Initially, the password is set to the driver's birth-date, and after successful access, they are asked to modify it. Furthermore, the login page features a panel for displaying any communications sent by the Assignment Office to all personnel.
+
+
+
+After login and during all BDPI usage phases, to ensure privacy, if the authenticated user is inactive for 3 minutes, the system will automatically log off and return to the login page. This auto log-off can be interrupted by clicking a button that appears in the last 5 seconds.
+
+Home Page:
+The home page displays the last access time and date; from here, users can navigate to all available sections.
+
+Requests:
+In this section, users can:
+
+
+
+In this section, users can:
+
+View the Requests List with details on the date, description, submission date and time, and request outcome.
+Submit requests for a Long Vacation period, suitable for summer holidays. The company offers many fixed periods to be taken as whole, with optional additional days before and/or after. Preferential access is given to those who schedule holidays in this manner.
+
+
+
+Submit requests for the Next 30 Days: Rostering data from Bdrop is displayed for up to 29 days ahead. Each day shows any existing requests (with color changes according to request type) and a traffic light indicating the request outcome:
+Off – The request is in stand-by, awaiting Assignment Staff validation.
+Yellow – A duty exchange agreement is submitted, pending confirmation from the other driver.
+Red – The request was not accepted. Clicking reveals the reasons.
+
+
+
+Green – The request was accepted, showing the actual service.
+Request details are viewable by clicking on them, with an option to withdraw if not yet received and validated by the Assignment Office.
+
+Duty Exchange:
+For those knowing with whom they want to exchange shifts. It begins with selecting the number of people involved and entering the IDs for the exchange. Bdpi ensures compliance with rest period and division constraints.
+
+Time-Range Requests:
+
+
+
+Time-Range Requests:
+Used when desiring to work in a different time slot than the assigned shift without knowing the specific agent or turn desired. Requests are posted on a virtual notice board, and an algorithm attempts to accommodate them, subject to legislation and shift availability.
+
+Leaves/Permissions:
+Requests are communicated to the Assignment Staff, who may accept or deny them based on service needs.
+
+Communications:
+
+
+
+Communications:
+Drivers can inform the Assignment Staff of their Availability to Overtime by selecting individual days of the current month to change their availability status.
+
+Service:
+This section displays the week's service details, including upcoming vacations and rest days, past, planned, and remaining, up to year-end.
+
+Personal Area:
+Drivers can change their password at any time, adhering to specific criteria. If forgotten, passwords can be reset to the date of birth by the Bdrop operator.
+
+Info:
+
+
+
+Info:
+(Optional) This section can be customized to display information to drivers, such as schedules, performance evaluation results, and other relevant data.
+
+Clothings:
+(Optional) Drivers can access their annual clothing allocation points and order necessary items in a guided manner.
+
+Help:
+Accessible from any screen by clicking the M logo at the top left, providing useful tips on using BDPI.
+
+
+
