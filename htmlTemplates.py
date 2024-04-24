@@ -28,7 +28,7 @@ css = '''
 bot_template = '''
 <div class="chat-message bot">
     <div class="avatar">
-        <img src="http://pages.di.unipi.it/micheli/FOTO/AlessioM-bright3.png" style="max-height: 78px; max-width: 78px; border-radius: 50%; object-fit: cover;">
+        <img src="https://www.cambridge.org/elt/blog/wp-content/uploads/2020/08/GettyImages-1221348467-e1597069527719.jpg" style="max-height: 78px; max-width: 78px; border-radius: 50%; object-fit: cover;">
     </div>
     <div class="message">{{MSG}}</div>
 </div>
@@ -37,7 +37,7 @@ bot_template = '''
 user_template = '''
 <div class="chat-message user">
     <div class="avatar">
-        <img src="https://www.maior.it/wp-content/uploads/2023/08/leopoldo-girardi.jpg">
+        <img src="https://sp-ao.shortpixel.ai/client/q_glossy,ret_img,w_1940/https://s22908.pcdn.co/wp-content/uploads/2022/02/what-are-bots.jpg">
     </div>    
     <div class="message">{{MSG}}</div>
 </div>
