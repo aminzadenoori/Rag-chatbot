@@ -16,10 +16,16 @@ from langchain import LLMChain
 from langchain import PromptTemplate
 from trubrics.integrations.streamlit import FeedbackCollector
 from transformers import AutoModel
+from transformers import AutoModelForCausalLM
 import csv
 import io
+from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
+from langchain.llms.huggingface_pipeline import HuggingFacePipeline
+import json
+
 
 global llm
+global user_question_temp
 
 def get_pdf_text(pdf_docs):
     text = ""
@@ -82,17 +88,35 @@ def get_vectorstore(text_chunks):
 
 
 def get_conversation_chain(vectorstore,option):
+    
     # llm = ChatOpenAI()
     st.session_state.chat_history=[]
     llm = None
     print(option)
     if option=="xgen-7b-8k-base":
-        llm = HuggingFaceHub(repo_id="Salesforce/xgen-7b-8k-base",model_kwargs={"temperature":0.2, "max_length":250})
+        llm = HuggingFaceHub(repo_id="Salesforce/xgen-7b-8k-base",model_kwargs={"temperature":0.2, "max_length":250},huggingfacehub_api_token="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")
     if option=="Falcon-7b":
-        llm = HuggingFaceHub(repo_id="tiiuae/falcon-7b",model_kwargs={"temperature":0.1, "max_length":570})
+        llm = HuggingFaceHub(repo_id="tiiuae/falcon-7b",model_kwargs={"temperature":0.1, "max_length":570},huggingfacehub_api_token="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")
     if option=="google/flan-t5-large":
-        llm = HuggingFaceHub(repo_id="google/flan-t5-large", model_kwargs={"temperature":0.2, "max_length":570})   
-    
+        llm = HuggingFaceHub(repo_id="google/flan-t5-large", model_kwargs={"temperature":0.2, "max_length":570},huggingfacehub_api_token="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")
+    if option=="phi3":
+        llm = HuggingFaceHub(repo_id="microsoft/Phi-3-mini-128k-instruct", model_kwargs={"trust_remote_code":True,"temperature":0.2, "max_length":570},huggingfacehub_api_token="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")
+    #         model = AutoModelForCausalLM.from_pretrained(
+#         "microsoft/Phi-3-mini-128k-instruct",
+#         trust_remote_code=True, 
+
+# )
+#         tokenizer = AutoTokenizer.from_pretrained("microsoft/Phi-3-mini-128k-instruct")
+
+#         pipe = pipeline(
+#     "text-generation",
+#     model=model,
+#     tokenizer=tokenizer,
+#     max_new_tokens=512
+# )
+#         llm= HuggingFacePipeline(pipeline=pipe)
+
+
     memory = ConversationBufferMemory(
         memory_key='chat_history', return_messages=True)
     conversation_chain = ConversationalRetrievalChain.from_llm(
@@ -107,8 +131,11 @@ def get_conversation_chain(vectorstore,option):
 
 def handle_userinput(user_question):
 
-    response = st.session_state.conversation({'question': user_question})
+
+    if user_question != user_question_temp:
+        response = st.session_state.conversation({'question': user_question})
     #response = st.session_state.conversation({'query': user_question})
+    user_question_temp = user_question
     print(response)
     st.session_state.chat_history = response['chat_history']
     feedback_collector = FeedbackCollector()
@@ -123,9 +150,7 @@ def handle_userinput(user_question):
         else:
             st.write(bot_template.replace(
                 "{{MSG}}", message.content.strip().split('\n\n')[0]), unsafe_allow_html=True)
-            feedback_collector = FeedbackCollector()
-            feedback_collector.st_feedback(feedback_type="faces",key=i
-	,path="thumbs_feedback.json")
+           
             feedback.append(feedback_collector)
     print(feedback)
         # Store feedback results in session state
@@ -140,25 +165,25 @@ def display_feedback():
     else:
         st.write("No feedback collected yet.")
 
-def chat_history_to_csv():
+def chat_history_to_txt():
     """Convert chat history to CSV format, alternating between question and answer."""
-    
-    output = io.StringIO()
-    writer = csv.writer(output)
-    writer.writerow(['Question', 'Answer'])  # Header row
-    
-    # Initialize variables to hold the question and answer
-    question, answer = None, None
+    output=""
     
     for i, message in enumerate(st.session_state.chat_history):
         if i % 2 == 0:
-            question = message.content  # User messages as questions
+            output += message.content + ":\n"  # User messages as questions
         else:
-            answer = message.content.strip().split('\n\n')[0]  # Bot responses as answers
-            writer.writerow([question, answer])  # Write the question-answer pair to CSV
-            question, answer = None, None  # Reset for the next pair
+            output += "\t\t" + message.content.strip().split('\n\n')[0] + "\n\n"  # Bot responses as answers
     
-    return output.getvalue()
+    with open("/Users/amin/ask-multiple-pdfs/thumbs_feedback.json", 'r') as file:
+        data = json.load(file)        
+    # Load the full JSON data from the file
+    
+    # Access and return the 'user_response' field
+    user_response = data.get('user_response', None)
+    output += "\n\n" + str(user_response)  # Bot responses as answers
+
+    return output
 
 def main():
     load_dotenv()
@@ -166,7 +191,7 @@ def main():
                        page_icon=":robot:")
     st.write(css, unsafe_allow_html=True)
     
-  
+    
     # if st.button("Display Feedback"):
     #     display_feedback()
     if "conversation" not in st.session_state:
@@ -178,11 +203,13 @@ def main():
     user_question = st.text_input("Ask a question about your documents:")
     
     if st.button("Answer"):
-        handle_userinput(user_question)
-
+       handle_userinput(user_question)
+    feedback_collector = FeedbackCollector()
+    feedback_collector.st_feedback(feedback_type="faces" 
+	,path="thumbs_feedback.json")
     if st.session_state.chat_history:
-        csv_data = chat_history_to_csv()
-        st.download_button("Download Chat History as CSV", csv_data, "results.csv", "text/csv")
+        csv_data = chat_history_to_txt()
+        st.download_button("Download Chat History as CSV", csv_data, "results.txt", "text/csv")
     
 
     with st.sidebar:
@@ -191,7 +218,7 @@ def main():
             "Upload your documents here and click on 'Process'", accept_multiple_files=True, type=['pdf', 'txt'])
         option = st.selectbox(
         'Select a Large langaue model:',
-        ['Falcon-7b', 'xgen-7b-8k-base', 'google/flan-t5-large']
+        ['Falcon-7b', 'xgen-7b-8k-base', 'google/flan-t5-large',"phi3"]
         )
         if st.button("Process"):
             with st.spinner("Processing"):
@@ -220,6 +247,7 @@ def main():
                 # create conversation chain
                 st.session_state.conversation = get_conversation_chain(
                     vectorstore,option)
+                
 
 
 if __name__ == '__main__':
