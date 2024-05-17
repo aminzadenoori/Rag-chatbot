@@ -8,7 +8,7 @@ from langchain.embeddings import OpenAIEmbeddings, HuggingFaceInstructEmbeddings
 from langchain.vectorstores import FAISS
 from langchain.chat_models import ChatOpenAI
 from langchain.memory import ConversationBufferMemory
-from langchain.chains import ConversationalRetrievalChain,RetrievalQA
+from langchain.chains import ConversationalRetrievalChain, RetrievalQA
 from htmlTemplates import css, bot_template, user_template
 from langchain.llms import HuggingFaceHub
 from transformers import T5Tokenizer, T5ForConditionalGeneration
@@ -22,7 +22,7 @@ import io
 from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
 from langchain.llms.huggingface_pipeline import HuggingFacePipeline
 import json
-
+import pandas as pd
 
 global llm
 global user_question_temp
@@ -92,15 +92,14 @@ def get_conversation_chain(vectorstore,option):
     # llm = ChatOpenAI()
     st.session_state.chat_history=[]
     llm = None
-    print(option)
     if option=="xgen-7b-8k-base":
         llm = HuggingFaceHub(repo_id="Salesforce/xgen-7b-8k-base",model_kwargs={"temperature":0.2, "max_length":250},huggingfacehub_api_token="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")
     if option=="Falcon-7b":
-        llm = HuggingFaceHub(repo_id="tiiuae/falcon-7b",model_kwargs={"temperature":0.1, "max_length":570},huggingfacehub_api_token="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")
+        llm = HuggingFaceHub(repo_id="tiiuae/falcon-7b-instruct",model_kwargs={"temperature":0.5, "max_length":570},huggingfacehub_api_token="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")
     if option=="google/flan-t5-large":
         llm = HuggingFaceHub(repo_id="google/flan-t5-large", model_kwargs={"temperature":0.2, "max_length":570},huggingfacehub_api_token="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")
     if option=="phi3":
-        llm = HuggingFaceHub(repo_id="microsoft/Phi-3-mini-128k-instruct", model_kwargs={"trust_remote_code":True,"temperature":0.2, "max_length":570},huggingfacehub_api_token="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")
+        llm = HuggingFaceHub(repo_id="microsoft/Phi-3-mini-4k-instruct", model_kwargs={"trust_remote_code":True,"temperature":0.2, "max_length":570},huggingfacehub_api_token="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")
     #         model = AutoModelForCausalLM.from_pretrained(
 #         "microsoft/Phi-3-mini-128k-instruct",
 #         trust_remote_code=True, 
@@ -116,42 +115,40 @@ def get_conversation_chain(vectorstore,option):
 # )
 #         llm= HuggingFacePipeline(pipeline=pipe)
 
-
+    print(llm("what was the first disney movie?"))
+    
     memory = ConversationBufferMemory(
         memory_key='chat_history', return_messages=True)
-    conversation_chain = ConversationalRetrievalChain.from_llm(
-        llm=llm,
-        retriever=vectorstore.as_retriever(),
-        memory=memory
-    )
+    # conversation_chain = ConversationalRetrievalChain.from_llm(
+    #     llm=llm,
+    #     retriever=vectorstore.as_retriever(),
+    #     memory=memory
+    # )
+    qa_chain = RetrievalQA.from_llm(
+    llm=llm,
+    retriever=vectorstore.as_retriever(k=3)
+)
   
     
-    return conversation_chain
+    return qa_chain
 
 
 def handle_userinput(user_question):
-
-
-    if user_question != user_question_temp:
-        response = st.session_state.conversation({'question': user_question})
-    #response = st.session_state.conversation({'query': user_question})
-    user_question_temp = user_question
+    #response = st.session_state.conversation({'question': user_question})
+    response = st.session_state.conversation({'query': user_question})
+   
     print(response)
-    st.session_state.chat_history = response['chat_history']
+
+    
     feedback_collector = FeedbackCollector()
     feedback_results = []
     feedback=[]
     print(st.session_state.chat_history)
-    for i, message in enumerate(st.session_state.chat_history):
-        
-        if i % 2 == 0:
-            st.write(user_template.replace(
-                "{{MSG}}", message.content), unsafe_allow_html=True)
-        else:
-            st.write(bot_template.replace(
-                "{{MSG}}", message.content.strip().split('\n\n')[0]), unsafe_allow_html=True)
+   
+    st.write(bot_template.replace(
+                "{{MSG}}",  response['result'].split("\n")[-1] if 'result' in response else response), unsafe_allow_html=True)
            
-            feedback.append(feedback_collector)
+    feedback.append(feedback_collector)
     print(feedback)
         # Store feedback results in session state
     st.session_state.feedback_results = feedback
@@ -242,13 +239,46 @@ def main():
                 text_chunks = get_text_chunks(raw_text)
 
                 # create vector store
-                vectorstore = get_vectorstore(text_chunks)
+                vectorstore = get_vectorstore(text_chunks) 
+                st.session_state.vectorstore = vectorstore  # Store vectorstore in session state
+                st.session_state.option = option  # Store option in session state
+
 
                 # create conversation chain
                 st.session_state.conversation = get_conversation_chain(
                     vectorstore,option)
+        st.subheader("Load Questions CSV")
+        questions_file = st.file_uploader("Upload a CSV file with questions", type=["csv"])
+        
+        if questions_file is not None:
+            questions_df = pd.read_csv(questions_file)
+            st.dataframe(questions_df)
+            
+            if st.button("Generate Answers"):
+                 # Initialize list to store generated answers
+                generated_answers = []
                 
+                print(questions_df.columns)
 
+                for question in questions_df["Question"]:
+                    # Reset the conversation chain for each question
+                    response = st.session_state.conversation.run(question)
+                    # Extract the final answer from the response
+                    generated_answer = response.split("\n")[-1]
+                    print(generated_answer)
+                    generated_answers.append(generated_answer)
 
+                questions_df['Generated answer by LLM'] = generated_answers
+                questions_df['LLM'] = st.session_state.option
+                
+                
+                st.write("Answers Generated:")
+                st.dataframe(questions_df)
+
+                csv_data = questions_df.to_csv(index=False)
+                st.download_button("Download Results", csv_data, "results_with_answers.csv", "text/csv")
+
+                
+   
 if __name__ == '__main__':
     main()
