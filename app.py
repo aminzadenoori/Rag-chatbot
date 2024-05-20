@@ -94,7 +94,7 @@ def get_conversation_chain(vectorstore,option):
     llm = None
     if option=="xgen-7b-8k-base":
         llm = HuggingFaceHub(repo_id="Salesforce/xgen-7b-8k-base",model_kwargs={"temperature":0.2, "max_length":250},huggingfacehub_api_token="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")
-    if option=="Falcon-7b":
+    if option=="Falcon-7b-instruct":
         llm = HuggingFaceHub(repo_id="tiiuae/falcon-7b-instruct",model_kwargs={"temperature":0.5, "max_length":570},huggingfacehub_api_token="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")
     if option=="google/flan-t5-large":
         llm = HuggingFaceHub(repo_id="google/flan-t5-large", model_kwargs={"temperature":0.2, "max_length":570},huggingfacehub_api_token="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")
@@ -215,7 +215,7 @@ def main():
             "Upload your documents here and click on 'Process'", accept_multiple_files=True, type=['pdf', 'txt'])
         option = st.selectbox(
         'Select a Large langaue model:',
-        ['Falcon-7b', 'xgen-7b-8k-base', 'google/flan-t5-large',"phi3"]
+        ['falcon-7b-instruct', 'xgen-7b-8k-base', 'google/flan-t5-large',"phi3"]
         )
         if st.button("Process"):
             with st.spinner("Processing"):
