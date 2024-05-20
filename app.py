@@ -264,7 +264,9 @@ def main():
                     # Reset the conversation chain for each question
                     response = st.session_state.conversation.run(question)
                     # Extract the final answer from the response
-                    generated_answer = response.split("\n")[-1]
+                    helpful_answer_index = response.find('Helpful Answer:')
+                    if helpful_answer_index != -1:
+                        generated_answer = response[helpful_answer_index + len('Helpful Answer:'):].strip()
                     print(generated_answer)
                     generated_answers.append(generated_answer)
 

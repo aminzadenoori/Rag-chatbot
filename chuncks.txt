@@ -1,96 +1,223 @@
+Introduction: This document shows all the standard functionalities of TTD.XT describing processes most used by users.
+Login: In order to access TTD.XT, you first have to log into the MAIOR Transit Scheduling Suite.
+Application Start-up: The application can be launched by selecting the item "Timetable" under the module "Planning." The item is also available from the MAIOR Icon > All modules > Planning > Timetable.
+
+
+
+Procedure: When launching TTD.XT, you can either open an existing scenario amongst the available ones or create a new scenario or access the Service Version directly. Note: You can see only scenarios belonging to the service versions you have read/write rights on. Select the scenario you want to access, then hit the button "Open." Otherwise, hit "Create" on the lower right corner to create a new scenario. A dialogue box appears where you can create a new scenario. Select one of the scenarios and hit "Open version" to directly access the related service version.
+
+
+
+Application Closure: Hit the close button on the top right corner of the window to close TTD.XT. If the applied changes haven't been saved yet, TTD.XT shows a confirmation message prompting the user to save changes before closing.
+Log Out: In order to correctly disconnect from TTD.XT, you shall log out from the MAIOR Suite.
+
+
+
+Title Bar: TTD.XT's title bar is composed of three items: Home: This function allows you to move from Work to Home. Work: This function allows you to move from Home to Work. All already open windows will be shown. Settings: This command allows you to access the Configuration window. For further details, refer to the "Settings" chapter.
+
+
+
+Home: As TTD.XT opens, the Home window appears divided into two main sections: The left frame presents the information of the Active Set. The Service Summary is presented in the central part of the window where a calendar-shaped graph represents the trips performed day by day.
+
+
+
+Service Summary: The Service Summary represents the trips' calendars. Initially, the calendar will be empty. After loading lines into the active set, the Service Summary will show the related trips within a calendar. Gray squares represent calendar days, while colored squares represent the trips performed on them. By clicking on a square, a work window set on the selected data opens.
+
+
+
+Active Set Properties: On the top left corner, the Active set properties are shown. The user can show or hide this area using appropriate commands.
+Active Set Choice: From the Lines section under the Home window, you can choose to work with a specific set of data. Commands for showing, hiding, allowing, or forbidding editing actions are available here. For example, changing the color of the graphic representation of a line or removing a line from the active set.
+
+
+
+Adding Lines: Further lines can be added to the scenario by clicking the "Add" button. The system will prompt the user to sort lines, view only certain columns, or filter data manually. Selected lines can be added or loaded in read-only mode if they are already being edited by another user.
+
+
+
+Shadow Lines: Shadow lines can be loaded in read-mode only, useful for creating connections among different lines or comparing current service with previous revisions. Shadow lines are marked with an eye-symbol and can be managed like read-only lines.
+Access to the Timetable: The Service Summary of the Home window displays the service of all lines in the active set. From here, users can access detailed timetables and perform various actions.
+
+
+
+Home Toolbar: At the upper side of the Home window, a toolbar provides different functionalities for interacting with your service. By right-clicking on the toolbar, a menu with the following functions opens: Change Toolbar/Rotate vertically: rotates the toolbar vertically Change Toolbar/Rotate horizontally: rotates the toolbar horizontally Change Toolbar/Squared toolbar: Commands are displayed into two columns Dock: it docks the toolbar to the top, bottom, left, or right. Press "Undock" to make the toolbar floating. Trips Info/Compare: enables or disables the Info/Compare tool Hide Toolbar: hides the toolbar. Press this button again to display the toolbar.
+
+
+
+Home Toolbar Tools: Save on DB: If by accessing you chose to open a scenario, this tool updates that by saving all the changes made on the active set on the database.
+Procedure: By pressing Save on database, you launch the saving process of the scenario. In the meantime, this button is idle. Once the process ends, a pop-up message on the right top alerts about the successful conclusion of the process; "Save on database" becomes active again.
+
+
+
+Export CSV: This tool allows exporting the summary details of the service into a CSV file. From the Timetable Booklet or the Activities Board, press the Export CSV button. A CSV file will be created and saved in your "Download" local folder.
+Graphic Timetable: Opens a new work window in Graphic Timetable mode. Click "Graphic Timetable" to access data as explained in Timetable Access.
+
+
+
+Timetable Booklet Window: This functionality opens a new work window in Timetable Booklet mode. Press the "Timetable Booklet" button and access the data following the procedure explained in "Access to timetables".
+Activities Board Window: This functionality opens a new work window in Activities Board mode. Press the "Activities Board" button and access data as explained in "Timetable Access".
+
+
+
+Trips Table: This functionality opens a new work window in Trips Table mode. Press the "Trips Table" button and access data as explained in "Timetable Access".
+Undo: The Undo tool allows you to go back to any step in your procedure in both Work and Home windows. Roll the mouse over its icon to see to which step you will go back to.
+Redo: The Redo tool allows you to repeat the last action canceled with the Undo tool. Roll the mouse over its icon to see to which step you will go to.
+
+
+
+Adjust Patterns: This tool is for working on lines whose patterns have been modified within the Network module. When you open a scenario whose lines' patterns have been modified, there are two possibilities: changes automatically recognized by TTD.XT or changes too complex for automatic recognition. The user can modify data using the Adjust Patterns tool.
+
+
+
+Manage Deleted Patterns: This tool is for working on lines whose patterns have been deleted within the Network module. When you open a scenario with deleted patterns, TTD.XT provides the Manage Deleted Patterns tool.
+Info/Compare: From Home, it is possible to analyze elements of Service Summary by accessing the information window or compare window if more elements are selected. The Info window opens for a single element, and the Compare window opens for multiple elements.
+
+
+
+Help: This opens the online user guide.
+Service Summary: The Service Summary allows you to manipulate the visualization conditions of the service represented on the Home window, affecting the data access into the Work windows. You can choose date ranges, display based on Operating Day or Homogeneous Days, apply Lockdown mode, and change the Zoom level.
+
+
+
+Lockdown Mode: The lockdown mode is used for editing the service on a defined range of days only. Activate the lockdown mode by hitting the button and select the days you wish to work on.
+Zoom In/Out: These tools change the zoom level of the Service Summary window.
+Copy-Paste: Copy and paste the service from one day to another. Right-click on the square of the day you wish to copy the service from, select Copy, then right-click on the target day and select Paste.
+
+
+
+Delete: This functionality removes one or more trips from a calendar day. Right-click on the square you wish to delete and click Delete to remove all the trips running on that line and day.
+Work: Work windows provide tools necessary for the creation, editing, and deletion of trips and activities. Each work window may show lines and their characteristics among the ones chosen in the active set.
+
+
+
+Windows Bar: The windows bar in Work displays an icon for each open work window. Hovering over an icon shows a tooltip with summary information about the window.
+Work Toolbar: In Work windows, a specific Toolbar for interacting with service data is available. Right-clicking on the toolbar opens a menu with functions like Dock, Undo, Selector Tools, and more.
+Save on Database: Same process described in Save on Database.
+
+
+
+Export CSV: This tool allows the user to export all the displayed information in a CSV file.
+Graphic Timetable: This functionality opens a new Work Graphic Window on the same active set of your current window.
+Timetable Booklet: This functionality opens a new Work Timetable Booklet window on the same active set of your current window.
+Activities Board: This function opens a new work window in Activities Board mode still on the same active set.
+
+
+
+Trips Table: This function opens a new work window in Trips Table mode still on the same active set.
+Undo: This functionality cancels the latest action performed before saving on the database. Running the mouse over the icon displays a tooltip which shows the latest operation possible to undo.
+Redo: This function recovers the latest canceled operation. Running the mouse over the icon displays a tooltip showing the last operation possible to redo.
+
+
+
+Selection Tools: Select Trips: This tool is used for selecting trips. When active, any tools and selections affect trips.
+Select Activities: This tool is used for selecting activities. When active, any tools and selections affect activities.
+Select All: This tool is aimed for selecting all the trips of a work window at once.
+
+
+
+Search Trips: By using this tool, you can apply filters to search for specific trips according to filtered common characteristics like Trip departure node, Trip end node, Leave time on node, Start and End time, Trip calendar, Operating day, Trip direction, Pattern, Pattern category, Line of the trip, Line type, Coverage type, Subcontract/Company.
+
+
+
+Procedure: Press the Search Trips button. A window opens where you can add filter rules. Select the filter from the drop-down menu, set the needed parameters, and click the search button.
 WFG_TTD001 - Navigation existing scenario Active set e Line: Open Timetable module ([C189563])_x000D_
 Hide some lines in **Home** page ([C67508])_x000D_
 Go to the Work page by click on "All lines" in Line grid section 
 _or_
  by click on specific line in Line grid section _x000D_
+
+
+
 Hide some lines in **Work** page ([C67509])_x000D_
 Show some lines in Work page ([C67509])_x000D_
 Hide all lines in Work page ([C67508])_x000D_
 Go to the **Home** page and add some line to the active set ([C189564])
-
-
-
 _Repeat for all interested lines__x000D_
 Add some line in read only mode to the active set ([C163379])
 _Repeat for all interested lines__x000D_
 Hide some Read-only lines in Home page ([C67508])_x000D_
 Go to the **Work** page by click on "All lines" in Line grid section 
 _or_
+
+
+
+_or_
  by click on specific line in Line grid section _x000D_
 Hide some lines in Work page ([C67509])_x000D_
 Show some lines in Work page ([C67509])_x000D_
 Go to the **Home** page  and hide all lines in Home page ([C67508])
-
-
-
 WFG_TTD002 - Navigation new scenario Active set e Line: Open Timetable module and create scenario ([C67503])_x000D_
 Select some Operating Day
 _x000D_
 Add some line to the active set ([C189564])
 _Repeat for all interested lines__x000D_
 Hide some lines in **Home** page ([C67508])_x000D_
+
+
+
 Go to the **Work** page by click on "All lines" in Line grid section 
 _or_
  by click on specific line in Line grid section _x000D_
 Hide some lines in Work page ([C67509])_x000D_
 Show some lines in Work page ([C67509])_x000D_
-
-
-
 Go to the **Home** page and add some line to the active set ([C189564])
 _Repeat for all interested lines__x000D_
 Add some line in read only mode to the active set ([C163379])
 _Repeat for all interested lines__x000D_
 Hide some Read-only lines in Home page ([C67508])_x000D_
+
+
+
 Go to the **Work** page by click on "All lines" in Line grid section 
 _or_
  by click on specific line in Line grid section _x000D_
 Hide some lines in Work page ([C67509])_x000D_
 Show some lines in Work page ([C67509])
-
-
-
 WFG_TTD100 - Create service with Algo and edit: Create new algorythm configuration ([C189577])
 Algorithm processing and applying solution one line ([C189578])
 _x000D_
 Select trip created with algo and delete ([C189568])_x000D_
 Move activity and edit some field
 _x000D_
+
+
+
+_x000D_
 break activity with Separate Trip ([C67865])_x000D_
 Edit trip ([C70520])_x000D_
 Create single trip([C189565])_x000D_
 Save changes ([C67574])
 WFG_TTD101 - Create service with manually and apply changes: Add line to the active set ([C189564])
-
-
-
 _x000D_
 Add line to the active set ([C189564])_x000D_
 Create multiple trips ([C189565])_x000D_
 Create return trips ([C189567])_x000D_
 Join trips and create activity ([C67864])_x000D_
 Duplicate trips ([C189566])
+
+
+
+Duplicate trips ([C189566])
 GEN show trip on the map: Select interested trip in window_x000D_
 Repeat step 1 for trip with different pattern and\or line
 Help- Help "?" in  tab: Accedere al TTD.
 Verificare che nelle finestre Home, Work, Setting, il manuale utente (?) si apra correttamente.
-
-
-
 TTD.XT- Language Translation: Aprire tutti i menu, sezioni, sottosezioni, sottomoduli presenti nel modulo.
 Home - Upload and work with multiple lines and check visualization and usability: Add lines and active validities
+
+
+
 Reset service version date range in homa page: Open TTD
 Click on reset button
 Show\Hide lines in Home page: Click on Show\Hide tool for interested line (L1)  
 _x000D_
 Click on Show\Hide tool for interested line (L1)  _x000D_
 Repeat step 1 and 2
-
-
-
-Repeat step 1 and 2
 Open work page: Click on element "All line" ([C453181]) or click on a line ([C453182]) or click on day square ([C453183]) or click on validity_x000D_
 [Optional] Click on Timetable booklet ![](index.php?/attachments/get/760293)
+_x000D_
+
+
+
 _x000D_
 [Optional] Click on Activity board ![](index.php?/attachments/get/760294)
 _x000D_
@@ -98,46 +225,47 @@ _x000D_
 Home - Select-deselect Operating days: Accedere al TTD.
 Selezionare una determinata validitÃ .
 _x000D_
-
-
-
-_x000D_
 Deselezionare una determinata validitÃ .
 Home - Select period & Day map: Accedere al TTD.
 Selezionare/Deselezionare i giorni della PeriodicitÃ ._x000D_
 Modificare il periodo.
 Home - Select summary time: Change from date in home window_x000D_
+
+
+
 Change to date in home window_x000D_
 Restore from and to date wit service version data range by click on ![](index.php?/attachments/get/98149)
 _x000D_
 Click on ![](index.php?/attachments/get/98150) to change visualization for validity_x000D_
-
-
-
 Click on ![](index.php?/attachments/get/98150)to change visualization for homogeneous days
 Show\Hide lines in Work page: Click on Show\Hide tool for interested line (L1)_x000D_
 Click on Show\Hide tool for interested line (L1)  _x000D_
 Repeat step 1 and 2
+
+
+
+Repeat step 1 and 2
 Visualizzazione percorso su Mappa: Accedere all'applicativo con credenziali valide per accesso a TTD
 Accedere a TTD aprendo uno scenario_x000D_
 Selezionare una linea\giorno\validitÃ  e accedere alla finestra Work_x000D_
-
-
-
 Selezionare una corsa e cliccare su "Visualizza su Mappa"_x000D_
 Aprire una linea con un percorso differente rispetto a quello appena visualizzato, selezionare una corsa e cliccare su "Visualizza su Mappa"
 Toolbar Work- Select: Selezione singola.
+
+
+
 Cliccare su una singola corsa_x000D_
 Cliccare su un punto del grafico e creare una linea/rettangolo per selezionare piÃ¹ corse_x000D_
 Cliccare sul tool cerca corse ![](index.php?/attachments/get/98153).
 Impostare i parametri di ricerca._x000D_
-
-
-
 Cliccare su tasto Seleziona Corsa
 Selezionare un corsa collegata in viaggio con almeno un'altra corsa_x000D_
 Cliccare su tasto Seleziona Viaggio
 Selezionare un corsa collegata in viaggio con almeno un'altra corsa_x000D_
+Cliccare su Seleziona Tutto.
+
+
+
 Cliccare su Seleziona Tutto.
 Create Trip navigation: Select Tools menu then click on Create new trip
 OR
@@ -145,24 +273,19 @@ Select Create new trip tool from toolbar ![](index.php?/attachments/get/743980)
 OR
 right click mouse trip drow on Graphic timetable
 _x000D_
-
-
-
-_x000D_
 Select another line in Filter patterns section_x000D_
 Select another direction in Filter patterns section_x000D_
 Fill-in all parameter_x000D_
 _[Optional] Repeat test for other navigation mode Tools menu\Toolbar_
 Open module on existing scenario: Open Timetables:
+
+
+
 Select "Open a Scenario"
 In next window confirm to open exiting scenario
 _x000D_
 Modify the Scenario (Add a line or create new trip into already present line, etc)
 Save on database._x000D_
-Close and reopen same Scenario
-
-
-
 Close and reopen same Scenario
 Open module on new scenario and create it simultaneously: Open Timetables from:
 + MVD Toolbar
@@ -170,38 +293,37 @@ Open module on new scenario and create it simultaneously: Open Timetables from:
 Select "Create a Scenario"
 In next window confirm to create new scenario and don't open exsisting scenario
 Insert Name and description for new scenario_x000D_
+
+
+
 Check into Scenario Manager new scenario presence
 Open more module instances simultaneously different scenario: Accedere al TTD aprendo uno scenario.
-
-
-
 Accedere al TTD con una seconda istanza aprendo uno scenario differente.
 TTD.XT- Check della modifica Scenario in Condivisione: User1 accesses MTRAM and opens the TTD._x000D_
 User2 accesses MTRAM and opens the TTD._x000D_
 User1 inserts a modification (such as creating a new trip) on a line on which User2 also works._x000D_
 User1 saves and closes the session.
+
+
+
 User2 closes and reopens the TTD and accesses the line previously modified by User1.
-
-
-
 Invalidate scenario after promotion when line used both scenario: Utente 1 apre lo Scenario 1 contenente la Linea 1 attiva.
 Successivamente Utente 2 apre lo Scenario 2 contenente la Linea 1 attiva._x000D_
 L'utente 2 effettua delle modifiche alla linean 1 nel proprio scenario e chiude il modulo delle corse salvando_x000D_
+
+
+
 Utente 1 applica alcune modifiche alla Linea 1, salva a DB e poi dallo Scenario Manager promuove la Linea 1._x000D_
-
-
-
 Utente 2 apre lo scenario Manager e accede allo Scenario 2 e alla Linea 1._x000D_
 L'utente aggiorna la Linea tramite il comando "Aggiorna dalla versione di Servizio"
 Add line to the active set: Open Timetable module ([C189563] or [C67503])_x000D_
 Click on add line ("+") in the Line section present in Home page
 _x000D_
 Select line in the list and click on Add button_x000D_
+
+
+
 Click on add line ("+") in the Line section present in Home page
-Double click on choosen line
-
-
-
 Double click on choosen line
 Read Only add line to the active set: Accedere al TTD.
 Nel riquadro linee cliccare sul tasto +.
@@ -212,20 +334,20 @@ Tool bar Work- Calendar tool: Accedere allo strumento calendario da:
 * Toolbar
 * Master
 * Click destro su una o piÃ¹ corse selezionate
+
+
+
 Tool bar Work- Calendar tool: editing data: Selezionare una corsa ed accedere allo strumento Calendario_x000D_
-
-
-
 Effettuare delle modifiche (modifica del periodo,eliminazione o aggiunta di un giorno della settimana)
 Toolbar Timetable Booklet- Calendar tool: Accedere allo strumento calendario da:
 * Toolbar
 * Master
 * Click destro su una o piÃ¹ corse selezionate
 Creazione corse in coincidenza definendo nodo, intervallo temporale, orari di passaggio - Caso due linee: Accedere al TTD.
+
+
+
 Selezionare la linea su cui si vogliono creare le corse in coincidenza e aprirla nella finestra Work.
-
-
-
 Visualizzare una seconda linea con la quale creare le corse in coincidenza._x000D_
 Aprire il tool e selezionare una linea avente corse.
 Impostare:
@@ -242,10 +364,12 @@ Nella finestra di selezione linea in coincidenza impostare:
 * Livello di servizio
 * Periodo
 Cliccare su Crea
+
+
+
+* Periodo
+Cliccare su Crea
 Viaggio con tempi di sosta proporzionali a singola corsa: Accedere a TTD.
-
-
-
 Selezionare un giorno/linea._x000D_
 Andare nella sezione setting.
 Impostare il check per la creazione di soste proporzionali alle percorrenze.
@@ -255,109 +379,113 @@ Mantenere la spunta su "Ignore Recovery Time"._x000D_
 Selezionare due corse e creare un viaggio.
 Viaggio con tempi di sosta proporzionali a corsa doppia: Accedere a TTD.
 Selezionare un giorno/linea._x000D_
+
+
+
 Andare nella sezione setting.
 Impostare il check per la creazione di soste proporzionali alle percorrenze.
-
-
-
 Spuntare Round Trip.
 Impostare il range percentuale.
 Mantenere la spunta su "Ignore Recovery Time"._x000D_
 Selezionare due corse e creare un viaggio.
 Creazione ed Applicazione Tempi di percorrenza per il percorso di una corsa: Accedere all'applicativo con credenziali valide per accesso a TTD
 Accedere a TTD aprendo uno scenario con linee non aventi i tempi di percorrenza definiti_x000D_
+
+
+
 Selezionare una linea\giorno\validitÃ  e accedere alla finestra Work_x000D_
 Nella finestra di configurazione impostare:
-
-
-
 * Ricalcolo Orario Transiti: No Ricalcolo
 * Calcolo con i tempi di Percorrenza: Tratte a Zero Minuti definendo un tempo superiore a zero
 Creare una nuova corsa_x000D_
 Accedere al tool "Running Time Editor"
 Impostare i tempi di percorrenza per tutti gli archi della corsa e salvare.
 Selezionare la corsa ed effettuare il Ricalcolo Transiti
+
+
+
 Creazione di una nuova corsa a partire da una corsa esistente: Accedere all'applicativo con credenziali valide per accesso a TTD
-
-
-
 Accedere a TTD aprendo uno scenario con linee aventi corse giÃ  definite_x000D_
 Nella finestra Home selezionare una linea avente giÃ  corse._x000D_
 Scegliere una corsa e utilizzare la funzione Duplica. impostare i parametri e procedere._x000D_
 Dopo aver selezionato una corsa modificare il transito sul nodo di controllo._x000D_
+
+
+
 Crea una nuova corsa utilizzando lo strumento di Modifica Percorso_x000D_
 Nella finestra Home selezionare un giorno con corse.
 Copiare e incollare su un giorno differente
-
-
-
 Assegnazione automatica di codice univoco per ogni corsa.: Accedere all'applicativo con credenziali valide per accesso a TTD
 Accedere a TTD aprendo uno scenario con linee aventi corse giÃ  definite_x000D_
 Selezionare una linea\giorno\validitÃ  e accedere alla finestra Work_x000D_
 Creare una nuova corsa o insieme di corse e Salvare_x000D_
+
+
+
 Modificare lo Static Id di una corsa inserendo un codice ancora non utilizzato e Salvare_x000D_
-
-
-
 Modificare lo Static Id di una corsa inserendo un codice giÃ  utilizzato e Salvare_x000D_
 Modificare lo Static Id di una corsa inserendo un codice non valido e Salvare
 Nuovi Parametri editabili di una corsa: Accedere all'applicativo con credenziali valide per accesso a TTD
 Accedere a TTD aprendo uno scenario con linee aventi corse giÃ  definite_x000D_
+
+
+
 Selezionare una linea\giorno\validitÃ  e accedere alla finestra Work_x000D_
-
-
-
 Selezionare una o piÃ¹ corse e accedere alla funzionalitÃ  di modifica corse._x000D_
 Accedere al TDA per modificare i tempi di percorrenza degli archi di una corsa.
 Effettuare le modifiche e salvare.
 Ricalcolare la percorrenza della corsa.
 Verifica violazione intervallo velocitÃ  percorrenza tipo linea: Accedere all'applicativo con credenziali valide per accesso a TTD
+
+
+
 Accedere a TTD aprendo uno scenario con linee avente tipo linea definito._x000D_
-
-
-
 Selezionare una linea\giorno\validitÃ  e accedere alla finestra Work_x000D_
 Aprire una corsa e modificare i tempi di percorrenza della corsa in modo che rispettino il range del tipo linea.
 Accedere alla sezione Violazioni e abilitare il controllo della velocitÃ  di percorrenza.
 Effettuare il controllo sulla corsa modificata._x000D_
+
+
+
 Aprire una corsa e modificare i tempi di percorrenza della corsa in modo che rispettino non rispetti il limite inferiore del range di velocitÃ .
-
-
-
 Accedere alla sezione Violazioni e abilitare il controllo della velocitÃ  di percorrenza.
 Effettuare il controllo sulla corsa modificata._x000D_
 Aprire una corsa e modificare i tempi di percorrenza della corsa in modo che rispettino non rispetti il limite superiore del range di velocitÃ .
+
+
+
 Accedere alla sezione Violazioni e abilitare il controllo della velocitÃ  di percorrenza.
 Effettuare il controllo sulla corsa modificata.
-
-
-
 Visualizzazione grafica corse proporzionale alle percorrenze: Accedere all'applicativo con credenziali valide per accesso a TTD
 Accedere a TTD aprendo uno scenario_x000D_
 Selezionare una linea\giorno\validitÃ  e accedere alla finestra Work_x000D_
+
+
+
 Cliccare con il tasto destro su un nodo della linea, accedere a Redistribuisci a Distanza e selezionare, in tre volte successive:
 * PrioritÃ  ascendente
 * PrioritÃ  discendente
 * Stessa prioritÃ _x000D_
-
-
-
-* Stessa prioritÃ _x000D_
 Editare manualmente la distanza tra le linee di transito dei nodi
 Inserimento tempo di sosta di default al nodo: Accedere a RTE.
 Aggiungere il livello di percorrenza e il percorso._x000D_
+Accedere alla finestra Work.
+
+
+
 Accedere alla finestra Work.
 Selezionare un arco con il nodo descritto nelle **Preconditions** ed inserire il tempo di sosta di default
 Work - Open Line -  Read Only: Accedere al TTD.
 Nel riquadro linee cliccare sul tasto +.
 Nella finestra successiva:
 * Scegliere una linea e cliccare su Aggiungi
-
-
-
 * Cliccare due volte su una linea_x000D_
 Cliccare sulla linea aperta in sola lettura
 Save by Toolbar: Accedere a TTD.
+Accedere alla finestra Work.
+
+
+
 Accedere alla finestra Work.
 Effettuare delle modifiche  (crea/modifica/cancella corse, modifica tempi di sosta/percorrenza/soste al transito, altro)
 Salva su DB_x000D_
@@ -369,15 +497,14 @@ Effettuare le seguenti operazioni sulla corsa:
 * Duplica
 * Cancella
 * Sposta percorso
-
-
-
-* Cancella
-* Sposta percorso
 * Modifica calendario
 * Corsa in ingresso/uscita
 * Allunga/Accorcia
 Check reading data from DB: Accedere al TTD
+_x000D_
+
+
+
 _x000D_
 Aggiungere una linea nella Home_x000D_
 Aggiunta linea in sola lettura_x000D_
@@ -385,11 +512,12 @@ Modifiche in una linea in work, ritorno in Home e rimozione di una linea_x000D_
 Rimozione linea dalla home senza modifiche_x000D_
 Lock di una linea (diventa in sola lettura
 Create single\ multiple trip: The user navigate to the create new trip window ([C67516])_x000D_
-
-
-
 The user select pattern, set Headway and Operating day 
 [Optional] fill-in in Trip the number of trip to be created
+then clicks on save_x000D_
+
+
+
 then clicks on save_x000D_
 [Optional] Repeat test changing direction
 Create Return Trip: Selezionare una corsa.
