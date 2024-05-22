@@ -94,8 +94,8 @@ def get_conversation_chain(vectorstore,option):
     llm = None
     if option=="xgen-7b-8k-base":
         llm = HuggingFaceHub(repo_id="Salesforce/xgen-7b-8k-base",model_kwargs={"temperature":0.2, "max_length":250},huggingfacehub_api_token="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")
-    if option=="Falcon-7b-instruct":
-        llm = HuggingFaceHub(repo_id="tiiuae/falcon-7b-instruct",model_kwargs={"temperature":0.5, "max_length":570},huggingfacehub_api_token="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")
+    if option=="falcon-7b-instruct":
+        llm = HuggingFaceHub(repo_id="tiiuae/falcon-7b-instruct",model_kwargs={"temperature":0.4, "max_length":570},huggingfacehub_api_token="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")
     if option=="google/flan-t5-large":
         llm = HuggingFaceHub(repo_id="google/flan-t5-large", model_kwargs={"temperature":0.2, "max_length":570},huggingfacehub_api_token="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")
     if option=="phi3":
@@ -135,7 +135,7 @@ def get_conversation_chain(vectorstore,option):
 
 def handle_userinput(user_question):
     #response = st.session_state.conversation({'question': user_question})
-    response = st.session_state.conversation({'query': user_question})
+    response = st.session_state.conversation.run(user_question)
    
     print(response)
 
