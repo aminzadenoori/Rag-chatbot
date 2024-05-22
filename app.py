@@ -143,10 +143,13 @@ def handle_userinput(user_question):
     feedback_collector = FeedbackCollector()
     feedback_results = []
     feedback=[]
-    print(st.session_state.chat_history)
-   
+    
+    helpful_answer_index = response.find('Helpful Answer:')
+    if helpful_answer_index != -1:
+                    generated_answer = response[helpful_answer_index + len('Helpful Answer:'):].strip()
+                    
     st.write(bot_template.replace(
-                "{{MSG}}",  response['result'].split("\n")[-1] if 'result' in response else response), unsafe_allow_html=True)
+                "{{MSG}}",  generated_answer), unsafe_allow_html=True)
            
     feedback.append(feedback_collector)
     print(feedback)
