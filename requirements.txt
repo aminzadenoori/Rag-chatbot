@@ -18,7 +18,6 @@ cachetools==5.2.0
 certifi==2021.5.30
 charset-normalizer==3.3.2
 click==8.1.6
-conda==4.10.3
 contourpy==1.0.6
 cycler==0.11.0
 dataclasses-json==0.5.7

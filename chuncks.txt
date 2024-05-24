@@ -1,245 +1,2347 @@
-Mohammad Amin (Amin) Zadenoori
-amin.zadenoori@gmail.com +393397825862
-linkedin.com/in/mohammad-amin-
-zadenoori-4b9980ab
-Summary
-- Expertise in leveraging Large Language Models (LLMs) for a broad range of applications, encompassing text
-generation, comprehension, summarization, and conversation. Proficient in fine-tuning and deploying models like
-GPT-3, and BERT.
--Proficient in MLOps practices to streamline and automate the machine learning lifecycle, from data preparation to
+WFG_TTD001 - Navigation existing scenario Active set e Line: Open Timetable module ([C189563])_x000D_
+Hide some lines in **Home** page ([C67508])_x000D_
+Go to the Work page by click on "All lines" in Line grid section 
+_or_
+ by click on specific line in Line grid section _x000D_
+Hide some lines in **Work** page ([C67509])_x000D_
+Show some lines in Work page ([C67509])_x000D_
+Hide all lines in Work page ([C67508])_x000D_
+Go to the **Home** page and add some line to the active set ([C189564])
 
 
 
-model deployment and monitoring in production environments.
--Proficiency in data preprocessing, including handling missing data, normalization, and encoding categorical data.
--Expertise in machine learning algorithms such as linear regression, logistic regression, decision trees, SVM, and
-ensemble methods like Random Forests and Gradient Boosting Machines.
--Understanding of advanced machine learning concepts like hyperparameter tuning, cross-validation, feature
+_Repeat for all interested lines__x000D_
+Add some line in read only mode to the active set ([C163379])
+_Repeat for all interested lines__x000D_
+Hide some Read-only lines in Home page ([C67508])_x000D_
+Go to the **Work** page by click on "All lines" in Line grid section 
+_or_
+ by click on specific line in Line grid section _x000D_
+Hide some lines in Work page ([C67509])_x000D_
+Show some lines in Work page ([C67509])_x000D_
+Go to the **Home** page  and hide all lines in Home page ([C67508])
 
 
 
-selection, and dimensionality reduction techniques (e.g., PCA).
--Familiarity with deep learning architectures beyond CNNs and RNNs, such as Autoencoders, GANs (Generative
-Adversarial Networks), and -Transformer models beyond BERT and GPT, like T5 and XLNet.
--Knowledge of advanced NLP techniques and frameworks such as spaCy, NLTK, and the use of word
-embeddings like Word2Vec and GloVe.
--Experience with big data technologies like Hadoop, Spark, and their ecosystems for handling large-scale data
-processing.
+WFG_TTD002 - Navigation new scenario Active set e Line: Open Timetable module and create scenario ([C67503])_x000D_
+Select some Operating Day
+_x000D_
+Add some line to the active set ([C189564])
+_Repeat for all interested lines__x000D_
+Hide some lines in **Home** page ([C67508])_x000D_
+Go to the **Work** page by click on "All lines" in Line grid section 
+_or_
+ by click on specific line in Line grid section _x000D_
+Hide some lines in Work page ([C67509])_x000D_
+Show some lines in Work page ([C67509])_x000D_
 
 
 
-processing.
--Proficiency in SQL and NoSQL databases for data storage and retrieval.
--Understanding of model interpretability and explainability techniques, like SHAP and LIME.
--Knowledge of best practices in data science and machine learning project management, including Agile
-methodologies.
--Familiarity with A/B testing, metric selection, and experiment design for model evaluation in real-world settings.
+Go to the **Home** page and add some line to the active set ([C189564])
+_Repeat for all interested lines__x000D_
+Add some line in read only mode to the active set ([C163379])
+_Repeat for all interested lines__x000D_
+Hide some Read-only lines in Home page ([C67508])_x000D_
+Go to the **Work** page by click on "All lines" in Line grid section 
+_or_
+ by click on specific line in Line grid section _x000D_
+Hide some lines in Work page ([C67509])_x000D_
+Show some lines in Work page ([C67509])
 
 
 
--Awareness of ethical considerations, bias, fairness, and privacy issues in machine learning models and data
-handling.
--Continuous learning mindset to keep up with the rapidly evolving field of machine learning and artificial
-intelligence.
-Experience
-Computer Vision Engineer (Freelancer)
-Sodi Scientifica Srl
-Nov 2022 - May 2023 (7 months)
-As a Computer Vision Engineer Freelancer at Sodi Scientifica, my role revolves around harnessing
+WFG_TTD100 - Create service with Algo and edit: Create new algorythm configuration ([C189577])
+Algorithm processing and applying solution one line ([C189578])
+_x000D_
+Select trip created with algo and delete ([C189568])_x000D_
+Move activity and edit some field
+_x000D_
+break activity with Separate Trip ([C67865])_x000D_
+Edit trip ([C70520])_x000D_
+Create single trip([C189565])_x000D_
+Save changes ([C67574])
+WFG_TTD101 - Create service with manually and apply changes: Add line to the active set ([C189564])
 
 
 
-cutting-edge technologies to enhance roadway safety through advanced traffic monitoring systems.
-Leveraging 3D point clouds captured by LIDAR technology, our team develops robust algorithms for
-the classification and tracking of vehicles on highways. By meticulously analyzing the intricate details
-of these point clouds, we discern distinct object features and trajectories, enabling precise identification
-and tracking of vehicles in real-time. This intricate process forms the backbone of our speed detection
+_x000D_
+Add line to the active set ([C189564])_x000D_
+Create multiple trips ([C189565])_x000D_
+Create return trips ([C189567])_x000D_
+Join trips and create activity ([C67864])_x000D_
+Duplicate trips ([C189566])
+GEN show trip on the map: Select interested trip in window_x000D_
+Repeat step 1 for trip with different pattern and\or line
+Help- Help "?" in  tab: Accedere al TTD.
+Verificare che nelle finestre Home, Work, Setting, il manuale utente (?) si apra correttamente.
 
 
 
-system, allowing for accurate measurement of vehicle velocities on the highway. Through our efforts,
-we aim to contribute significantly to the improvement of road safety and traffic management strategies.
-Machine Learning Engineer
-Mohammad Amin (Amin) Zadenoori - page 1M.A.I.O.R.
-Jul 2022 - Present (1 year 9 months)
-During my tenure as a Machine Learning Engineer at MAIOR, a prominent Italian company specializing
+TTD.XT- Language Translation: Aprire tutti i menu, sezioni, sottosezioni, sottomoduli presenti nel modulo.
+Home - Upload and work with multiple lines and check visualization and usability: Add lines and active validities
+Reset service version date range in homa page: Open TTD
+Click on reset button
+Show\Hide lines in Home page: Click on Show\Hide tool for interested line (L1)  
+_x000D_
+Click on Show\Hide tool for interested line (L1)  _x000D_
+Repeat step 1 and 2
 
 
 
-in software solutions, I led two significant projects, each leveraging machine learning techniques to
-address distinct challenges in different sectors.
-Project 1: Modelling Unoperated Trips in Transportation
-Focus: Analyzed historical data to model unoperated trips, aiming to enhance planning for local
-transport firms and airlines.
-Tools: Utilized Scikit-learn, TensorFlow, and PyTorch during development.
-Outcome: Developed and deployed a Flask web application, optimizing operational processes for
+Repeat step 1 and 2
+Open work page: Click on element "All line" ([C453181]) or click on a line ([C453182]) or click on day square ([C453183]) or click on validity_x000D_
+[Optional] Click on Timetable booklet ![](index.php?/attachments/get/760293)
+_x000D_
+[Optional] Click on Activity board ![](index.php?/attachments/get/760294)
+_x000D_
+[Optional] Click on Trip table ![](index.php?/attachments/get/760295)
+Home - Select-deselect Operating days: Accedere al TTD.
+Selezionare una determinata validitÃ .
+_x000D_
 
 
 
-transportation firms.
-Project 2: Predictive Maintenance for Bus Fleets
-Role: Data Scientist and AI Developer
-Focus: Developed a predictive maintenance system for bus fleets, leveraging advanced analytics and
-machine learning models.
-Tools: Utilized TensorFlow, PyTorch, and GPT API for predictive analytics and fault diagnosis.
-Outcome: Significantly enhanced fleet reliability and operational efficiency, leading to reduced downtime
-and maintenance costs.
+_x000D_
+Deselezionare una determinata validitÃ .
+Home - Select period & Day map: Accedere al TTD.
+Selezionare/Deselezionare i giorni della PeriodicitÃ ._x000D_
+Modificare il periodo.
+Home - Select summary time: Change from date in home window_x000D_
+Change to date in home window_x000D_
+Restore from and to date wit service version data range by click on ![](index.php?/attachments/get/98149)
+_x000D_
+Click on ![](index.php?/attachments/get/98150) to change visualization for validity_x000D_
 
 
 
-and maintenance costs.
-Project 3: Design and Implementation of the "RAG driven chat bot" System
-Focus: Spearheaded the development of the "Talk to PDF" project, a sophisticated system designed to
-extract, analyze, and interpret information from PDF documents through natural language queries.
-Tools and Technologies: The project leveraged a combination of open-source tools and advanced
-machine learning models, including Python for backend development, Streamlit for the web interface,
+Click on ![](index.php?/attachments/get/98150)to change visualization for homogeneous days
+Show\Hide lines in Work page: Click on Show\Hide tool for interested line (L1)_x000D_
+Click on Show\Hide tool for interested line (L1)  _x000D_
+Repeat step 1 and 2
+Visualizzazione percorso su Mappa: Accedere all'applicativo con credenziali valide per accesso a TTD
+Accedere a TTD aprendo uno scenario_x000D_
+Selezionare una linea\giorno\validitÃ  e accedere alla finestra Work_x000D_
 
 
 
-PyPDF2 for PDF text extraction, and LangChain for text processing and embeddings. A pivotal part
-of the system was the integration of state-of-the-art Large Language Models (LLMs) such as GPT-3,
-BERT, and T5 from the Hugging Face library.
-Research Assistant
-STLAB (Software Technologies LAB)
-Feb 2022 - Jul 2022 (6 months)
-Machine Learning Researcher
-Università degli Studi di Firenze
-Nov 2018 - Jan 2022 (3 years 3 months)
+Selezionare una corsa e cliccare su "Visualizza su Mappa"_x000D_
+Aprire una linea con un percorso differente rispetto a quello appena visualizzato, selezionare una corsa e cliccare su "Visualizza su Mappa"
+Toolbar Work- Select: Selezione singola.
+Cliccare su una singola corsa_x000D_
+Cliccare su un punto del grafico e creare una linea/rettangolo per selezionare piÃ¹ corse_x000D_
+Cliccare sul tool cerca corse ![](index.php?/attachments/get/98153).
+Impostare i parametri di ricerca._x000D_
 
 
 
-I was a PhD candidate in machine learning, supervised by Paolo Frasconi and Enrico Vicario,
-working on a project that focused on applying machine learning techniques to stochastic modeling of
-systems. As a member of this research team, my main objective was to utilize my expertise in machine
-learning and artificial intelligence in order to develop and enhance algorithms and models for systems
-characterized by randomness and uncertainty.
+Cliccare su tasto Seleziona Corsa
+Selezionare un corsa collegata in viaggio con almeno un'altra corsa_x000D_
+Cliccare su tasto Seleziona Viaggio
+Selezionare un corsa collegata in viaggio con almeno un'altra corsa_x000D_
+Cliccare su Seleziona Tutto.
+Create Trip navigation: Select Tools menu then click on Create new trip
+OR
+Select Create new trip tool from toolbar ![](index.php?/attachments/get/743980)
+OR
+right click mouse trip drow on Graphic timetable
+_x000D_
 
 
 
-Throughout my PhD, I worked closely with my supervisors and fellow researchers, contributing to
-the development of novel methods for analyzing complex stochastic systems. This collaborative
-environment allowed me to deepen my understanding of machine learning and its applications,
-ultimately resulting in the production of high-quality research and the advancement of the field.
-Data Scientist
-Ghateh chain stores
-Mohammad Amin (Amin) Zadenoori - page 2Dec 2017 - Sep 2018 (10 months)
+_x000D_
+Select another line in Filter patterns section_x000D_
+Select another direction in Filter patterns section_x000D_
+Fill-in all parameter_x000D_
+_[Optional] Repeat test for other navigation mode Tools menu\Toolbar_
+Open module on existing scenario: Open Timetables:
+Select "Open a Scenario"
+In next window confirm to open exiting scenario
+_x000D_
+Modify the Scenario (Add a line or create new trip into already present line, etc)
+Save on database._x000D_
+Close and reopen same Scenario
 
 
 
-As the data scientist, I did Data visualization to Viuslize purchases in different branches of the store
-alongside predictive modeling on the purchase amount of different Items by data-driven modeling by
-different groups of customers.
- 
-Tools:
-Microsoft Power Bi
-Python
-SciKit learn
-Machine learning
-Designing and developing E-learning mobile apps
-Dr.words Project
-Dec 2016 - Dec 2017 (1 year 1 month)
-Dr. Words is the best mobile application awarded startup established in 2016 by me in Iran with a focus
+Close and reopen same Scenario
+Open module on new scenario and create it simultaneously: Open Timetables from:
++ MVD Toolbar
++ Maior Logo
+Select "Create a Scenario"
+In next window confirm to create new scenario and don't open exsisting scenario
+Insert Name and description for new scenario_x000D_
+Check into Scenario Manager new scenario presence
+Open more module instances simultaneously different scenario: Accedere al TTD aprendo uno scenario.
 
 
 
-on teaching the English language in an innovative way by the usage of games and attractive UI.
-This mobile application was developed by Android SDK and SQLite in java.
-It was planned to utilize NLP techniques to reorder the selected words to select a personalized teaching
-methodology based on users' learning curves.
-Access link: https://cafebazaar.ir/app/com.example.amin.howmanywordsdoyouknow?l=en
-Junior Java Developer
-Farsi WordNet Project
-Nov 2011 - May 2012 (7 months)
+Accedere al TTD con una seconda istanza aprendo uno scenario differente.
+TTD.XT- Check della modifica Scenario in Condivisione: User1 accesses MTRAM and opens the TTD._x000D_
+User2 accesses MTRAM and opens the TTD._x000D_
+User1 inserts a modification (such as creating a new trip) on a line on which User2 also works._x000D_
+User1 saves and closes the session.
+User2 closes and reopens the TTD and accesses the line previously modified by User1.
 
 
 
-Nov 2011 - May 2012 (7 months)
-During my bachelor's, I was in the Farsi wordnet project as the senior Java developer.
-WordNet is a lexical database for the English language. It groups words into sets of synonyms called
-synsets, provides short definitions and usage examples, and records a number of relations among
-these synonym sets or their members.
-Education
-Università degli Studi di Firenze
-PhD in Computer engineering. , Computer science with Specialization in Machine
-Learning
-2018 - 2021
+Invalidate scenario after promotion when line used both scenario: Utente 1 apre lo Scenario 1 contenente la Linea 1 attiva.
+Successivamente Utente 2 apre lo Scenario 2 contenente la Linea 1 attiva._x000D_
+L'utente 2 effettua delle modifiche alla linean 1 nel proprio scenario e chiude il modulo delle corse salvando_x000D_
+Utente 1 applica alcune modifiche alla Linea 1, salva a DB e poi dallo Scenario Manager promuove la Linea 1._x000D_
 
 
 
-Learning
-2018 - 2021
-Qazvin Islamic Azad University
-Master's Degree, Artificial Intelligence
-2013 - 2017
-Thesis Title: Face recognition via manifold learning and contourlet transform
-Supervisor: Prof. Amir Masoud Eftekhari Moghadam
-Hamedan university of Technology (HUT)
-Bachelor's Degree, Information Technology
-2008 - 2012
-Mohammad Amin (Amin) Zadenoori - page 3Final Project: Designing a distributed web mining system 20/20
-Udacity
-Data Scientist Nanodegree, data scientist
-Skills Learned and improved:
+Utente 2 apre lo scenario Manager e accede allo Scenario 2 e alla Linea 1._x000D_
+L'utente aggiorna la Linea tramite il comando "Aggiorna dalla versione di Servizio"
+Add line to the active set: Open Timetable module ([C189563] or [C67503])_x000D_
+Click on add line ("+") in the Line section present in Home page
+_x000D_
+Select line in the list and click on Add button_x000D_
+Click on add line ("+") in the Line section present in Home page
+Double click on choosen line
 
 
 
-Skills Learned and improved:
-• Apply CRISP-DM process to communicate findings of a Data Science project to respective
-stakeholders
-• Basics of Python Object-Oriented Programming and Web Development using Flask, Bootstrap, Plotly.
-• Data Engineering skills to build efficient ETL, NLP, and Machine Learning Pipelines using Python
-NumPy, Pandas, Scikit-Learn.
-• Concepts in Experiment Design, Statistical Considerations in Testing, A/B Testing.
+Double click on choosen line
+Read Only add line to the active set: Accedere al TTD.
+Nel riquadro linee cliccare sul tasto +.
+Nella finestra successiva:
+* Scegliere una linea e cliccare su Read Only
+* Cliccare due volte su una linea
+Tool bar Work- Calendar tool: Accedere allo strumento calendario da:
+* Toolbar
+* Master
+* Click destro su una o piÃ¹ corse selezionate
+Tool bar Work- Calendar tool: editing data: Selezionare una corsa ed accedere allo strumento Calendario_x000D_
 
 
 
-• Various Recommendation engines such as Rank Based /Knowledge-based recommendation, User-
-User Based Collaborative Filtering, Content-Based Filtering, and Matrix Factorization technique for
-Recommendations using Python.
-• Data Visualization using Python Matplotlib, seaborn.
-• Version control: Git and GitHub
-• Python for Data Analysis
-• Basics of Machine Learning (Scikit-Learn), Linear Algebra and Statistics
-• Basics of Natural language Processing
-• Linux Shell commands
-• SQL
-• Pyspark
-• Churn prediction
+Effettuare delle modifiche (modifica del periodo,eliminazione o aggiunta di un giorno della settimana)
+Toolbar Timetable Booklet- Calendar tool: Accedere allo strumento calendario da:
+* Toolbar
+* Master
+* Click destro su una o piÃ¹ corse selezionate
+Creazione corse in coincidenza definendo nodo, intervallo temporale, orari di passaggio - Caso due linee: Accedere al TTD.
+Selezionare la linea su cui si vogliono creare le corse in coincidenza e aprirla nella finestra Work.
 
 
 
-• Pyspark
-• Churn prediction
-Licenses & Certifications
-Neural Networks and Deep Learning  - Coursera
-Y5DNX9UM66UB
-Improving Deep Neural Networks: Hyperparameter tuning, Regularization and
-Optimization  - Coursera
-K49ELQRBH9CA
-Structuring Machine Learning Projects  - Coursera
-C7RQQMMCGMKE
-Convolutional Neural Networks  - Coursera
-C3VYD4DUU8PQ
-Introduction to Machine Learning in Production  - Coursera
-HAWGTL7C7CGW
-Skills
+Visualizzare una seconda linea con la quale creare le corse in coincidenza._x000D_
+Aprire il tool e selezionare una linea avente corse.
+Impostare:
+* Direzione
+* Nodo di supporto
+* Range orario.
+_x000D_
+Nella finestra di selezione linea in coincidenza impostare:
+* Linea
+* Nodo di supporto in coincidenza
+* Percorso di arrivo
+* Percorso di partenza
+* ValiditÃ 
+* Livello di servizio
+* Periodo
+Cliccare su Crea
+Viaggio con tempi di sosta proporzionali a singola corsa: Accedere a TTD.
 
 
 
-HAWGTL7C7CGW
-Skills
-Mohammad Amin (Amin) Zadenoori - page 4Oracle Cloud Infrastructure (OCI)    •   Scikit-Learn    •   Object Detection    •   Bioinformatics    •   Medical Retina    • 
-  Reinforcement Learning    •   Formal Methods    •   Data Analysis    •   Machine Learning    •   Deep Learning
-Honors & Awards
-Winner of Pegasus scholarship(by Tuscany region of Italy)for PhD program.
-Nov 2018
-Best mobile application of the day  - Caffe Bazar
+Selezionare un giorno/linea._x000D_
+Andare nella sezione setting.
+Impostare il check per la creazione di soste proporzionali alle percorrenze.
+Spuntare Single Trip.
+Impostare il range percentuale.
+Mantenere la spunta su "Ignore Recovery Time"._x000D_
+Selezionare due corse e creare un viaggio.
+Viaggio con tempi di sosta proporzionali a corsa doppia: Accedere a TTD.
+Selezionare un giorno/linea._x000D_
+Andare nella sezione setting.
+Impostare il check per la creazione di soste proporzionali alle percorrenze.
 
 
 
-Dr.words awarded the best language teaching mobile application with regards to its innovative UI and
-methodology.
-Mohammad Amin (Amin) Zadenoori - page 5
+Spuntare Round Trip.
+Impostare il range percentuale.
+Mantenere la spunta su "Ignore Recovery Time"._x000D_
+Selezionare due corse e creare un viaggio.
+Creazione ed Applicazione Tempi di percorrenza per il percorso di una corsa: Accedere all'applicativo con credenziali valide per accesso a TTD
+Accedere a TTD aprendo uno scenario con linee non aventi i tempi di percorrenza definiti_x000D_
+Selezionare una linea\giorno\validitÃ  e accedere alla finestra Work_x000D_
+Nella finestra di configurazione impostare:
+
+
+
+* Ricalcolo Orario Transiti: No Ricalcolo
+* Calcolo con i tempi di Percorrenza: Tratte a Zero Minuti definendo un tempo superiore a zero
+Creare una nuova corsa_x000D_
+Accedere al tool "Running Time Editor"
+Impostare i tempi di percorrenza per tutti gli archi della corsa e salvare.
+Selezionare la corsa ed effettuare il Ricalcolo Transiti
+Creazione di una nuova corsa a partire da una corsa esistente: Accedere all'applicativo con credenziali valide per accesso a TTD
+
+
+
+Accedere a TTD aprendo uno scenario con linee aventi corse giÃ  definite_x000D_
+Nella finestra Home selezionare una linea avente giÃ  corse._x000D_
+Scegliere una corsa e utilizzare la funzione Duplica. impostare i parametri e procedere._x000D_
+Dopo aver selezionato una corsa modificare il transito sul nodo di controllo._x000D_
+Crea una nuova corsa utilizzando lo strumento di Modifica Percorso_x000D_
+Nella finestra Home selezionare un giorno con corse.
+Copiare e incollare su un giorno differente
+
+
+
+Assegnazione automatica di codice univoco per ogni corsa.: Accedere all'applicativo con credenziali valide per accesso a TTD
+Accedere a TTD aprendo uno scenario con linee aventi corse giÃ  definite_x000D_
+Selezionare una linea\giorno\validitÃ  e accedere alla finestra Work_x000D_
+Creare una nuova corsa o insieme di corse e Salvare_x000D_
+Modificare lo Static Id di una corsa inserendo un codice ancora non utilizzato e Salvare_x000D_
+
+
+
+Modificare lo Static Id di una corsa inserendo un codice giÃ  utilizzato e Salvare_x000D_
+Modificare lo Static Id di una corsa inserendo un codice non valido e Salvare
+Nuovi Parametri editabili di una corsa: Accedere all'applicativo con credenziali valide per accesso a TTD
+Accedere a TTD aprendo uno scenario con linee aventi corse giÃ  definite_x000D_
+Selezionare una linea\giorno\validitÃ  e accedere alla finestra Work_x000D_
+
+
+
+Selezionare una o piÃ¹ corse e accedere alla funzionalitÃ  di modifica corse._x000D_
+Accedere al TDA per modificare i tempi di percorrenza degli archi di una corsa.
+Effettuare le modifiche e salvare.
+Ricalcolare la percorrenza della corsa.
+Verifica violazione intervallo velocitÃ  percorrenza tipo linea: Accedere all'applicativo con credenziali valide per accesso a TTD
+Accedere a TTD aprendo uno scenario con linee avente tipo linea definito._x000D_
+
+
+
+Selezionare una linea\giorno\validitÃ  e accedere alla finestra Work_x000D_
+Aprire una corsa e modificare i tempi di percorrenza della corsa in modo che rispettino il range del tipo linea.
+Accedere alla sezione Violazioni e abilitare il controllo della velocitÃ  di percorrenza.
+Effettuare il controllo sulla corsa modificata._x000D_
+Aprire una corsa e modificare i tempi di percorrenza della corsa in modo che rispettino non rispetti il limite inferiore del range di velocitÃ .
+
+
+
+Accedere alla sezione Violazioni e abilitare il controllo della velocitÃ  di percorrenza.
+Effettuare il controllo sulla corsa modificata._x000D_
+Aprire una corsa e modificare i tempi di percorrenza della corsa in modo che rispettino non rispetti il limite superiore del range di velocitÃ .
+Accedere alla sezione Violazioni e abilitare il controllo della velocitÃ  di percorrenza.
+Effettuare il controllo sulla corsa modificata.
+
+
+
+Visualizzazione grafica corse proporzionale alle percorrenze: Accedere all'applicativo con credenziali valide per accesso a TTD
+Accedere a TTD aprendo uno scenario_x000D_
+Selezionare una linea\giorno\validitÃ  e accedere alla finestra Work_x000D_
+Cliccare con il tasto destro su un nodo della linea, accedere a Redistribuisci a Distanza e selezionare, in tre volte successive:
+* PrioritÃ  ascendente
+* PrioritÃ  discendente
+* Stessa prioritÃ _x000D_
+
+
+
+* Stessa prioritÃ _x000D_
+Editare manualmente la distanza tra le linee di transito dei nodi
+Inserimento tempo di sosta di default al nodo: Accedere a RTE.
+Aggiungere il livello di percorrenza e il percorso._x000D_
+Accedere alla finestra Work.
+Selezionare un arco con il nodo descritto nelle **Preconditions** ed inserire il tempo di sosta di default
+Work - Open Line -  Read Only: Accedere al TTD.
+Nel riquadro linee cliccare sul tasto +.
+Nella finestra successiva:
+* Scegliere una linea e cliccare su Aggiungi
+
+
+
+* Cliccare due volte su una linea_x000D_
+Cliccare sulla linea aperta in sola lettura
+Save by Toolbar: Accedere a TTD.
+Accedere alla finestra Work.
+Effettuare delle modifiche  (crea/modifica/cancella corse, modifica tempi di sosta/percorrenza/soste al transito, altro)
+Salva su DB_x000D_
+Riaprire il modulo.
+Operazioni su corse fuori linea: Accedere al TTD
+Creare una corsa fuori linea_x000D_
+Effettuare le seguenti operazioni sulla corsa:
+* Crea ribattuta
+* Duplica
+* Cancella
+* Sposta percorso
+
+
+
+* Cancella
+* Sposta percorso
+* Modifica calendario
+* Corsa in ingresso/uscita
+* Allunga/Accorcia
+Check reading data from DB: Accedere al TTD
+_x000D_
+Aggiungere una linea nella Home_x000D_
+Aggiunta linea in sola lettura_x000D_
+Modifiche in una linea in work, ritorno in Home e rimozione di una linea_x000D_
+Rimozione linea dalla home senza modifiche_x000D_
+Lock di una linea (diventa in sola lettura
+Create single\ multiple trip: The user navigate to the create new trip window ([C67516])_x000D_
+
+
+
+The user select pattern, set Headway and Operating day 
+[Optional] fill-in in Trip the number of trip to be created
+then clicks on save_x000D_
+[Optional] Repeat test changing direction
+Create Return Trip: Selezionare una corsa.
+Cliccare su crea Ribattute.
++ From Master
++ From ToolBar
++ From Click tasto destro_x000D_
+Selezionare un percorso tra i possibile proposti. _x000D_
+Ripetere il test selezionando piÃ¹ corse identiche utilizzando il tool da un punto differente rispetto a quanto fatto allo Step 1_x000D_
+
+
+
+Ripetere il test selezionando corse su percorsi e direzioni differenti utilizzando il tool da un punto differente rispetto a quanto fatto allo Step 1
+Create trip remembers headway setting for next creation: Create trip ([C189565]), setting headway different by default value_x000D_
+Reopen create new trip window ([C67516])_x000D_
+Close Work window and reopen with different data
+Reopen create new trip window ([C67516])
+Delete single Trip: Select trip by click on it then proceed with deletion by:
+
+
+
+Select Tools menu then click on Delete
+OR
+Select Delete tool from toolbar ![](index.php?/attachments/get/744005)
+OR
+right click mouse trip's object on Graphic timetable
+Duplicate trip: Selezionare una corsa.
+Premere il tasto Duplica:
++ From Master
++ From Toolbar_x000D_
+Inserire i parametri richiesti:
+* Numero di corse
+* Frequenza di creazione
+* ValiditÃ 
+* Periodo_x000D_
+
+
+
+* ValiditÃ 
+* Periodo_x000D_
+Ripetere il test selezionando un gruppo di corse da duplicare e accedendo al tool da un punto differente rispetto a quello utilizzato nello Step 1
+Toolbar Timetable Booklet- Create Return Trip: Selezionare una corsa.
+Cliccare su crea Ribattute.
++ From Master
++ From ToolBar_x000D_
+Selezionare un percorso tra i possibile proposti. _x000D_
+Ripetere il test selezionando piÃ¹ corse identiche_x000D_
+Ripetere il test selezionando corse su percorsi e direzioni differenti
+
+
+
+Inserimento tempi cuscinetto all'inizio e alla fine di una corsa: Accedere al TTD.
+Selezionare un giorno/linea e Accedere alla finestra Work._x000D_
+Selezionare una corsa e andare nella sezione modifica.
+Nella sezione attributi inserire il cuscinetto di anticipo e ritardo.
+Creazione corsa di ritorno rispetto alla fermata del percorso: Eseguire test [C89706]_x000D_
+Selezionare la corsa appena creata.
+Accedere al tool per la creazione delle ribattute.
+
+
+
+Creazione corsa di ritorno rispetto alla fermata del percorso - Caso selezione multipla: Eseguire test [C89706]_x000D_
+Selezionare piÃ¹ corse che abbiano la fermata finale differente
+Accedere al tool per la creazione delle ribattute.
+Toolbar Activities Board- Duplicate trip: Selezionare una corsa.
+Premere il tasto Duplica:
++ From Master
++ From Toolbar_x000D_
+Inserire i parametri richiesti:
+* Numero di corse
+* Frequenza di creazione
+* ValiditÃ 
+* Periodo_x000D_
+Ripetere il test selezionando un viaggio
+
+
+
+Toolbar Timetable Booklet- Duplicate trip: Selezionare una corsa.
+Premere il tasto Duplica:
++ From Master
++ From Toolbar_x000D_
+Inserire i parametri richiesti:
+* Numero di corse
+* Frequenza di creazione
+* ValiditÃ 
+* Periodo_x000D_
+Ripetere il test selezionando un gruppo di corse da duplicare
+Toolbar Work- Duplicate trip - Editing Data: Perform duplicate operation:
++ From Master
++ From Toolbar_x000D_
+Repeat operation for a group of trips
+Toolbar Work- Create Return Trip - Editing Data: Create Return Trip:
+
+
+
++ From Master
++ From ToolBar
+Duplicazione corsa con cambio validitÃ : Accedere all'applicativo con credenziali valide per accesso a TTD
+Accedere a TTD aprendo uno scenario con linee aventi corse giÃ  definite_x000D_
+Selezionare una linea\giorno\validitÃ  e accedere alla finestra Work_x000D_
+Selezionare una corsa, cliccare su Duplica corse e selezionare una validitÃ  differente da quella della corsa selezionata.
+
+
+
+Duplicazione corsa con modifica percorso: Accedere all'applicativo con credenziali valide per accesso a TTD
+Accedere a TTD aprendo uno scenario con linee aventi corse giÃ  definite_x000D_
+Selezionare una linea\giorno\validitÃ  e accedere alla finestra Work_x000D_
+Selezionare una corsa, cliccare su Duplica corse_x000D_
+Selezionare la corsa duplicata e cliccare sul tool "Allunga/Accorcia".
+Selezionare un percorso differente da quello attualmente in uso.
+
+
+
+Toolbar Activities Board- Check "Create Trip" Window: Aprire il tool per la creazione corse
+Verificare che le seguenti sezioni sia presenti e formattate correttamente:
+1) Filtri Percorso
+2) Selezione Percorso 
+3) Frequenza
+4) ValiditÃ 
+Toolbar Timetable Booklet- Check "Create Trips" Window: Verificare che le finestre dei seguenti settori siano costruite correttamente:
+1) Filtri Percorso
+2) Selezione Percorso 
+3) Frequenza
+4) ValiditÃ
+
+
+
+3) Frequenza
+4) ValiditÃ 
+Toolbar Activities Board- Check "Create Trip" Window: Aprire il tool per la creazione corse
+Verificare che le seguenti sezioni sia presenti e formattate correttamente:
+1) Filtri Percorso
+2) Selezione Percorso 
+3) Frequenza
+4) ValiditÃ 
+Toolbar Activities Board- Check Parameter in Trip Window: Creare una nuova linea.
+Nella finestra di creazione deve essere possibile inserire/selezionare i seguenti parametri:
+* Linea
+* Direzione
+* Nodo
+* Percorso
+* Orario di passaggio
+* Frequenza
+
+
+
+* Frequenza
+* Orario di fine
+* Numero di corse
+* ValiditÃ 
+* Livello di Servizio
+* Inizio Periodo
+* Fine Periodo
+Toolbar Timetable Booklet- Check Parameter in Trip Window: Creare una nuova corsa.
+Nella finestra di creazione deve essere possibile inserire/selezionare i seguenti parametri:
+* Linea
+* Direzione
+* Nodo
+* Percorso
+* Orario di passaggio
+* Frequenza
+* Orario di fine
+* Numero di corse
+* ValiditÃ 
+* Livello di Servizio
+* Inizio Periodo
+* Fine Periodo
+
+
+
+* Inizio Periodo
+* Fine Periodo
+Toolbar Activities Board- Delete Trip: Selezionare una corsa.
+Selezionare Cancella Corsa da:
++ Toolbar
++ MAster
++ Click destro sulla corsa._x000D_
+Ripetere il test selezionando piÃ¹ corse.
+Toolbar Timetable Booklet- Delete Trip: Selezionare una corsa.
+Selezionare Cancella Corsa da:
++ Toolbar
++ MAster
++ Click destro sulla corsa._x000D_
+Ripetere il test selezionando piÃ¹ corse.
+Toolbar Activities Board- Create Return Trip: Selezionare una corsa.
+Cliccare su crea Ribattute.
+
+
+
+Cliccare su crea Ribattute.
++ From Master
++ From ToolBar_x000D_
+Selezionare un percorso tra i possibile proposti. _x000D_
+Ripetere il test selezionando piÃ¹ corse identiche_x000D_
+Ripetere il test selezionando corse su percorsi e direzioni differenti
+Edit trip: Select trip and drag it with mouse and open trip details [only Graphic timetable]_x000D_
+Fill in some field (Company code and so on) and Save.
+Reopen trip detail_x000D_
+Change time in Leaves time in Trip details
+
+
+
+Toolbar Activities Board- Edit trips: edit dwell time: Selezionare una corsa che abbia almeno due archi.
+Cliccare su Modifica corsa.
+In un nodo intermedio modificare l'orario di partenza per creare un tempo di sosta al nodo.
+Salvare.
+Toolbar Timetable Booklet- Edit trips: edit dwell time: Selezionare una corsa che abbia almeno due archi.
+Cliccare su Modifica corsa.
+In un nodo intermedio modificare l'orario di partenza per creare un tempo di sosta al nodo.
+Salvare.
+
+
+
+Salvare.
+Toolbar Work- Edit trips: Edit dwell time: Selezionare una corsa che abbia almeno due archi.
+Cliccare su Modifica corsa.
+In un nodo intermedio modificare l'orario di partenza per creare un tempo di sosta al nodo.
+Salvare.
+Create activity Join trip by Toolbar Work: Selezionare almeno due corse.
+Cliccare su Unisci corse_x000D_
+Cliccare su una sola corsa con il tasto destro e andare nel tool unisci corse_x000D_
+Selezionare una delle corse in elenco
+
+
+
+Separate trip by Toolbar Work: Selezionare due corse unite in viaggio.
+Cliccare su "Separa Corse" da:
++ Toolbar
++ MAster
++ Click destro sulla corsa._x000D_
+Ripetere il test selezionando un'unica corsa collegata sia in testa sia in coda._x000D_
+Selezionare una delle due possibilitÃ  a disposizione._x000D_
+Ripetere il test accedendo al tool da un punto differente da quello utilizzato nello Step 1
+Separate trip by Toolbar Work: Selezionare due corse unite in viaggio.
+Cliccare su "Separa Corse" da:
++ Toolbar
+
+
+
++ Toolbar
++ MAster
++ Click destro sulla corsa.
+_x000D_
+Ripetere il test selezionando un'unica corsa collegata sia in testa sia in coda._x000D_
+Selezionare una delle due possibilitÃ  a disposizione._x000D_
+Ripetere il test accedendo al tool da un punto differente da quello utilizzato nello Step 1
+Toolbar Timetable Booklet- Separate trip: Selezionare due corse unite in viaggio.
+Cliccare su "Separa Corse" da:
++ Toolbar
++ MAster
++ Click destro sulla corsa.
+
+
+
++ Click destro sulla corsa.
+Toolbar Activities Board- Separate trip: Selezionare due corse unite in viaggio.
+Cliccare su "Separa Corse"
+Toolbar Work- Number Trip: 1) Select method 
+2) set parameters
+Repeat test at least two times with different method and different parameters
+Toolbar Activities Board - Extend/Shorten Trips: Seleziona una corsa
+Clicca su Allunga/Accorcia.
+Scegliere tra:
+* In testa
+* In coda_x000D_
+Selezionare uno dei percorsi disponibili.
+
+
+
+Toolbar Timetable Booklet - Extend/Shorten Trips: Seleziona una corsa
+Clicca su Allunga/Accorcia.
+Scegliere tra:
+* In testa
+* In coda_x000D_
+Selezionare uno dei percorsi disponibili.
+Toolbar Work - Extend/Shorten Trips: Seleziona una corsa
+Clicca su Allunga/Accorcia.
+Scegliere tra:
+* In testa
+* In coda_x000D_
+Selezionare uno dei percorsi disponibili.
+Toolbar Work - Extend/Shorten Trips: Click on Extend/Shorten Trips
+Toolbar Activities Board - Create inserting/exiting Trips: Selezionare una corsa.
+
+
+
+Cliccare su In Ingresso/In uscita.
+Selezionare tra:
+* Inserimento
+* Deinserimento_x000D_
+Selezionare uno dei percorsi proposti_x000D_
+Ripetere il test nel caso in cui siano giÃ  presenti delle corse in inserimento o uscita e selezionare quell'opzione
+Toolbar Timetable Booklet - Create inserting/exiting Trips: Selezionare una corsa.
+Cliccare su In Ingresso/In uscita.
+Selezionare tra:
+* Inserimento
+* Deinserimento_x000D_
+Selezionare uno dei percorsi proposti_x000D_
+
+
+
+Ripetere il test nel caso in cui siano giÃ  presenti delle corse in inserimento o uscita e selezionare quell'opzione
+Toolbar Work - Create inserting/exiting Trips: Selezionare una corsa.
+Cliccare su In Ingresso/In uscita.
+Selezionare tra:
+* Inserimento
+* Deinserimento_x000D_
+Selezionare uno dei percorsi proposti_x000D_
+Ripetere il test nel caso in cui siano giÃ  presenti delle corse in inserimento o uscita e selezionare quell'opzione
+
+
+
+Toolbar Work - Create inserting/exiting Trips: Click on Create inserting/exiting Trips
+Toolbar Work - Create Feeder Trips: Esecuzione test [C79637].
+Toolbar Timetable Booklet - Create Feeder Trips: Esecuzione test [C79637]
+Join trip by Toolbar Work: Select two single trip have common node: end node first trip = first node second trip.
+Click on Join trip tool in toolbar ![](index.php?/attachments/get/760296)_x000D_
+
+
+
+[Alternative] Select single trip and click on Join trip tool in toolbar ![](index.php?/attachments/get/760296)_x000D_
+[Alternative] Select your choice
+Toolbar Timetable Booklet- Join trip: Selezionare almeno due corse.
+Cliccare su Unisci corse da:
++ Toolbar
++ MAster
++ Click destro sulla corsa.
+Toolbar Activities Board- Join trip: Selezionare almeno due corse.
+Cliccare su Unisci corse
+Info corsa dopo modifica puntuale: Eseguire il test [C70639]._x000D_
+
+
+
+Aprire la finestra Work tramite la corsa precedentemente selezionata.
+Effettuare delle modifiche aggiungendo o cancellando corse.
+Salvare_x000D_
+Rieseguire il test [C70639].
+Info corse singola linea - Finestra Work: Accedere a MTRAM con credenziali valide per l'accesso al TTD.
+Accedere al TTD_x000D_
+Nella finestra Home selezionare un giorno/linea e accedere alla finestra Work.
+Visualizzare una singola linea e cliccare sul tasto Compare/Info
+
+
+
+Info corsa dopo modifica puntuale - Finestra Work: Eseguire il test [C72647]._x000D_
+Effettuare delle modifiche alla corsa_x000D_
+Rieseguire il test [C72647].
+Modifica visualizzazione tabella dati corsa: Eseguire il test [C70783]._x000D_
+Nella finestra riassuntiva dei dati della corsa cliccare sulla tendina a destra della colonna con il nome della linea e nel menu colonne deselezionare la  checkbox della colonna con i dati._x000D_
+
+
+
+Nella finestra riassuntiva dei dati della corsa cliccare sulla tendina a destra della colonna con il nome della linea e nel menu colonne deselezionare la checkbox della colonna con i parametri.
+Export in Info\Compare done: Go to the home and click with right button on the square.
+Choose graph [optional] and click on "Export" button
+Ricerca corse: Accedere all'applicativo con credenziali valide per accesso a TTD
+Accedere a TTD aprendo uno scenario_x000D_
+
+
+
+Selezionare una linea\giorno\validitÃ  e accedere alla finestra Work_x000D_
+Effettuare una ricerca delle corse almeno per i seguenti parametri:
+* Percorso
+* Linea
+* Direzione
+Ricerca corse con le nuove funzionalitÃ : Accedere all'applicativo con credenziali valide per accesso a TTD
+Accedere a TTD aprendo uno scenario_x000D_
+Selezionare una linea\giorno\validitÃ  e accedere alla finestra Work_x000D_
+Effettuare una ricerca delle corse almeno per i seguenti parametri:
+* i nuovi campi xt
+
+
+
+* i nuovi campi xt
+* la gestione delle merged route e la ricerca sulle fermate
+* le eccezioni di validita'
+* l'apertura di una nuova finestra con il risultato della ricerca : non selezione ma ricerca, eventualmente partendo dalla home.
+Verify Info Trips for single line: Accedere a MTRAM con credenziali valide per l'accesso al TTD.
+Accedere al TTD_x000D_
+Nella finestra Home selezionare un giorno di una line avente corse e cliccare con il tasto destro e andare su Info.
+
+
+
+Verifica Info corse singola linea: Accedere a MTRAM con credenziali valide per l'accesso al TTD.
+Accedere al TTD_x000D_
+Nella finestra Home selezionare un giorno di una line avente corse e cliccare con il tasto destro e andare su Info.
+Verifica Info corse singolo giorno: Accedere a MTRAM con credenziali valide per l'accesso al TTD.
+Accedere al TTD_x000D_
+Nella finestra Home selezionare un giorno valido per piÃ¹ linee cliccare con il tasto destro e andare su Info.
+
+
+
+Comparazione corse stessa linea giorni differenti con medesime corse: Eseguire test [C70786] selezionando due giorni diversi sulla stessa linea aventi medesime corse
+Comparazione corse stessa linea giorni differenti con corse differenti: Eseguire test [C70786] selezionando due giorni diversi sulla stessa linea aventi corse differenti
+
+
+
+Comparazione corse di  linee differenti per il medesimo giorno: Eseguire test [C70786] selezionando lo stesso giorno per tutte le linee verificando che per tale giorno siano presenti corse valide per piÃ¹ linee
+Rimuovi elemento comparazione: Eseguire test [C70786] selezionando piÃ¹ giorni differenti per diverse linee_x000D_
+Rimuovere la selezione da uno dei giorni.
+Elimina comparazione: Eseguire test [C70786] selezionando piÃ¹ giorni differenti per diverse linee_x000D_
+Eliminare la comparazione
+
+
+
+Eliminare la comparazione
+Elimina/Riaggiungi colonne dati all'interno di una comparazione: Eseguire test [C70786] selezionando piÃ¹ giorni differenti per diverse linee_x000D_
+Cliccando con il tasto destro su una colonna dati aprire l'elenco delle checkbox delle colonne.
+Togliere la spunta da uno o piÃ¹ elementi._x000D_
+Cliccando con il tasto destro su una colonna dati aprire l'elenco delle checkbox delle colonne.
+Mettere la spunta su uno o piÃ¹ elementi.
+
+
+
+Comparazione corse linee differenti - Finestra Work: Eseguire il test [C72647] visualizzando nella finestra Work corse di piÃ¹ linee
+Esportazione dati comparazione: Eseguire il test [C70642] selezionando le corse dello stesso giorno per due linee differenti_x000D_
+Effettuare l'Export dei Dati
+Modifica colorazione intestazione colonne di comparazione: Eseguire test [C70786]
+Cliccare sull'intestazione di una colonna dati.
+_x000D_
+Impostare una nuova colorazione.
+
+
+
+Impostare una nuova colorazione.
+Comparazione le corse di due linee diverse: Accedere a MTRAM con credenziali valide per l'uso di WebTram e del TTD
+Accedere al TTD_x000D_
+Selezionare  per il confronto un giorno di una linea e il giorno di un'latra linea.
+cliccare su Confronta.
+Comparazione corse totali di giorni differenti: Eseguire il test [C70642] selezionando le corse di tutte le linee di due giorni differenti aventi corse differenti
+
+
+
+Compare trips of different lines: Choose two line and select a day for each by click on right mouse button and choosing select for compare _x000D_
+Click on Info\Compare in toolbar ![](index.php?/attachments/get/120313)
+Esportazione dati comparazione: Eseguire il test [C70642] selezionando le corse dello stesso giorno per due linee differenti_x000D_
+Effettuare l'Export dei Dati
+Creazione corse definendo nodo,  senza intervallo - Caso due linee: Eseguire il test [C70779] senza inserire un periodo.
+
+
+
+Creazione corse in coincidenza utilizzando corse selezionate - Caso due linee: Eseguire il test [C70779] selezionato preventivamente un gruppo di corse.
+Creazione corse in coincidenza sulla stessa linea.: Eseguire il test [C70779] creando le corse in coincidenza con la stessa linea.
+Creazione corse in coincidenza utilizzando revisioni di percorso: Eseguire il test [C70779] creando le corse in coincidenza utilizzando una revisione del percorso.
+
+
+
+Spostamento Corse - Nodi Forzati - Modifica Data: Eseguire il test [C78613] e allo Step 5 mettere la spunta su Scelta Data e indicare da quale data effettuare lo spostamento delle corse e su "Forza Associazione Primo/Ultimo Nodo"
+KO:Spostamento Corse - Nessun nodo in comune: Eseguire il test [C78613]  selezionando un percorso destinazione che non abbia nodi in comune con il percorso origine
+
+
+
+KO: Spostamento Corse su linea differente senza nodi in comune: Eseguire il test [C78613] selezionando una linea differente rispetto a quella del percorso origine senza avere nodi in comune.
+Spostamento Corse con Nodi Forzati - Nessun Nodo in comune: Eseguire il test [C78613] e allo Step 5 mettere la spunta su "Forza associazione primo/ultimo nodo.
+Tale opzione farÃ  si che i tempi di passaggio per il primo e l'ultimo nodo del percorso rimangano inalterati.
+
+
+
+Spostamento Corse su Linea differente con Nodi Forzati: Eseguire il test [C78613]  selezionando una linea differente da quella del percorso origine e allo Step 5 mettere la spunta su "Forza associazione primo/ultimo nodo.
+Tale opzione farÃ  si che i tempi di passaggio per il primo e l'ultimo nodo del percorso rimangano inalterati.
+
+
+
+Spostamento Corse con associazione nodi manuale: Eseguire il test [C78613] facendo generare la soluzione dal sistema e poi associando manualmente i nodi origine con i nodi destinazione.
+KO:Spostamento Corse con associazione nodi manuale - Doppia associazione nodo: Eseguire il test [C78613] facendo generare la soluzione dal sistema e poi associando manualmente i nodi origine con i nodi destinazione, cercando di associare nuovamente un nodo giÃ  associato.
+
+
+
+Spostamento Corse: Accedere a MTRAM con credenziali valide per l'uso di WebTram e del TTD_x000D_
+Accedere al TTD e scegliere uno scenario in modo che sia presente, nell'elenco linee, una linea con piÃ¹ percorsi._x000D_
+Nella finestra HOME deve essere attivo il tasto di Correzione Percorsi.
+Selezionare una linea sul quale esistono corse e passare alla finestra WORK.
+Il tasto Modifica Percorsi deve essere attivo. Cliccare sul tasto._x000D_
+Selezionare una riga dell'elenco e premere Edit.
+
+
+
+Nel caso allo step 3 si siano scelte tutte corse associate allo stesso percorso viene mostrata direttamente la finestra dello Step 5_x000D_
+Nel pannello di destra selezionare una combinazione di:
+* Linea
+* Percorso
+* Direzione
+Mantenere la stessa linea a cui Ã¨ associata la corsa.
+Cliccare su tasto Generate_x000D_
+Il sistema permette di effettuare delle variazioni rispetto all'associazione automatica prodotta.
+Provare ad effettuare alcune modifiche e poi Cliccare su Salva._x000D_
+
+
+
+Nel caso siano presenti altri percorsi da correggere si possono ripetere gli Step 4-5-6 ma si puÃ² anche procedere all'applicazione delle modifiche solo per il percorso appena modificato tramite il tasto Apply.
+Spostamento Corse con Nodi Forzati: Eseguire il test [C70635] e allo Step 5 mettere la spunta su "Forza associazione primo/ultimo nodo.
+Tale opzione farÃ  si che i tempi di passaggio per il primo e l'ultimo nodo del percorso rimangano inalterati.
+
+
+
+Spostamento Corse - Modifica data: Eseguire il test [C70635] e allo Step 5 mettere la spunta su Scelta Data e indicare da quale data effettuare lo spostamento delle corse.
+Spostamento Corse su linea differente: Eseguire il test [C70635] selezionando una linea differente rispetto a quella del percorso origine ma che abbiano almeno un nodo in comune.
+Master table of the trips: Open TTD
+Select Tabular Window
+Open one or more lines in Work
+Master table of the trips - Modify Trips: Open TTD
+Select Tabular Window
+
+
+
+Select Tabular Window
+Open one or more lines in Work_x000D_
+Select a Trips
+Click on edit
+Modify Trip (Departure, Arrival, Dwell Time, Attributes, Management)
+Master table of the trips - Trip operations: Open TTD
+Select Tabular Window
+Open one or more lines in Work_x000D_
+Execute test [C161313]_x000D_
+Execute test [C161316]_x000D_
+Execute test [C161315]_x000D_
+Execute test [C161314]_x000D_
+Execute test [C161313]_x000D_
+Execute test [C67522]_x000D_
+Execute test [C67521]_x000D_
+Execute test [C67526]_x000D_
+
+
+
+Execute test [C67526]_x000D_
+Execute test [C67534]_x000D_
+Execute test [C78747]_x000D_
+Execute test [C161318]_x000D_
+Execute test [C161320]_x000D_
+Spostamento Corse_x000D_
+Copia Corse
+Master table of the trips - Open from external module: Execute test [C70938]_x000D_
+Select one trip and click on Open Module Timetable_x000D_
+Select two or more trips and click on Open Module Timetable_x000D_
+Execute test [C80264]
+Execute test [C80268] for 1 trip_x000D_
+Execute test [C80264]
+
+
+
+Execute test [C80264]
+Execute test [C80268] for 2 or more trips_x000D_
+Execute test [C181682]
+Execute test [C173402]
+Open record on Timetable module_x000D_
+Execute test [C181682]
+Execute test [C173402]
+Open 2 or more record on Timetable module
+TTD: Copy trips from another line in Work: Open Lines in Work_x000D_
+Select one or more runs of the line
+Click on Copy Trips Command_x000D_
+Select:
+* Line
+* Pattern
+* Direction
+Associate origin and destination nodes
+Click su Ok_x000D_
+Click on apply
+
+
+
+Click on apply
+TTD: Copy trips from another line in Work - Set Service Level: Execute test [C185653] setting Service Level
+TTD: Copy trips from another line in Work - Set Operating Day: Execute test [C185653] setting Operating Day
+TTD: Copy trips from another line in Work - Set Calendar: Execute test [C185653] setting Trip Calendar
+TTD: Copy trips from another line in Work - Multiple trips: Execute test [C185653] copying before a homogeneous group of races and repeating the procedure for all groups
+
+
+
+Removing message for undo deeltion after manual saving: Manual saving_x000D_
+Automatic saving
+Toolbar Timetable Booklet- Undo: Accedere alla finestra Work del TTD.
+Effettuare una o piÃ¹ operazioni (Crea/Modifica/Cancella una corsa per esempio)
+Cliccare sul tool Undo
+Toolbar Timetable Booklet- Redo: Eseguire il test [C67569] e poi cliccare sul tool Redo
+Toolbar Work- Undo: Accedere alla finestra Work del TTD.
+Effettuare una o piÃ¹ operazioni (Crea/Modifica/Cancella una corsa per esempio)
+
+
+
+Cliccare sul tool Undo
+Toolbar Work- Redo: Eseguire il test [C67531] e poi cliccare sul tool Redo
+TTD: PossibilitÃ  di cancellare le ultime azioni effettuate: Accedere al TTD.
+Selezionare/giorno/validitÃ /linea._x000D_
+Effettuare una serie di operazioni e premere in maniera successiva il tasto undo fino a che non sia esaurita la catena delle operazioni._x000D_
+Ripetere il test eseguendo, prima di riportare indietro le operazioni, di volta in volta le seguenti operazioni nella finestra Home:
+
+
+
+* Inserimento/Cancellazione Linea
+* Abilitazione/Disabilitazione ValiditÃ 
+* Modifica periodo
+* Abilitazione/Disabilitazione giorni settimana.
+TTD: Messaggio di warning nel caso di operazione che cancella la sequenza Undo: Effettuare il test [C78432] ma prima di esaurire la catena delle operazioni nell'Undo tornare alla Home e aggiungere una Linea all'activeset._x000D_
+Selezionare Ok._x000D_
+Ripetere il test selezionando No nel messaggio di Warning._x000D_
+
+
+
+Ripetere il test per ogni caso che porta alla cancellazione della catena di operazioni.
+Tool bar Work- Peaks of Vehicles: Nella finestra Work cliccare sul tool Picco Veicoli ![](index.php?/attachments/get/744026)
+_x000D_
+Ripetere il test nel caso in cui non ci siano corse visualizzate
+Toolbar Timetable Booklet- Peaks of Vehicles: Nella finestra Work cliccare sul tool Picco Veicoli_x000D_
+Ripetere il test nel caso in cui non ci siano corse visualizzate
+
+
+
+Number Trip - Toolbar Work: Selezionare una o piÃ¹ corse.
+Cliccare su "Numera Corse" ![](index.php?/attachments/get/744028)
+, selezionabile da:
+* Toolbar
+* Master
+* Click destro sopra corse selezionate_x000D_
+Inserire i parametri richiesti_x000D_
+Ripetere il test modificando nella finestra Setting il Metodo di Numerazione
+Number Trip - Toolbar Activities Board- Number Trip: 1) Select method 2) set parameters: Selezionare una o piÃ¹ corse.
+Cliccare su "Numera Corse", selezionabile da:
+* Toolbar
+* Master
+
+
+
+* Toolbar
+* Master
+* Click destro sopra corse selezionate_x000D_
+Inserire i parametri richiesti_x000D_
+Ripetere il test modificando nella finestra Setting il Metodo di Numerazione
+Number Trip - Toolbar Timetable Booklet: Selezionare una o piÃ¹ corse.
+Cliccare su "Numera Corse", selezionabile da:
+* Toolbar
+* Master
+* Click destro sopra corse selezionate_x000D_
+Inserire i parametri richiesti_x000D_
+Ripetere il test modificando nella finestra Setting il Metodo di Numerazione
+
+
+
+Select tools - Toolbar Activities Board: Selezione singola.
+Cliccare su una singola corsa_x000D_
+Cliccare sul tool seleziona corse.
+Impostare i parametri di ricerca._x000D_
+Cliccare su tasto Seleziona Viaggio
+Selezionare sulla barra sopra la prima corsa del viaggio_x000D_
+Cliccare sul tool seleziona corse.
+Impostare i parametri di ricerca._x000D_
+Cliccare su Seleziona Tutto.
+Select tools - Toolbar Timetable Booklet: Selezione singola.
+Cliccare su una singola corsa_x000D_
+Cliccare sul tool seleziona corse.
+
+
+
+Impostare i parametri di ricerca._x000D_
+Cliccare su tasto Seleziona Viaggio
+Selezionare un corsa collegata in viaggio con almeno un'altra corsa_x000D_
+Cliccare su Seleziona Tutto.
+Turnout track creation: * Open TTD
+* Open line setted like preconditions
+* Click on Create Turnout Track tool_x000D_
+Click on create
+Turnout track creation - Use revenue pattern: Perform test [C186638] setting flag, in creatino window, to use revenue pattern
+
+
+
+Turnout track creation - Multiline: Perform test [C186638] using differente lines
+Turnout track creation - Use selected activities: Perform test [C186638] setting flag, in creatino window, to use revenue pattern
+KO: Turnout track creation - Recovery time insufficient: Perform test [C186638] using differente lines
+KO: Turnout track creation - Tooltip Error: Perform test [C186638] in a situation to block turnout reation
+
+
+
+Turnout track creation - Activieties for differente lines(multipla visualizzazione linee): Perform test [C186638] using differente lines
+PossibilitÃ  di nascondere i tronchini ferroviari: Accedere a TTD.
+Creare una corsa in linea_x000D_
+Impostare il sistema come da Preconditions 2
+Creare un viaggio con una corsa fuori linea e una successiva corsa in linea_x000D_
+DAl menu delle violazioni rimuovere la visualizzazione delle corse fuori linea_x000D_
+
+
+
+Ripetere il test inserendo una serie di corse fuori linea tra due corse in linea
+PossibilitÃ  di nascondere i tronchini ferroviari - Viaggi solo fuori linea: Accedere a TTD.
+Creare una corsa fuori linea_x000D_
+DAl menu delle violazioni rimuovere la visualizzazione delle corse fuori linea_x000D_
+Ripetere il test inserendo una serie di corse fuori linea tra due corse in linea
+TTD:Verificare corretta identificazione linea "Merged Route": Accedere al TTD.
+Aggiungere una linea associata ad una "Merged Route"
+
+
+
+TTD: Visualizzare corse su linea associata a "Merged Route": Accedere al TTD.
+Aprire le corse di una linea associata ad una "Merged Route"
+TTD: Modificare corse su linea associata a "Merged Route": Accedere al TTD.
+Aprire le corse di una linea associata ad una "Merged Route"
+Effettuare una qualsiasi modifica (spostamento temporale corsa,creazione ribattuta)
+Settings- General: Leave time recalculation: Impostare la modalitÃ  "No ricalcolo"_x000D_
+
+
+
+Impostare la modalitÃ  "Mantieni i tempi di percorrenza"_x000D_
+Impostare la modalitÃ  "Ricalcolo a partire dai tempi di percorrenza" con opzione Ricalcola tempi di sosta_x000D_
+Impostare "VelocitÃ  Commerciale"
+Settings- General: Recalculation method: Nella pagina di configurazione
+Impostare "Nodo inizio Arco"_x000D_
+Impostare "Proporzionale"_x000D_
+Impostare opzione "Percorrenza Percorso"_x000D_
+Impostare "Tratte a Zero Minuti"
+
+
+
+Impostare "Tratte a Zero Minuti"
+Per le tratte a zero minuti Ã¨ possibile calcolare un tempo di percorrenza secondo una delle opzioni disponibili:
+* Tempo costante
+* VelocitÃ  commerciale media
+Settings- General: Trip recalculation: Selezionare l'opzione: "Sposta corse e successive".
+Selezionare una corsa inserita all'interno di un viaggio e modificare l'orario di partenza, mantenendo il tempo di percorrenza inalterato._x000D_
+Selezionare l'opzione: "Ammortizza soste"
+
+
+
+Selezionare una corsa inserita all'interno di un viaggio e modificare l'orario di partenza in modo che la variazione non riduca il tempo di sosta al nodo al di sotto della sosta minima impostata, mantenendo il tempo di percorrenza inalterato._x000D_
+Selezionare entrambe le opzioni.
+Settings- General: Dwell times: Selezionare l'opzione "Gestione Soste ai transiti".
+
+
+
+Selezionare una corsa avente il dwell time impostato per un nodo intermedio e traslare in avanti l'orario di percorrenza della corsa in per quel nodo._x000D_
+Selezionare l'opzione "Ammortizza soste ai transiti"
+Selezionare una corsa avente il dwell time impostato per un nodo intermedio e traslare in avanti l'orario di percorrenza della corsa in per quel nodo.
+Settings- General: Checks: Nella sezione Config impostare:
+Controllo sosta minima
+
+
+
+Controllo sosta minima
+Creare un viaggio con un tempo di sosta inferiore alla sosta minima impostata_x000D_
+Controllo sosta massima
+Creare un viaggio con un tempo di sosta superiore alla sosta massima impostata_x000D_
+Distanza minima di sicurezza: impostare tempo
+Creare due corse successive sullo stesso percorso e nella stessa direzione con un intervallo inferiore al tempo di Distanza.
+Nella pagina delle violazioni impostare il controllo sulla violazione "Sorpasso in linea"._x000D_
+
+
+
+Forza sosta di default. Impostare il tempo.
+Creare un viaggio._x000D_
+**Test da non effettuare sull'Ibrido**
+Controllo Tempo toilette: impostare tempo
+Creare una viaggio utilizzando come capolinea di passaggio un nodo su cui sia presente il tempo toilette che non sia presente sull'altro capolinea_x000D_
+Ripetere lo step 6 nel caso in cui il tempo toilette sia impostato su entrambi i nodi capolinea_x000D_
+Usa tempi di sosta percentuali:
+Fare riferimento ai test [C78458] e [C78459]_x000D_
+
+
+
+Controllo deposito in unione viaggi.
+Impostare su due corse successive, andata/ritorno, lo stesso deposito.
+Creare un viaggio_x000D_
+Ripetere lo step 8 nel caso in cui siano stati impostati depositi differenti_x000D_
+Controllo veicolo in unione viaggi.
+Impostare su due corse successive, andata/ritorno, lo stesso veicolo.
+Creare un viaggio_x000D_
+Ripetere lo step 10 nel caso in cui siano stati impostati veicoli differenti_x000D_
+Unisci viaggi con lo stesso codice corsa.
+
+
+
+Modificare il codice aziendale di due corse, impostando lo stesso numero.
+Creare viaggio tra le due corse_x000D_
+Ripetere lo step 12 unendo due corse che non hanno lo stesso codice aziendale._x000D_
+Usa ritardo della corsa.
+Creare un viaggio utilizzando corse su cui sia stato impostato il Ritardo.
+Settings- General: options: Nella sezione Config impostare:
+Permetti Viaggi non univoci.
+Selezionare due corse giÃ  unite in viaggio e unirle in viaggio_x000D_
+Impostare Vince corsa antecedente_x000D_
+
+
+
+Intervallo per linee feeder: impostare tempo
+Utilizzando il tool dei Bracket Trips creare dei viaggi in coincidenza._x000D_
+Orientamento corse libretto orario:
+Impostare Verticale.
+Aprire la finestra Work in modalitÃ  Libretto Orario_x000D_
+Orientamento corse libretto orario:
+Impostare Orizzontale.
+Aprire la finestra Work in modalitÃ  Libretto Orario_x000D_
+Visualizzazione collegamenti corse:
+Impostare Trapezoidi
+Aprire la finestra Work_x000D_
+Visualizzazione collegamenti corse:
+Impostare Archetti
+
+
+
+Impostare Archetti
+Aprire la finestra Work
+Settings- General: Scale: Impostare l'utilizzo della visualizzazione fino ai secondi.
+Utilizzare differenti combinazioni per la scala dei secondi da utilizzare.
+Creare corse con orari e percorrenze compatibili con la scala selezionata.
+Settings- General: Numbering Type: Impostare con varie combinazioni i parametri per la numerazione delle corse.
+Creare nuove corse e numerarle.
+
+
+
+Creare nuove corse e numerarle.
+Settings- General: System: Attivare l'impostazione sistema ed impostare il tempo di salvataggio automatico
+Settings- Display: Violations: Nella sezione Config->Violazione:
+* Abilitare singolarmente le violazioni disponibili.
+* Abilitare, ove sia necessario, le opzioni corrispondenti alla violazione abilitata
+* Creare nuove corse, o modificare quelle esistenti, in modo che non rispettino la violazione impostata.
+
+
+
+Settings- Display: Color rules: Selezionare una o piÃ¹ oggetti tra quelli disponibili, abilitarli e impostare per ognuno un colore diverso.
+Settings- Display: Duty Type: Impostare uno o piÃ¹ parametri tra quelli disponibili. Per ogni parametro impostare la colorazione corrispondente.
+Settings- Display: Label: Selezionare una o piÃ¹ etichette tra quelle disponibili, impostando il punto di visualizzazione di ogni etichetta
+
+
+
+Settings- Display: tooltip: Selezionare e abilitare, insieme o a gruppi, ogni singolo tooltip disponibile.
+Passare il mouse sopra una corsa.
+Settings- Info version: Sezione SEtting->Info
+Viaggio con restroom time impostato su capolinea intermedio: Accedere al TTD.
+Selezionare una linea rispondente alle Precoditions e aprirla nella finestra Work._x000D_
+Configurare nella finestra Setting il controllo sulla presenza del RestRoom ai nodi e impostare il tempo di sosta.
+_x000D_
+
+
+
+_x000D_
+Unire in viaggio due corse al nodo in cui Ã¨ stato impostato il RestRoom Time.
+Viaggio con restroom time impostato su entrambi i capolinea: Eseguire il test [C72452] nel caso di RestRoom time impostato su entrambi i nodi
+Viaggio con restroom time impostato su capolinea intermedio + tempo di sosta al nodo: Eseguire il test [C72452] avendo inserito precedentemente il tempo di sosta al nodo minimo superiore al restroom time._x000D_
+
+
+
+Ripetere il test [C72452] avendo inserito precedentemente il tempo di sosta al nodo minimo inferiore al restroom time._x000D_
+Ripetere il test [C72452] avendo inserito precedentemente il tempo di sosta al nodo massimo inferiore al restroom time.
+KO: Viaggio con tempo di sosta al nodo incongruente con Restroom time: Eseguire il test [C72452] su un nodo avente impostato il tempo di sosta al nodo.
+
+
+
+Viaggio con tempi di sosta proporzionali a singola corsa+Restroom time impostato: Eseguire il test [C72458] su un nodo avente impostato il Restroom Time
+Modifica percorrenza corsa associata ad un viaggio: Eseguire il test [C72458],
+Modificare il tempo di percorrenza della corsa.
+Viaggio con tempo di sosta al nodo impostato - Caso corsa singola: Eseguire il test [C72458] su un nodo avente impostato il tempo di sosta al nodo.
+Nella finestra Setting togliere la spunta da "Ignora tempi di sosta".
+
+
+
+Impostare i check sulla sosta minima e sulla sosta massima.
+Impostare il tempo di percorrenza in modo che sia compreso tra tempo di sosta minimo e massimo._x000D_
+Ripetere il test Impostando il tempo di percorrenza in modo che sia inferiore al tempo di sosta minimo_x000D_
+Ripetere lo step 2 impostando il controllo sulla sosta minima_x000D_
+Ripetere il test Impostando il tempo di percorrenza in modo che sia superiore al tempo di sosta massimo_x000D_
+
+
+
+Ripetere lo step 4 impostando il controllo sulla sosta massima
+Viaggio con tempo di sosta al nodo impostato - Caso Tempo Giro: Eseguire il test [C72459] su un nodo avente impostato il tempo di sosta al nodo.
+Impostare i check sulla sosta minima e sulla sosta massima.
+Impostare il tempo di percorrenza in modo che sia compreso tra tempo di sosta minimo e massimo._x000D_
+Ripetere il test Impostando il tempo di percorrenza in modo che sia inferiore al tempo di sosta minimo_x000D_
+
+
+
+Ripetere lo step 2 impostando il controllo sulla sosta minima_x000D_
+Ripetere il test Impostando il tempo di percorrenza in modo che sia superiore al tempo di sosta massimo_x000D_
+Ripetere lo step 4 impostando il controllo sulla sosta massima
+Viaggio con tempo di sosta al nodo impostato - Spunta "Ignore" attiva: Eseguire il test [C72458] su un nodo avente impostato il tempo di sosta al nodo.
+Nella finestra Setting mantenere la spunta su "Ignora tempi di sosta"
+
+
+
+Verifica  violazione autonomia mezzo: Accedere al TTD.
+Creare un viaggio tale che la percorrenza delle corse sia superiore all'autonomia impostata per il tipo veicolo_x000D_
+Andare nella sezione Violation ed abilitare la violazione sull'autonomia veicolo._x000D_
+Dalla toolbar effettuare la verifica delle violazione
+Verifica visualizzazione violazione autonomia mezzo: Eseguire test [C164252]
+Verifica  violazione autonomia mezzo - No violazione: Accedere al TTD.
+
+
+
+Creare un viaggio tale che la percorrenza delle corse sia inferiore all'autonomia impostata per il tipo veicolo_x000D_
+Andare nella sezione Violation ed abilitare la violazione sull'autonomia veicolo._x000D_
+Dalla toolbar effettuare la verifica delle violazione
+Terminal stop visualization using link: Open TTD
+Click on line to open in the work
+Terminal stop visualization using link - Violations: Open TTD
+Click on line to open in the work_x000D_
+Show violations
+Manage default dwell times: Open TTD
+
+
+
+Open in Work window a line using pattern with preconditions node
+Create a new trip_x000D_
+Modify a trip create before preconditions_x000D_
+Create a return trip
+Manage default dwell times - Unset dwell times on node: Open TTD
+Open in Work window a line using pattern with preconditions node
+Create a new trip
+Manage default dwell times - Set running times: Open TTD
+Open in Work window a line using pattern with preconditions node
+Create a new trip_x000D_
+Modify a trip create before preconditions_x000D_
+
+
+
+Create a return trip
+Tooltip for special services: Open TTD
+Open line in work window
+Setting value for  flex field created in precondition 1 in several trips
+Check day tooltip in home window_x000D_
+Open Setting->Check tooltip flag
+Check day tooltip in home window
+Tooltip for special services-2 or more flex field: Execute test [C181688] using 2 flex field with semantic tooltip
+Check for windows alrealdy opened: Open TTD
+Open one or more lines in Work_x000D_
+Open different lines\days in work_x000D_
+
+
+
+Open same lines\day of step 1_x000D_
+Click Yes_x000D_
+Repeat step 3-4 and Click No
+TTD: Salvataggio preferenze utente: Accedere al TTD.
+Modificare alcune impostazioni delle finestre Home, Work e Sestting.
+Salvare, chiudere e Riaprire.
+Violation notified with trips pass on SP at same time, minumum distance valued and check safety distance active: Go to the "Graphic timetable"_x000D_
+Go to Violation Board
+
+
+
+Go to Violation Board
+Violation notified with trips pass on SP at time diff. minor minimum distance, minumum distance valued and check safety distance active: Go to the "Graphic timetable"_x000D_
+Go to Violation Board
+Violation NOT notified with trips pass on SP at time diff. major minimum distance, minumum distance valued and check safety distance active: Go to the "Graphic timetable"_x000D_
+Go to Violation Board
+
+
+
+Go to Violation Board
+Violation notified with trips pass on SP at same time, minumum distance valued and check safety distance NOT active: Go to the "Graphic timetable"_x000D_
+Go to Violation Board
+Violation notified with trips pass on SP at time diff. minor minimum distance, minumum distance valued and check safety distance NOT active: Go to the "Graphic timetable"_x000D_
+Go to Violation Board
+
+
+
+Go to Violation Board
+Violation NOT notified with trips pass on SP at time diff. major minimum distance, minumum distance valued and check safety distance NOT active: Go to the "Graphic timetable"_x000D_
+Go to Violation Board
+Violation notified with trips pass on SP at same time, minumum distance DEFAULT and check safety distance active: Go to the "Graphic timetable"_x000D_
+Go to Violation Board
+
+
+
+Go to Violation Board
+Violation notified with trips pass on SP at time diff. minor minimum distance, minumum distance DEFAULT and check safety distance active: Go to the "Graphic timetable"_x000D_
+Go to Violation Board
+Violation NOT notified with trips pass on SP at time diff. major minimum distance, minumum distance DEFAULT and check safety distance active: Go to the "Graphic timetable"_x000D_
+Go to Violation Board
+
+
+
+Go to Violation Board
+Violation notified with trips pass on SP at same time, minumum distance DEFAULT  and check safety distance NOT active: Go to the "Graphic timetable"_x000D_
+Go to Violation Board
+Violation notified with trips pass on SP at time diff. minor minimum distance, minumum distance DEFAULT and check safety distance NOT active: Go to the "Graphic timetable"_x000D_
+Go to Violation Board
+
+
+
+Go to Violation Board
+Violation NOT notified with trips pass on SP at time diff. major minimum distance, minumum distance DEFAULT and check safety distance NOT active: Go to the "Graphic timetable"_x000D_
+Go to Violation Board
+Violation notified with trips pass on SWI at same time, time protection distance valued and check safety distance active: Go to the "Graphic timetable"_x000D_
+Go to Violation Board
+
+
+
+Go to Violation Board
+Violation notified with trips pass on SWI at time diff. minor minimum distance, time protection valued and check safety distance active: Go to the "Graphic timetable"_x000D_
+Go to Violation Board
+Violation NOT notified with trips pass on SWI at time diff. minor minimum distance, time protection valued and check safety distance active: Go to the "Graphic timetable"_x000D_
+Go to Violation Board
+
+
+
+Go to Violation Board
+Violation notified with trips pass on SWI at same time, time protection valued and check safety distance NOT active: Go to the "Graphic timetable"_x000D_
+Go to Violation Board
+Violation notified with trips pass on SWI at time diff. minor minimum distance, time protection valued and check safety distance NOT active: Go to the "Graphic timetable"_x000D_
+Go to Violation Board
+
+
+
+Go to Violation Board
+Violation NOT notified with trips pass on SWI at time diff. minor minimum distance, time protection valued and check safety distance NOT active: Go to the "Graphic timetable"_x000D_
+Go to Violation Board
+Violation notified with trips pass on SWI at same time, time protection distance DEFAULT and check safety distance active: Go to the "Graphic timetable"_x000D_
+Go to Violation Board
+
+
+
+Go to Violation Board
+Violation notified with trips pass on SWI at time diff. minor minimum distance, time protection DEFAULT and check safety distance active: Go to the "Graphic timetable"_x000D_
+Go to Violation Board
+Violation NOT notified with trips pass on SWI at time diff. minor minimum distance, time protection DEFAULT and check safety distance active: Go to the "Graphic timetable"_x000D_
+Go to Violation Board
+
+
+
+Go to Violation Board
+Violation notified with trips pass on SWI at same time, time protection DEFAULT and check safety distance NOT active: Go to the "Graphic timetable"_x000D_
+Go to Violation Board
+Violation notified with trips pass on SWI at time diff. minor minimum distance, time protection DEFAULT and check safety distance NOT active: Go to the "Graphic timetable"_x000D_
+Go to Violation Board
+
+
+
+Go to Violation Board
+Violation NOT notified with trips pass on SWI at time diff. minor minimum distance, time protection DEFAULT and check safety distance NOT active: Go to the "Graphic timetable"_x000D_
+Go to Violation Board
+Create new algorythm configuration: Open work page ([C411859]) and select configure in algorithm menu on the top window 
+![](index.php?/attachments/get/759147)
+_x000D_
+Click on Create button_x000D_
+For each interested line choose service level and check line
+
+
+
+![](index.php?/attachments/get/759177)
+_x000D_
+For each interested pattern apply ![](index.php?/attachments/get/759181) check by click on checkbox
+![](index.php?/attachments/get/759177)
+then click on next button_x000D_
+For each pattern in pattern list section (not automatically setted) to drag in the right direction section then click on next_x000D_
+Choose algo criteria and click on next_x000D_
+Change build node if different by default selection and click on next_x000D_
+
+
+
+Define parameters and time band for algo and click on Save_x000D_
+Fill in field and Save _x000D_
+Double click on configuration created and navigate paramenter
+Create and Execute new algorythm configuration: Open work page ([C411859]) and select configure in algorithm menu on the top window 
+![](index.php?/attachments/get/759147)
+_x000D_
+Click on Create button_x000D_
+For each interested line choose service level and check line
+![](index.php?/attachments/get/759177)
+_x000D_
+
+
+
+_x000D_
+For each interested pattern apply ![](index.php?/attachments/get/759181) check by click on checkbox
+![](index.php?/attachments/get/759177)
+then click on next button_x000D_
+For each pattern in pattern list section (not automatically setted) to drag in the right direction section then click on next_x000D_
+Choose algo criteria and click on next_x000D_
+Change build node if different by default selection and click on next_x000D_
+Define parameters and time band for algo and click on Save_x000D_
+
+
+
+Fill in field and Execute_x000D_
+Double click on configuration created and navigate paramenter
+Execute algorythm configuration: Select configure in algorithm menu on the top window 
+![](index.php?/attachments/get/759147)
+Double click on interested configuration
+then click on execute_x000D_
+Open algorithm dashboard
+View & import algorithm solution one line: Run algorithm configuration in preconditions
+Go to the Algorithm Dashboard_x000D_
+Aprire la soluzione._x000D_
+Applicare la soluzione.
+
+
+
+Applicare la soluzione.
+Import algorithm solution line NOT in the active set: Go to the work window and then go to the algo dashboard and do double click on solution to be imported
+Create and Execute new algorythm configuration two lines: Esegui il test [C70593] utilizzando due linee e inserendo come parametro per i sottoinsiemi "Intertempi"_x000D_
+Ripetere il test utilizzando il parametro Veicoli_x000D_
+Ripetere il test utilizzando il parametro Corse_x000D_
+
+
+
+Ripetere il test utilizzando il parametro Passeggeri
+Create and Execute new algorythm configuration one line: Esegui il test [C70593] utilizzando una sola linea e inserendo come parametro per i sottoinsiemi "Intertempi"_x000D_
+Ripetere il test utilizzando il parametro Veicoli_x000D_
+Ripetere il test utilizzando il parametro Corse_x000D_
+Ripetere il test utilizzando il parametro Passeggeri
+Home - Toolbar configuration: Accedere a TTD_x000D_
+
+
+
+Tramite tasto destro sulla Toolbar accedere al menu di configurazione.
+Effettuare tutte le operazioni e configurazioni presenti nel menu.
+Work - Toolbar configuration: Accedere a TTD_x000D_
+Accedere alla finestra Work
+Tramite tasto destro sulla Toolbar accedere al menu di configurazione.
+Effettuare tutte le operazioni e configurazioni presenti nel menu.
+Verifica violazione senso unico: Accedere al TTD.
+Accedere alla finestra Work con la linea definita nelle Preconditions
+
+
+
+Creare almeno 2 corse, in verso opposto, su un percorso avente il senso unico impostato_x000D_
+Accedere alla seziona Visualization.
+Impostare la violazione sui sensi unici.
+Effettuare la verifica delle violazioni nella finestra Work
+Verifica violazione senso unico - Finestra Libretto Orario: Accedere al TTD.
+Accedere alla finestra Work con la linea definita nelle Preconditions
+Creare almeno 2 corse, in verso opposto, su un percorso avente il senso unico impostato_x000D_
+Accedere alla seziona Visualization.
+
+
+
+Impostare la violazione sui sensi unici.
+Effettuare la verifica delle violazioni nella finestra Work
+TTD.XT - Timetable booklet print: Accedere al TTD.
+Aprire una o piÃ¹ linee della finestra Work utilizzando la visualizzazione per Libretto Orario_x000D_
+Cliccare sul tasto Export_x000D_
+Ripetere il test modificando la visualizzazione con l'orientamento orizzontael_x000D_
+Ripetere il test nel caso di visualizzazione per Tabella Viaggi_x000D_
+Ripetere il test nel caso di visualizzazione per finestra grafica
+
+
+
+Viaggio con restroom time impostato su capolinea intermedio: Accedere al TTD.
+Selezionare una linea rispondente alle Precoditions e aprirla nella finestra Work._x000D_
+Configurare nella finestra Setting il controllo sulla presenza del RestRoom ai nodi e impostare il tempo di sosta.
+_x000D_
+Unire in viaggio due corse al nodo in cui Ã¨ stato impostato il RestRoom Time.
+Viaggio con restroom time impostato su entrambi i capolinea: Eseguire il test [C72452] nel caso di RestRoom time impostato su entrambi i nodi
+
+
+
+Viaggio con tempi di sosta proporzionali a singola corsa+Restroom time impostato: Eseguire il test [C72458] su un nodo avente impostato il Restroom Time
+Toolbar Work- Edit trips: add note: Eseguire il test [C78747]
+Toolbar Activities Board- Edit trips: add note: Eseguire il test [C78747]
+Toolbar Timetable Booklet- Edit trips: add note: Eseguire il test [C78747]
+
+
+
+Tool bar Work- Show trip on Map - Caso finestra WebTram giÃ  aperta su scenario differente: Nella finestra Work selezionare una corsa e cliccare sul tool Visualizza sulla Mappa_x000D_
+Selezionare una corsa con percorso differente e cliccare sul tool Visualizza sulla Mappa
+Ricerca, visualizzazione, modifica corse da Libretto Orario e Finestra Grafica: Accedere a MTRAM con credenziali valide per TTD_x000D_
+Accedere a Planning->Orari.
+Selezionare uno scenario._x000D_
+
+
+
+Selezionare uno scenario._x000D_
+Nelle finestra Home selezionare la modalitÃ  Libretto Orario e aprire una linea
+Creazione viaggio multilinea utilizzando due linee: Accedere al TTD.
+Verificare che siano presenti almeno 2 linee visualizzate nella finestra Work.
+Accedere alla finestra Work selezionando un giorno generico per il quale entrambe le linee abbiano corse_x000D_
+Selezionare due corse, una per ogni linea, e unirle in viaggio rispettando l'unione del viaggio su un capolinea in comune
+
+
+
+Elaborazione Algoritmo per viaggi Multilinea: Accedere al TTD.
+Verificare che siano presenti almeno 2 linee visualizzate nella finestra Work.
+Accedere alla finestra Work selezionando un giorno generico per il quale entrambe le linee abbiano corse_x000D_
+Accedere al tool dell'algoritmo.
+Selezionare entrambe le linee.
+Selezionare un percorso per linea._x000D_
+Selezionare il parametro.
+Selezionare le fasce di percorrenza.
+Far partire l'esecuzione._x000D_
+
+
+
+Far partire l'esecuzione._x000D_
+Riseguire il test indicando nello Step 3 un parametro differente.
+Abilitazione visualizzazione prima/ultima fermata percorso: Accedere al sistema WebTram.
+Accedere al TTD_x000D_
+Accedere al tool Crea Corse.
+Abilitare la visualizzazione dell prima e dell'ultima fermata di un percorso.
+Ricerca prima/ultima fermata percorso: Accedere a MTRAM.
+Accedere al TTD_x000D_
+Accedere al tool Ricerca Corse_x000D_
+
+
+
+Effettuare una ricerca usando i parametri di prima e/o ultima fermata di un percorso
+Visualizzazione tooltip prima/ultima fermata percorso: Accedere a MTRAM.
+Accedere al TTD_x000D_
+Andare nella sezione Setting->Visualization.
+Inserire tra i tooltip attivi: La prima e l'ultima fermata di un percorso.
+Creare un corsa.
+Creazione viaggio multilinea utilizzando piÃ¹ di due linee: Accedere al TTD.
+Verificare che siano presenti almeno 2 linee visualizzate nella finestra Work.
+
+
+
+Accedere alla finestra Work selezionando un giorno generico per il quale le linee abbiano corse_x000D_
+Selezionare alcunecorse, una per ogni linea, e unirle in viaggio rispettando l'unione del viaggio su un capolinea in comune
+Cambia selezione copia corse singolo giorno: Esegui il test [C79323] ma dopo aver selezionato il giorno A  selezionare giorno B scegliendo sempre copia
+TTD: Corretta visualizzazione Nodo Pilota per singola linea: Accedere al TTD.
+
+
+
+Aprire tutte le sezioni in cui Ã¨ evidenziato il nodo pilota:
+* Finestra Work
+* Bracket Trip
+* Spostamento corse
+* Scheda nodo
+TTD: Corretta visualizzazione Nodo Pilota per piÃ¹ linee: Eseguire il test [C72244] nel caso in cui siano presenti piÃ¹ linee aventi settato il nodo pilota
+Modifica corse solo per specifici giorni settimanali/periodi - Eccezione di ValiditÃ : Accedere all'applicativo con credenziali valide per accesso a TTD
+
+
+
+Accedere a TTD aprendo uno scenario con linee aventi corse giÃ  definite_x000D_
+Selezionare un giorno della settimana e passare alla finestra Work_x000D_
+Selezionare una o piÃ¹ corse e accedere al Tool Calendario.
+Selezionare o creare nuove eccezioni di validitÃ  e applicarle alle corse selezionate.
+Tornare alle finestra Home_x000D_
+Ripetere lo Step 4 creando una corsa che sia valida un unico giorno e che sia effettuata una sola volta, sempre applicando le specifiche eccezioni di validita.
+
+
+
+Open Read only version: Open TTD
+Select Open Version
+Select Version_x000D_
+Add one or more lines_x000D_
+Select trip_x000D_
+TRy to modify trip by dragging
+Edit patterns: Move trips on another pattern: Add line to the active set ([C189564])
+Go to Work window ([C411859]) with interedted mode (Timetable Booklet or other one) selecting all line._x000D_
+Click on Edit Pattern_x000D_
+Selezionare una riga dell'elenco e premere Edit.
+
+
+
+Nel caso allo step 3 si siano scelte tutte corse associate allo stesso percorso viene mostrata direttamente la finestra dello Step 5_x000D_
+Nel pannello di destra selezionare una combinazione di:
+* Linea
+* Percorso
+* Direzione
+Mantenere la stessa linea a cui Ã¨ associata la corsa.
+Cliccare su tasto Generate_x000D_
+Il sistema permette di effettuare delle variazioni rispetto all'associazione automatica prodotta.
+Provare ad effettuare alcune modifiche e poi Cliccare su Salva._x000D_
+
+
+
+Nel caso siano presenti altri percorsi da correggere si possono ripetere gli Step 4-5-6 ma si puÃ² anche procedere all'applicazione delle modifiche solo per il percorso appena modificato tramite il tasto Apply.
+Edit patterns: Move tris on another line's pattern: Eseguire il test [C79627] selezionando una linea differente rispetto a quella del percorso origine ma che abbiano almeno un nodo in comune.
+SOC Window: Open TTD_x000D_
+Select a trip_x000D_
+Click on Button_x000D_
+Change charge type
+
+
+
+Change charge type
+SOC Window - No vehicle type electric: Open TTD_x000D_
+Select a trip
+Create a new Trips inserting end time 48 Hours: â€¢Configure Operating Day 
+â€¢Add One or More Lines
+â€¢Click on one Day to go to work _x000D_
+â€¢Go to Master Tools and go to Create new Trip or double-click on Work 
+â€¢Fill The Fields 
+â€¢Enter Start Time and on End time, Insert 47:59 _x000D_
+Try to Insert a time Bigger than 48:00
+Insert Leave Time to 48 Hours: Open TTD Module (From Homepage or From Maior Logo)_x000D_
+
+
+
+â€¢Configure Operating Day
+â€¢Add One or More Lines
+â€¢Click on one Day to go to work_x000D_
+â€¢Go to Master Tools and go to Modify Leave Time
+â€¢Set Leave time to 47:59 and click on Update_x000D_
+Try to Insert a time Bigger than 48:00
+Edit Trips Inserting Arrival time to 48 Hours: Open TTD Module (From Homepage or From Maior Logo)_x000D_
+â€¢Configure Operating Day
+â€¢Add One or More Lines
+â€¢Click on one Day to go to work_x000D_
+â€¢Select one or more trips
+
+
+
+â€¢Select one or more trips
+â€¢Right-click on the line or go to master Tools and click on edit Trip
+â€¢Modify arrival time inserting 47:59_x000D_
+Try to Insert a time Bigger than 48:00
+Insert Arrival/Departure at Node on Modify leave times to 48 hours: Open TTD Module (From Homepage or From Maior Logo)_x000D_
+â€¢Configure Operating Day
+â€¢Add One or More Lines
+â€¢Click on one Day to go to work_x000D_
+â€¢Go to Master Tools and go to Modify Leave Time
+
+
+
+â€¢On parameter section, go to subsection Arrival/Departure at Node and insert time 47:59
+â€¢On subsection Add/change dwell time insert 47:59
+â€¢on subsection Set Headways time to 47:59 and click on Update
+_x000D_
+Try to Insert a time Bigger than 48:00
+Create Tail track and insert recovery time to 48 Hours: Open TTD Module (From Homepage or From Maior Logo)
+_x000D_
+â€¢Configure Operating Day
+â€¢Add One or More Lines
+â€¢Click on one Day to go to work_x000D_
+
+
+
+â€¢Click on Create Tail tracks from toolbar or go to Tools and click on Create tail tracks 
+â€¢Fill the fields and select recovery time to 47:59 Hours 
+â€¢Click on Create_x000D_
+Insert Recovery time bigger than 48:00
+Create Tail track and insert Node time to 48 Hours: Open TTD Module (From Homepage or From Maior Logo)_x000D_
+â€¢Configure Operating Day
+â€¢Add One or More Lines
+â€¢Click on one Day to go to work_x000D_
+â€¢Click on Create Tail tracks from toolbar or go to Tools and click on Create tail tracks
+
+
+
+â€¢Insert end time under Select Recoveries section to 48:00_x000D_
+â€¢Insert start time lower than end time_x000D_
+â€¢Insert End time bigger than 48:00
+Create Feeder trips and Insert Leave times to 48 Hours: Open TTD Module (From Homepage or From Maior Logo)_x000D_
+â€¢Configure Operating Day
+â€¢Add One or More Lines
+â€¢Click on one Day to go to work_x000D_
+â€¢Select one Trip
+â€¢Click on Feeder Trips Icon or go to tools and click on Feeder trips 
+â€¢Fill the fields and insert Leave time to 47:59 Hours
+
+
+
+â€¢Click on create_x000D_
+Try to insert Leave time bigger than 48:00 Hours
+Duplicate trips and insert End time to 48 Hours: Open TTD Module (From Homepage or From Maior Logo)_x000D_
+â€¢Configure Operating Day
+â€¢Add One or More Lines
+â€¢Click on one Day to go to work_x000D_
+â€¢Select one or more trips
+â€¢Right-click on the line or go to master Tools and click on Duplicate
+â€¢Insert the End time to 47:59
+â€¢Click on Duplicate_x000D_
+Try to insert End time bigger than 48:00
+
+
+
+Create Algorithm inserting Band End time to 48 Hours: Open TTD Module (From Homepage or From Maior Logo)_x000D_
+â€¢Configure Operating Day
+â€¢Add One or More Lines
+â€¢Click on one Day to go to work_x000D_
+â€¢Go to Algorithm
+â€¢Click on Configure
+â€¢Fill the Fields
+â€¢On Step Values, insert the Band end Time to 48:00
+â€¢Click on Save_x000D_
+Insert Band end time bigger tan 48:00 Hours
+Create Force Default Recovery by inserting Max time to 48 Hours: Open TTD Module (From Homepage or From Maior Logo)_x000D_
+
+
+
+â€¢Go to Settings
+â€¢On Check Section go to Force Default Recovery
+â€¢Insert Max Recovery To 47:59 Hours
+_x000D_
+Set Min time and try to insert max recovery time Bigger than Min time_x000D_
+Insert max recovery time bigger than 48:00
+Active\Deactive node on creation: The user clicks two times on active node and deactive flag_x000D_
+The user selects graphics window_x000D_
+The user selects booklet orizontal window_x000D_
+The user selects booklet vertical window_x000D_
+The user selects activitiet window_x000D_
+
+
+
+The user clicks two times on deactive node and active flag_x000D_
+The user selects graphics window_x000D_
+The user selects booklet orizontal window_x000D_
+The user selects booklet vertical window_x000D_
+The user selects activitiet window_x000D_
+The user save trip
+Pagination flag in Settings: Go to the "Settings" tab_x000D_
+Check the pagination flag_x000D_
+Insert number of page 0_x000D_
+Insert number of page 9
+_x000D_
+Insert number of page 10_x000D_
+Insert number of page 999_x000D_
+
+
+
+Insert number of page 999_x000D_
+Insert number of page 1000_x000D_
+Insert negative value_x000D_
+Insert characters
+Pagination active for Booklet visualization: The user go to the Timetable module ad add line prec.4 in active set ( if else)
+Select Booklet visualization_x000D_
+The user go to the setting tab and change "Tabular view orientatio" in "Orizontal"_x000D_
+The user return on work window and select Booklet visualization
+
+
+
+Pagination NOT active for other visualization: The user go to the Timetable module ad add line prec.4 in active set ( if else)
+Select Activities board visualization_x000D_
+Selects Trip table visualization
+create trips window visualization: Click on add trip
+edit trips window visualization: Go to the edit trip window [C262872]_x000D_
+Trip detail section_x000D_
+In optional section and then Management tab_x000D_
+View details section
+
+
+
+View details section
+consumption level on edit single trip window: Go to the edit trip window [C262872].
+In optional section and then Management tab
+consumption level on edit multiple trip window: Go to the edit trip window [C262872].
+In optional section and then Management tab
+consumption level default value on add single trip: Add single trip [C189565]
+View trip detail [C262872]
+consumption level default value on add multiple trips: Add single trip [C189565]
+View trip detail [C262872]
+
+
+
+View trip detail [C262872]
+consumption level origin value on copy trip: Add single trip [C189565]
+View trip detail [C262872]
+Copia tutte le corse da un giorno ad un altro: Accedere al TTD
+Nella finestra Home cliccare con il tasto destro su giorno A con corse valide di una linea.
+Selezionare copia.
+Selezionare giorno B con corse differenti sempre della stessa linea
+Elimina tutte le corse per singolo giorno: Accedere al TTD.
+Selezionare con il tasto destro un giorno di una linea avente corse valide.
+
+
+
+Cliccare su cancella.
+Modifica corse solo per specifici giorni settimanali/periodi - FunzionalitÃ  Lock: Accedere all'applicativo con credenziali valide per accesso a TTD
+Accedere a TTD aprendo uno scenario con linee aventi corse giÃ  definite_x000D_
+Nella finestra Home premere il tasto Lock.
+_x000D_
+Selezionare un giorno della settimana e passare alla finestra Work_x000D_
+Eseguire determinate modifiche a una o piÃ¹ corse e Tornare alla finestra Home
+
+
+
+Modifica corse solo per specifici giorni settimanali/periodi - Modifiche al calendario: Accedere all'applicativo con credenziali valide per accesso a TTD
+Accedere a TTD aprendo uno scenario con linee aventi corse giÃ  definite_x000D_
+Selezionare un giorno della settimana e passare alla finestra Work_x000D_
+Selezionare una o piÃ¹ corse e accedere al Tool Calendario.
+Modificare il calendario di validitÃ  e salvare.
+Tornare alle finestra Home
+
+
+
+Tornare alle finestra Home
+Creazione corsa rispetto alla fermata del percorso: Eseguire test [C89700]
+Creare una corsa
+Copia tutte le corse da un giorno ad un altro avente corse uguali: Esegui il test [C79323] con due giorni avente giÃ  corse uguali
+
+
+
+Copia tutte le corse da un giorno ad un altro avente corse come sottoinsieme completo delle corse del primo giorno: Esegui il test [C79323] in modo che le corse del giorno B siano giÃ  tutte contenute nell'insieme di corse del giorno A ma esistano delle corse del giorno A non presenti nel giorno B
+Create Trip with last Trip of the day as "Deadhead Link": â€¢Open Network Module
+â€¢Create a Pattern
+â€¢Create a DHL and a DHD Associated
+â€¢Associate DHL wit Pattern just created
+
+
+
+â€¢Link the pattern to a Line_x000D_
+â€¢After Open TTD
+â€¢Add the line with the new pattern on the List of lines to work
+â€¢Go to Work
+â€¢Create trips on that way that the last trip must be a "Deadhead Link"_x000D_
+â€¢Go on Home
+â€¢Select the Days for Compare
+Create new trip with ITN active WITHOUT node selection: The user click on create new trip_x000D_
+The user select pattern, set Headway and Operating day then clicks on save
+
+
+
+Create new trip with ITN active WITH node selection: The user click on create new trip_x000D_
+The user select pattern, set Headway and Operating day 
+and click at least a node to be deselected
+then clicks on save
+Create new trip with ITN active and trip selected WITHOUT deactive node: The user selects trip T1 and clicks on create new trip_x000D_
+The user clicks on save
+Create new trip with ITN active and trip selected WITH deactive node: The user selects trip T1 and clicks on create new trip_x000D_
+
+
+
+The user clicks on save
+Create new trip with ITN active and more trip selected WITHOUT deactive node: The user click on create new trip_x000D_
+The user select pattern, set Headway and Operating day 
+and unselect node [optional]
+then clicks on save
+Create new trip with ITN active and more trip selected WITH deactive node: The user click on create new trip_x000D_
+The user select pattern, set Headway and Operating day 
+and unselect node [optional]
+then clicks on save
+
+
+
+then clicks on save
+Edit pattern with ITN active when deactivated nodes common: The user deactive node in trip related PO pattern and save_x000D_
+The user selects Edit pattern tool ![](index.php?/attachments/get/157772)
+and set values to change pattern from PO to PD
+and check Force [optional]
+and click on Generate
+then save
+_x000D_
+The user go to the changed trip (i.e. open graphical window)
+
+
+
+Edit pattern with ITN active when nodes terminus destination pattern: The user deactive node N1 in trip related PO pattern and save_x000D_
+The user selects Edit pattern tool ![](index.php?/attachments/get/157772)
+and set values to change pattern from PO to PD
+and check Force [optional]
+and click on Generate
+then save_x000D_
+The user go to the changed trip (i.e. open graphical window)
+
+
+
+Edit pattern with ITN active WITHOUT common deactivated nodes: The user deactive node in trip related PO pattern and save_x000D_
+The user selects Edit pattern tool ![](index.php?/attachments/get/157772)
+and set values to change pattern from PO to PD
+and check Force [optional]
+and click on Generate
+then save_x000D_
+The user go to the changed trip (i.e. open graphical window)
+Copy to another line with ITN active when deactivated nodes common: The user deactive node in trip related PO pattern and save_x000D_
+
+
+
+The user selects Edit pattern by copy to another line tool ![](index.php?/attachments/get/157796)
+and select line and confirm
+and set values to change pattern from PO to PD
+and check Force [optional]
+and click on Generate
+then save
+_x000D_
+The user go to the changed trip (i.e. open graphical window)
+Copy to another line with ITN active when nodes terminus destination pattern: The user deactive node in trip related PO pattern and save_x000D_
+
+
+
+The user selects Edit pattern by copy to another line tool ![](index.php?/attachments/get/157796)
+and select line and confirm
+and set values to change pattern from PO to PD
+and check Force [optional]
+and click on Generate
+then save
+_x000D_
+The user go to the changed trip (i.e. open graphical window)
+Copy to another line with ITN active WITHOUT common deactivated nodes: The user deactive node in trip related PO pattern and save_x000D_
+
+
+
+The user selects Edit pattern by copy to another line tool ![](index.php?/attachments/get/157796)
+and select line and confirm
+and set values to change pattern from PO to PD
+and check Force [optional]
+and click on Generate
+then save
+_x000D_
+The user go to the changed trip (i.e. open graphical window)
+Create return trip trip with ITN: The user clicks on create return trip ![](index.php?/attachments/get/157808)
+_x000D_
+Deactive and Active node [C369870]
+and clicks on create
+
+
+
+and clicks on create
+New pattern on network: Click on tool Create new Trip from;
+Toolbar;
+Menu;
+Double Click
+_x000D_
+Choose line; Direction; and DOUBLE CLICK ON PATTERN NODE _x000D_
+Click on create tab _x000D_
+Close and reopen the page
+Create inserting trip with ITN: The user clicks on Inserting\Exiting ![](index.php?/attachments/get/157806)
+ and choose Inserting _x000D_
+Deactive and Active node [C369870]
+and clicks on create
+
+
+
+and clicks on create
+Create exiting trip with ITN: The user clicks on Inserting\Exiting ![](index.php?/attachments/get/157806)
+ and choose Exiting_x000D_
+Deactive and Active node [C369870]
+and clicks on create
+RUPD003 - Extend\Shorten trip: create at least one trip that has set the Passa ma non Ferma on a node_x000D_
+Click on tab extend/shorten trips_x000D_
+Click one of the options given _x000D_
+Choose the Pattern and click on edit
+
+
+
+RCONF001 - Running Time adjustement configuration: Open TTD , choose a scenario and basins_x000D_
+Choose a line and a day to apply the modification_x000D_
+Choose a trip from the work tab and click it twice.
+You can also just select twice anywhere in the space of the graphic timetable ._x000D_
+In the pattern section where are seen the stops , select one of the stop with double click 
+_x000D_
+Create the new trip _x000D_
+Go to the settings tab_x000D_
+
+
+
+Go to the settings tab_x000D_
+Run times calculation when skipping nodes are vizualized by default times _x000D_
+Edit those times by giving exp : 
+Time saved on entrance (hh:mm:ss): 00:07:00
+Time saved on exit (hh:mm:ss): 00:10:00
+_x000D_
+Go to the work tab_x000D_
+Select the trip and then select the tool "Recalculate leave times"_x000D_
+Select re-calucalte_x000D_
+Save the changes. Close and reopen TTD
+
+
+
+Spostamento Corse da percorso inconsistente/Modifica Complessa - Associazione Manuale - Finestra Home: Accedere a MTRAM con credenziali valide per l'uso di WebTram e del TTD_x000D_
+Accedere al TTD e scegliere uno scenario in modo che sia presente, nell'elenco linee, una linea con un percorso, con corse, sul quale siano state effettuate modifiche sostanziali_x000D_
+Nella finestra HOME deve essere attivo il tasto di Correzione Percorsi. Cliccare sul tasto._x000D_
+
+
+
+Selezionare una riga dell'elenco e premere Edit._x000D_
+Cliccare il tasto Generate del pannello di destra. _x000D_
+Cliccare su Salva._x000D_
+Nel caso siano presenti altri percorsi da correggere si possono ripetere gli Step 4-5-6 ma si puÃ² anche procedere all'applicazione delle modifiche solo per il percorso appena modificato tramite il tasto Apply._x000D_
+Salvare, chiudere e riaprire il TTD:
+
+
+
+1. Nel caso sia proceduto alla correzione di tutti i percorsi verificare che il tasto Correzione Percorsi non sia piÃ¹ attivo.
+2. Nel caso non si sia proceduto alla correzione di tutti i percorsi, il tasto sarÃ  attivo, cliccare e verificare che nell'elenco non sia piÃ¹ presente il percorso appena modificato.
+Spostamento Corse da percorso inconsistente/Modifica Complessa - Associazione Automatica - Finestra Home: Accedere a MTRAM con credenziali valide per l'uso di WebTram e del TTD_x000D_
+
+
+
+Accedere al TTD e scegliere uno scenario in modo che sia presente, nell'elenco linee, una linea con un percorso, con corse, sul quale siano state effettuate modifiche sostanziali_x000D_
+Nella finestra HOME deve essere attivo il tasto di Correzione Percorsi. Cliccare sul tasto._x000D_
+Selezionare una o  piÃ¹ righe dell'elenco e premere Automatic Association_x000D_
+Premere su Applica._x000D_
+Salvare, chiudere e riaprire il TTD:
+
+
+
+1. Nel caso sia proceduto alla correzione di tutti i percorsi verificare che il tasto Correzione Percorsi non sia piÃ¹ attivo.
+2. Nel caso non si sia proceduto alla correzione di tutti i percorsi, il tasto sarÃ  attivo, cliccare e verificare che nell'elenco non sia piÃ¹ presente il percorso appena modificato.
+
+
+
+Spostamento Corse da percorso inconsistente/Modifica Complessa - Associazione Manuale - Nodi Forzati -  Finestra Work: Eseguire il test [C69079] e allo Step 5 mettere la spunta su "Forza associazione primo/ultimo nodo.
+Tale opzione farÃ  si che i tempi di passaggio per il primo e l'ultimo nodo del percorso rimangano inalterati.
+Automatic movement of trips for simple modification: Open WT and perform simple changes ([C163814] or [C163946] or [C163792] or [C163793]) on pattern of precondition 1_x000D_
+
+
+
+Open TTD_x000D_
+Save on DB_x000D_
+Close and Open TTD_x000D_
+Open line involved in pattern's changes
+Spostamento Corse da percorso cancellato - Cancellazione corse: Open WT and perform deletion pattern ([C212361]) of precondition 1_x000D_
+Open TTD_x000D_
+Delete trips and save_x000D_
+Close and Open TTD_x000D_
+Open line involved in pattern's deletion
+Spostamento Corse da percorso cancellato - Spostamento corse su altro percorso: Open WT and perform suppress pattern ([C212361]) of precondition 1_x000D_
+
+
+
+Open TTD_x000D_
+Move trips on another pattern and save_x000D_
+Close and Open TTD_x000D_
+Open line involved in change's pattern of step 1
+KO:Spostamento Corse con associazione nodi manuale - Associazione con ordine invertito: Eseguire il test [C78613] facendo generare la soluzione dal sistema e poi associando manualmente i nodi origine con i nodi destinazione, cercando di associare i nodi origine in ordine invertito
+
+
+
+Spostamento Corse da percorso inconsistente/Modifica Complessa - Associazione Manuale - Nodi Forzati - Finestra Home: Eseguire il test [C69072] e allo Step 5 mettere la spunta su "Forza associazione primo/ultimo nodo.
+Tale opzione farÃ  si che i tempi di passaggio per il primo e l'ultimo nodo del percorso rimangano inalterati.
+
+
+
+Spostamento Corse da percorso inconsistente/Modifica Complessa - Associazione Automatica - Nodi Forzati - Finestra Home: Eseguire il test [C69076] mettendo nello Step 5 la spunta su Forza associazione primo/ultimo nodo.
+Spostamento Corse da percorso inconsistente/Modifica Complessa - Associazione Manuale - Finestra Work: Accedere a MTRAM con credenziali valide per l'uso di WebTram e del TTD_x000D_
+
+
+
+Accedere al TTD e scegliere uno scenario in modo che sia presente, nell'elenco linee, una linea con un percorso, con corse, sul quale siano state effettuate modifiche sostanziali_x000D_
+Nella finestra HOME deve essere attivo il tasto di Correzione Percorsi.
+Selezionare una linea sul quale esistono corse e percorsi inconsistenti e passare alla finestra WORK.
+Il tasto Modifica Percorsi deve essere attivo. Cliccare sul tasto._x000D_
+Selezionare una riga dell'elenco e premere Edit._x000D_
+
+
+
+Nel pannello di destra selezionar una combinazione di:
+* Linea
+* Percorso
+* Direzione
+Cliccare su tasto Generate_x000D_
+Il sistema permette di effettuare delle variazioni rispetto all'associazione automatica prodotta.
+Provare ad effettuare alcune modifiche e poi Cliccare su Salva._x000D_
+Nel caso siano presenti altri percorsi da correggere si possono ripetere gli Step 4-5-6 ma si puÃ² anche procedere all'applicazione delle modifiche solo per il percorso appena modificato tramite il tasto Apply._x000D_
+
+
+
+Salvare, chiudere e riaprire il TTD:
+1. Nel caso sia proceduto alla correzione di tutti i percorsi verificare che il tasto Correzione Percorsi non sia piÃ¹ attivo.
+2. Nel caso non si sia proceduto alla correzione di tutti i percorsi, il tasto sarÃ  attivo, cliccare e verificare che nell'elenco non sia piÃ¹ presente il percorso appena modificato.
+
+
+
+Spostamento Corse da percorso inconsistente/Modifica Complessa - Caso modifica percorso nella versione: Eseguire il test [C69072] nel caso di percorso presente nella versione e modificato nello scenario_x000D_
+Eseguire il test [C69093] nel caso di percorso presente nella versione e modificato nello scenario_x000D_
+Eseguire il test [C69076] nel caso di percorso presente nella versione e modificato nello scenario_x000D_
+
+
+
+Eseguire il test [C69095] nel caso di percorso presente nella versione e modificato nello scenario_x000D_
+Eseguire il test [C69079] nel caso di percorso presente nella versione e modificato nello scenario_x000D_
+Eseguire il test [C69098] nel caso di percorso presente nella versione e modificato nello scenario
+Spostamento Corse da una revisione all'altra di un percorso: Eseguire il test [C69079] e allo Step 5 mettere la spunta su "Includi Vecchie Revisioni del Percorso"
+
+
+
+Tale opzione farÃ  si che nell'elenco dei percorsi vengano mostrate anche le vecchie revisioni.
+Scegliere una vecchia revisione del percorso su cui spostare le corse.
+Spostamento Corse da una revisione all'altra di un percorso - Nodi Forzati: Eseguire il test [C69079] e allo Step 5 mettere la spunta su "Includi Vecchie Revisioni del Percorso" e su "Forza Associazione Primo/Ultimo Nodo"
+Scegliere una vecchia revisione del percorso su cui spostare le corse.
+Adding shadow lines: Open TTD
+
+
+
+Adding shadow lines: Open TTD
+Click + on Shadow lines box
+Select a line and adding in active set_x000D_
+Open Normal line in work_x000D_
+Open shadow line in Work
+Adding shadow lines - Different scenario: Perform test [C194479] using lines from another scenario
+Adding shadow lines - Different Version: Perform test [C194479] using lines from another scenario
+Adding shadow lines - Manage Dates in Home: Perform test [C194479] using lines from another scenario
+
+
+
+Adding shadow lines - Manage Dates in Work: Perform test [C194479] using lines from another scenario
+Adding shadow lines - Remove Shadow Lines: Perform test [C194479] using lines from another scenario
+Adding shadow lines - Check Right on version shadow lines: Perform test [C194479] using lines from another scenario
+Adding shadow lines - Shadow lines not persitent: Perform test [C194479] using lines from another scenario_x000D_
+Close TTD and Reopend in same Scenario
+
+
+
+Adding shadow lines - Using same line as norma and shadow line: Perform test [C194479] using lines from another scenario_x000D_
+Activate same line as normal and shadow line
+Energy consumption worst and medium: Set some run with consumption different by default_x000D_
+change default adn repeat step 1
+TTD: Copy trips from another line in Home: Open TTD
+Add at least two lines in Home
+Click right button on line's day with trips and select copy
+
+
+
+Click right button on other line's day and select "Incolla Speciale"_x000D_
+Select:
+* Line
+* Pattern
+* Direction
+Associate origin and destination nodes
+Click su Ok_x000D_
+Click on apply
+TTD: Copy trips from another line in Home - Caso linee Ombra: Open TTD
+Add at least two lines in Home
+Click right button on shadow line's day with trips and select copy
+Click right button on other line's day and select "Incolla Speciale"_x000D_
+Select:
+* Line
+* Pattern
+* Direction
+Associate origin and destination nodes
+
+
+
+Click su Ok_x000D_
+Click on apply
+TTD: Copy trips from another line in Home - Automatic Association: Execute test [C185663] usin Automatic Association
+TTD: Copy trips from another line in Work - Caso linee Ombra: Open TTD
+Add same lines present in Home as Linee Ombra
+Open Lines in Work_x000D_
+Select one or more runs of the line
+Click on Copy Trips Command_x000D_
+Select:
+* Line
+* Pattern
+* Direction
+Associate origin and destination nodes
+Click su Ok_x000D_
+Click on apply
+
+
+
+Click on apply
+TTD: Copy trips from another line in Work - Set Service Level - Caso Linee Ombra: Execute test [C185658] setting Service Level
+TTD: Copy trips from another line in Work - Set Operating Day - Caso Linee Ombra: Execute test [C185658] setting Operating Day
+TTD: Copy trips from another line in Work - Set Calendar - Caso Linee Ombra: Execute test [C185658] setting Trip Calendar
+
+
+
+TTD: Copy trips from another line in Work - Multiple trips - Caso Linee Ombra: Execute test [C185658] copying before a homogeneous group of races and repeating the procedure for all groups
+Open current service version: Accedere al modulo del TTD.
+Nella finestra selezionare "Apri l'attuale versione di servizio"
+Open service versions: Accedere al modulo TTD.
+Nella finestra selezionare "Apri versione di servizio"
+Selezionare la versione di servizio
+
+
+
+Open TTD- Update from Service Version: Aprire lo Scenario Manager.
+Selezionare uno scenario invalido ed effettuare l'aggiornamento dalla versione di servizio
+_x000D_
+Aprire il TTD o un altro modulo dove era presente un disallineamento tra scenario e versione di servizio
+Tool bar Work- Calendar tool: Integration editing data with RotDB: 1) Operating day 2) trip calendar: Accedere al TTD
+Aprire una linea in Work
+Effettuare una modifica al calendario di una corsa e salvare._x000D_
+
+
+
+Accedere allo scenario manager e promuovere lo scenario su cui si Ã¨ effettuata la modifica_x000D_
+Accedere a RotDb per la versione di servizio in uso_x000D_
+Accedere alla corsa su cui si Ã¨ effettuata la modifica
+Bug Fix Disney - Modify two different lines saving in different step: Accedere a MTRAM con credenziali valide per lavora su TTD_x000D_
+Accedere a TTD usando uno scenario con due linee_x000D_
+Aprire la finestra work di una linea, separare due corse unite in viaggio e salvare.
+
+
+
+(Nel caso in cui non esistano due corse unite in viaggio, procedere prima alla creazione del viaggio e salvare, per maggior sicurezza chiudere il TTD e riaccedere)_x000D_
+Aprire la finestra Work di un'altra linea, effettuare una modifica qualsiasi e salvare
+Bug Fix Conero - Check Method No Recalculation for zero minutes link: Accedere a MTRAM con credenziali valide per il TTD
+Accedere al TTD_x000D_
+
+
+
+Accedere al TTD_x000D_
+Aprire una linea e creare una corsa utilizzando i tempi di percorrenza o impostando le tratte a zero minuti su un tempo superiore a zero_x000D_
+Nella finestra settings impostare:
+* Ricalcolo Orario Transiti: No Ricalcolo
+* Calcolo con i tempi di percorrenza: Tratte a Zero Minuti con valore Zero
+Nella finestra Work effettuare Ricalcola Transiti per una corsa con tempi di percorrenza superiori a zero
+
+
+
+Bug Fix Conero - Check Leave Time Recalculation function "No Recalculation" on moving node: Accedere a MTRAM con credenziali valide per il TTD
+Accedere al TTD_x000D_
+Aprire una linea e creare una corsa utilizzando i tempi di percorrenza._x000D_
+Nella finestra settings impostare:
+* Ricalcolo Orario Transiti: No Ricalcolo
+* Calcolo con i tempi di percorrenza: Tratte a Zero Minuti con valore Zero
+Nella finestra Work modificare i tempi di transito di un nodo che non sia l'ultimo.
+
+
+
+ToolBar - Add-Edit Note: Accedere al TTD.
+Aprire una linea con corse nella finestra Work_x000D_
+Selezionare una corsa e accedere alla sezione modifica._x000D_
+Andare nelle sezione opzionali->note_x000D_
+Selezionare un transito e inserire una nota_x000D_
+Inserire una nota sulla corsa_x000D_
+Inserire un simbolo sulla linea
+ToolBar Activities Board - Add-Edit Note: Accedere al TTD.
+Aprire una linea con corse nella finestra Work_x000D_
+Selezionare una corsa e accedere alla sezione modifica._x000D_
+
+
+
+Andare nelle sezione opzionali->note_x000D_
+Selezionare un transito e inserire una nota_x000D_
+Inserire una nota sulla corsa_x000D_
+Inserire un simbolo sulla linea
+ToolBar Timetable Booklet - Add-Edit Note: Accedere al TTD.
+Aprire una linea con corse nella finestra Work_x000D_
+Selezionare una corsa e accedere alla sezione modifica._x000D_
+Andare nelle sezione opzionali->note_x000D_
+Selezionare un transito e inserire una nota_x000D_
+Inserire una nota sulla corsa_x000D_
+Inserire un simbolo sulla linea
+
+
+
+Inserire un simbolo sulla linea
+Edit patterns: Move trips on another pattern: Accedere al TTD e scegliere uno scenario in modo che sia presente, nell'elenco linee, una linea con piÃ¹ percorsi._x000D_
+Selezionare una linea sul quale esistono corse e passare alla finestra WORK.
+Selezionare una corsa e fare click sul tasto Modifica Percorsi_x000D_
+Selezionare una riga dell'elenco e premere Edit._x000D_
+Nel pannello di destra selezionare una combinazione di:
+* Linea
+* Percorso
+* Direzione
+E fare click su genera
+
+
+
+E fare click su genera
+Mantenere la stessa linea a cui Ã¨ associata la corsa.
+Cliccare su tasto Generate_x000D_
+Fare click sulla check di forzatura e rifare click su genera_x000D_
+Il sistema permette di effettuare delle variazioni rispetto all'associazione automatica prodotta.
+Provare ad effettuare alcune modifiche e poi Cliccare su Salva.
+
+
+
+Edit patterns: Move tris on another line's pattern: Eseguire il test [C189573] selezionando una linea differente rispetto a quella del percorso origine ma che abbiano almeno un nodo in comune.
+Create Trips window visualization: Click on add trip
+Save line in scenario from version: Accedere a TTD.
+Aggiungere nell'active set della home la linea descritta nelle preconditions_x000D_
+Aprire la linea in Work._x000D_
+Effettuare una modifica:
+* Creazione corsa
+* Modifica corsa
+* Creazione viaggio
+* Modifica viaggio
+
+
+
+* Modifica viaggio
+* Cancellazione corsa
+Salvare
+Running Time adjustement configuration NOT present: create run and try to disable node_x000D_
+edit run and try to disable node
+TTD: Open: Open the TTD, only to see the TT diagrams
+TTD: Add lines: Add lines to the filters in the TTD Home window (MQPS ex.: 0793,0797, 2191,2192,2193,2194,2195)
+TTD: Work - zoom the view with the mouse wheel: - Starting from the test [C353696]
+- Switch to Work window
+- zoom the view with the mouse wheel
 
 
 
