@@ -48,7 +48,7 @@ def get_txt_text(txt_docs):
 def get_text_chunks(text):
     text_splitter = CharacterTextSplitter(
         separator="\n",
-        chunk_size=512,
+        chunk_size=256,
         chunk_overlap=32,
         length_function=len
     )
