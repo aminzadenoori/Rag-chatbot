@@ -184,3 +184,6 @@ Werkzeug==2.3.6
 yarg==0.1.9
 yarl==1.9.4
 zipp==3.11.0
+rouge-score 
+nltk
+

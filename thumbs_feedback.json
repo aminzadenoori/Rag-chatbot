@@ -1,15 +1,15 @@
 {
     "feedback_type": "faces",
     "user_response": {
-        "User satisfaction: faces": ":5 - very positive:"
+        "User satisfaction: faces": ":3 - neutral:"
     },
     "data": null,
     "model": null,
     "collaborators": [],
     "open": true,
     "tags": null,
-    "git_commit": "b4f8cb5caea41287736687a217c08a1d7a2f9046",
-    "timestamp": 1715201162,
+    "git_commit": "2a8ea1e00e39f1511db4d1dd027ee05f9a8b57a7",
+    "timestamp": 1717669470,
     "created_by": null,
     "closed_on": null,
     "closed_by": null,

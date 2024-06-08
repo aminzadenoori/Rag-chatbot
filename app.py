@@ -24,12 +24,17 @@ from langchain.llms.huggingface_pipeline import HuggingFacePipeline
 import json
 import pandas as pd
 from sentence_transformers import SentenceTransformer, util
+from rouge_score import rouge_scorer
+from nltk.translate.bleu_score import sentence_bleu
+import torch
+from sentence_transformers import SentenceTransformer, util
+
 
 global llm
 global user_question_temp
 
 # Initialize the sentence transformer model
-model = SentenceTransformer('all-MiniLM-L6-v2')
+model = SentenceTransformer('all-mpnet-base-v2')
 
 def get_pdf_text(pdf_docs):
     text = ""
@@ -61,7 +66,7 @@ def get_text_chunks(text):
     return chunks
 
 def get_vectorstore(text_chunks):
-    embeddings = HuggingFaceInstructEmbeddings(model_name="hkunlp/instructor-large")
+    embeddings = HuggingFaceInstructEmbeddings(model_name="hkunlp/instructor-base")
     vectorstore = FAISS.from_texts(texts=text_chunks, embedding=embeddings)
     return vectorstore
 
@@ -76,8 +81,24 @@ def get_conversation_chain(vectorstore, option):
         llm = HuggingFaceHub(repo_id="google/flan-t5-large", model_kwargs={"temperature": 0.2, "max_length": 570}, huggingfacehub_api_token="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")
     if option == "phi3":
         llm = HuggingFaceHub(repo_id="microsoft/Phi-3-mini-4k-instruct", model_kwargs={"trust_remote_code": True, "temperature": 0.2, "max_length": 570}, huggingfacehub_api_token="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")
+    if option == "Mistral-7B-Instruct-v0.3":
+        llm = HuggingFaceHub(repo_id="mistralai/Mistral-7B-Instruct-v0.3", model_kwargs={"temperature": 0.2}, huggingfacehub_api_token="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")
     memory = ConversationBufferMemory(memory_key='chat_history', return_messages=True)
-    qa_chain = RetrievalQA.from_llm(llm=llm, retriever=vectorstore.as_retriever(k=3))
+    
+    custom_prompt = PromptTemplate(
+    input_variables=["question", "context"],
+    template="""
+    Use the following pieces of context to answer the question at the end. If you don't know the answer, just say "I don't kow" and nothing more, don't try to make up an answer.
+
+    {context}
+
+    Question:
+    {question}
+
+    Helpful Answer:
+    """
+)
+    qa_chain = RetrievalQA.from_llm(llm=llm, retriever=vectorstore.as_retriever(k=2),prompt=custom_prompt)
     return qa_chain
 
 def handle_userinput(user_question):
@@ -85,12 +106,26 @@ def handle_userinput(user_question):
     feedback_collector = FeedbackCollector()
     feedback_results = []
     feedback = []
+    print(response)
     helpful_answer_index = response.find('Helpful Answer:')
     if helpful_answer_index != -1:
         generated_answer = response[helpful_answer_index + len('Helpful Answer:'):].strip()
     st.write(bot_template.replace("{{MSG}}", generated_answer), unsafe_allow_html=True)
     feedback.append(feedback_collector)
     st.session_state.feedback_results = feedback
+
+# Function to calculate ROUGE score
+def calculate_rogue(generated_answer, expected_answer):
+    scorer = rouge_scorer.RougeScorer(['rougeL'], use_stemmer=True)
+    scores = scorer.score(expected_answer, generated_answer)
+    return scores['rougeL'].fmeasure
+
+# Function to calculate BLEU score
+def calculate_blue(generated_answer, expected_answer):
+    reference = expected_answer.split()
+    hypothesis = generated_answer.split()
+    return sentence_bleu([reference], hypothesis)
+
 
 def display_feedback():
     if "feedback_results" in st.session_state:
@@ -133,7 +168,7 @@ def main():
     with st.sidebar:
         st.subheader("Your documents")
         uploaded_docs = st.file_uploader("Upload your documents here and click on 'Process'", accept_multiple_files=True, type=['pdf', 'txt'])
-        option = st.selectbox('Select a Large language model:', ['falcon-7b-instruct', 'xgen-7b-8k-base', 'google/flan-t5-large', "phi3"])
+        option = st.selectbox('Select a Large language model:', ['falcon-7b-instruct', 'xgen-7b-8k-base', 'google/flan-t5-large', "Mistral-7B-Instruct-v0.3"])
         if st.button("Process"):
             with st.spinner("Processing"):
                 pdf_docs = [doc for doc in uploaded_docs if doc.type == "application/pdf"]
@@ -153,27 +188,46 @@ def main():
         if questions_file is not None:
             questions_df = pd.read_csv(questions_file)
             st.dataframe(questions_df)
-            if st.button("Generate Answers"):
-                generated_answers = []
-                automatic_scores = []
-                for question, expected_answer in zip(questions_df["Question"], questions_df["Expected Answer"]):
-                    response = st.session_state.conversation.run(question)
-                    helpful_answer_index = response.find('Helpful Answer:')
-                    if helpful_answer_index != -1:
-                        generated_answer = response[helpful_answer_index + len('Helpful Answer:'):].strip()
-                    generated_answers.append(generated_answer)
-                    # Calculate similarity score
-                    embeddings1 = model.encode(generated_answer, convert_to_tensor=True)
-                    embeddings2 = model.encode(expected_answer, convert_to_tensor=True)
-                    similarity_score = util.pytorch_cos_sim(embeddings1, embeddings2).item()
-                    automatic_scores.append(similarity_score)
-                questions_df['Generated answer by LLM'] = generated_answers
-                questions_df['LLM'] = st.session_state.option
-                questions_df['Automatic Score'] = automatic_scores
-                st.write("Answers Generated:")
-                st.dataframe(questions_df)
-                csv_data = questions_df.to_csv(index=False)
-                st.download_button("Download Results", csv_data, "results_with_answers.csv", "text/csv")
+        if st.button("Generate Answers"):
+            generated_answers = []
+            automatic_scores = []
+            rogue_scores = []
+            blue_scores = []
+            
+            for question, expected_answer in zip(questions_df["Question"], questions_df["Expected Answer"]):
+                response = st.session_state.conversation.run(question)
+                print(response)
+                
+                helpful_answer_index = response.find('Helpful Answer:')
+                if helpful_answer_index != -1:
+                    generated_answer = response[helpful_answer_index + len('Helpful Answer:'):].strip()
+                else:
+                    generated_answer = response
+                generated_answers.append(generated_answer)
+                
+                # Calculate similarity score
+                embeddings1 = model.encode(generated_answer, convert_to_tensor=True)
+                embeddings2 = model.encode(expected_answer, convert_to_tensor=True)
+                similarity_score = util.pytorch_cos_sim(embeddings1, embeddings2).item()
+                automatic_scores.append(similarity_score)
+                
+                # Calculate ROUGE score
+                rogue_score = calculate_rogue(generated_answer, expected_answer)
+                rogue_scores.append(rogue_score)
+                
+                # Calculate BLEU score
+                blue_score = calculate_blue(generated_answer, expected_answer)
+                blue_scores.append(blue_score)
+
+            questions_df['Generated answer by LLM'] = generated_answers
+            questions_df['LLM'] = st.session_state.option
+            questions_df['Automatic Score'] = automatic_scores
+            questions_df['ROUGE Score'] = rogue_scores
+            questions_df['BLEU Score'] = blue_scores
+            st.write("Answers Generated:")
+            st.dataframe(questions_df)
+            csv_data = questions_df.to_csv(index=False)
+            st.download_button("Download Results", csv_data, "results_with_answers.csv", "text/csv")
 
 if __name__ == '__main__':
     main()
