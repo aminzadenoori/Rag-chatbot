@@ -10,6 +10,9 @@ COPY . /app
 # Install any needed packages specified in requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
+# Install additional Python packages
+RUN pip install -U sentence-transformers langchain-community langchain huggingface-hub transformers
+
 # Make port 8501 available to the world outside this container
 EXPOSE 8501
 
@@ -24,5 +27,3 @@ RUN curl -s https://www.google.com > /dev/null || (echo "Internet connectivity i
 
 # Run streamlit when the container launches
 CMD ["streamlit", "run", "app.py", "--server.address=0.0.0.0"]
-
-
