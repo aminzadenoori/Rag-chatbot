@@ -19,11 +19,5 @@ EXPOSE 8501
 # Define environment variable
 ENV NAME World
 
-# Install curl for connectivity tests
-RUN apt-get update && apt-get install -y curl && rm -rf /var/lib/apt/lists/*
-
-# Check internet connectivity
-RUN curl -s https://www.google.com > /dev/null || (echo "Internet connectivity issue detected" && exit 1)
-
 # Run streamlit when the container launches
 CMD ["streamlit", "run", "app.py", "--server.address=0.0.0.0"]
