@@ -30,11 +30,11 @@ The ChatBot uses the Streamlit framework for the frontend and integrates several
 The ChatBot can be deployed as a Docker container, making it easy to set up and run in any environment that supports Docker. A Dockerfile is included in the repository, which details the steps for creating a Docker image that runs the ChatBot.
 ### Building the Docker Image
 To build the Docker image, run the following command in your terminal where the Dockerfile is located:
-"""docker build -t chatbot ."""
+``` docker build -t chatbot . ```
 This command builds a Docker image named chatbot based on the instructions in the Dockerfile.
 ### Running the Docker Container
 To run the ChatBot as a Docker container, use the following command:
-"""docker run -p 8501:8501 chatbot"""
+``` docker run -p 8501:8501 chatbot ```
 This command runs the chatbot Docker container and maps port 8501 of the container to port 8501 on your host, allowing you to access the Streamlit app by navigating to http://localhost:8501 in your web browser.
 
 ## Chat History Saving Feature
