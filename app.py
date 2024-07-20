@@ -11,7 +11,6 @@ from langchain.memory import ConversationBufferMemory
 from langchain.chains import ConversationalRetrievalChain, RetrievalQA
 from htmlTemplates import css, bot_template, user_template
 from langchain_community.llms import HuggingFaceHub
-from transformers import T5Tokenizer, T5ForConditionalGeneration
 from langchain.chains import LLMChain
 from langchain_core.prompts import PromptTemplate
 from trubrics.integrations.streamlit import FeedbackCollector
@@ -19,7 +18,7 @@ from transformers import AutoModel
 from transformers import AutoModelForCausalLM
 import csv
 import io
-from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
+
 from langchain_community.llms import HuggingFacePipeline
 import json
 import pandas as pd
@@ -28,12 +27,19 @@ from rouge_score import rouge_scorer
 from nltk.translate.bleu_score import sentence_bleu
 import torch
 from sentence_transformers import SentenceTransformer, util
+from InstructorEmbedding import INSTRUCTOR
+from transformers import AutoModel
+
 
 global llm
 global user_question_temp
 
+import os
+os.environ['CURL_CA_BUNDLE'] = ''
+os.environ['REQUESTS_CA_BUNDLE'] = ''
+
 # Initialize the sentence transformer model
-model = SentenceTransformer('all-mpnet-base-v2')
+model = SentenceTransformer('sentence-transformers/all-mpnet-base-v2')
 
 def get_pdf_text(pdf_docs):
     text = ""
@@ -65,6 +71,8 @@ def get_text_chunks(text):
     return chunks
 
 def get_vectorstore(text_chunks):
+
+
     embeddings = HuggingFaceInstructEmbeddings(model_name="hkunlp/instructor-base")
     vectorstore = FAISS.from_texts(texts=text_chunks, embedding=embeddings)
     return vectorstore
@@ -76,10 +84,6 @@ def get_conversation_chain(vectorstore, option):
         llm = HuggingFaceHub(repo_id="Salesforce/xgen-7b-8k-base", model_kwargs={"temperature": 0.2, "max_length": 250}, huggingfacehub_api_token="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")
     if option == "falcon-7b-instruct":
         llm = HuggingFaceHub(repo_id="tiiuae/falcon-7b-instruct", model_kwargs={"temperature": 0.4, "max_length": 570}, huggingfacehub_api_token="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")
-    if option == "google/flan-t5-large":
-        llm = HuggingFaceHub(repo_id="google/flan-t5-large", model_kwargs={"temperature": 0.2, "max_length": 570}, huggingfacehub_api_token="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")
-    if option == "phi3":
-        llm = HuggingFaceHub(repo_id="microsoft/Phi-3-mini-4k-instruct", model_kwargs={"trust_remote_code": True, "temperature": 0.2, "max_length": 570}, huggingfacehub_api_token="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")
     if option == "Mistral-7B-Instruct-v0.3":
         llm = HuggingFaceHub(repo_id="mistralai/Mistral-7B-Instruct-v0.3", model_kwargs={"temperature": 0.2}, huggingfacehub_api_token="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")
     memory = ConversationBufferMemory(memory_key='chat_history', return_messages=True)

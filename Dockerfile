@@ -11,7 +11,7 @@ COPY . /app
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Install additional Python packages
-RUN pip install -U sentence-transformers langchain-community langchain huggingface-hub transformers
+RUN pip install -U sentence-transformers langchain-community langchain huggingface-hub transformers streamlit
 
 # Make port 8501 available to the world outside this container
 EXPOSE 8501
