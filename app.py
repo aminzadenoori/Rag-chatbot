@@ -4,23 +4,23 @@ import streamlit as st
 from dotenv import load_dotenv
 from PyPDF2 import PdfReader
 from langchain.text_splitter import CharacterTextSplitter
-from langchain.embeddings import OpenAIEmbeddings, HuggingFaceInstructEmbeddings
-from langchain.vectorstores import FAISS
-from langchain.chat_models import ChatOpenAI
+from langchain_community.embeddings import OpenAIEmbeddings, HuggingFaceInstructEmbeddings
+from langchain_community.vectorstores import FAISS
+from langchain_community.chat_models import ChatOpenAI
 from langchain.memory import ConversationBufferMemory
 from langchain.chains import ConversationalRetrievalChain, RetrievalQA
 from htmlTemplates import css, bot_template, user_template
-from langchain.llms import HuggingFaceHub
+from langchain_community.llms import HuggingFaceHub
 from transformers import T5Tokenizer, T5ForConditionalGeneration
-from langchain import LLMChain
-from langchain import PromptTemplate
+from langchain.chains import LLMChain
+from langchain_core.prompts import PromptTemplate
 from trubrics.integrations.streamlit import FeedbackCollector
 from transformers import AutoModel
 from transformers import AutoModelForCausalLM
 import csv
 import io
 from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
-from langchain.llms.huggingface_pipeline import HuggingFacePipeline
+from langchain_community.llms import HuggingFacePipeline
 import json
 import pandas as pd
 from sentence_transformers import SentenceTransformer, util
@@ -28,7 +28,6 @@ from rouge_score import rouge_scorer
 from nltk.translate.bleu_score import sentence_bleu
 import torch
 from sentence_transformers import SentenceTransformer, util
-
 
 global llm
 global user_question_temp
