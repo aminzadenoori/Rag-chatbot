@@ -81,17 +81,17 @@ def get_conversation_chain(vectorstore, option):
     st.session_state.chat_history = []
     llm = None
     if option == "xgen-7b-8k-base":
-        llm = HuggingFaceHub(repo_id="Salesforce/xgen-7b-8k-base", model_kwargs={"temperature": 0.2, "max_length": 250}, huggingfacehub_api_token="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")
+        llm = HuggingFaceHub(repo_id="Salesforce/xgen-7b-8k-base", model_kwargs={"temperature": 0.2, "max_length": 250}, huggingfacehub_api_token="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")
     if option == "falcon-7b-instruct":
-        llm = HuggingFaceHub(repo_id="tiiuae/falcon-7b-instruct", model_kwargs={"temperature": 0.4, "max_length": 570}, huggingfacehub_api_token="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")
+        llm = HuggingFaceHub(repo_id="tiiuae/falcon-7b-instruct", model_kwargs={"temperature": 0.4, "max_length": 570}, huggingfacehub_api_token="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")
     if option == "Mistral-7B-Instruct-v0.3":
-        llm = HuggingFaceHub(repo_id="mistralai/Mistral-7B-Instruct-v0.3", model_kwargs={"temperature": 0.2}, huggingfacehub_api_token="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")
+        llm = HuggingFaceHub(repo_id="mistralai/Mistral-7B-Instruct-v0.3", model_kwargs={"temperature": 0.2}, huggingfacehub_api_token="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")
     memory = ConversationBufferMemory(memory_key='chat_history', return_messages=True)
     
     custom_prompt = PromptTemplate(
     input_variables=["question", "context"],
     template="""
-    Use the following pieces of context to answer the question at the end. If you don't know the answer, just say "I don't kow" and nothing more, don't try to make up an answer.
+    Use the following pieces of context to answer the question at the end. If you don't know the answer, just say "I don't kow" and nothing more, don't try to make up an answer. 
 
     {context}
 
@@ -151,6 +151,17 @@ def chat_history_to_txt():
     output += "\n\n" + str(user_response)
     return output
 
+def extract_context(text):
+    # Find the index of "Context" and "Question"
+    context_start = text.find("Context:")
+    question_start = text.find("Question:")
+    
+    # Extract the text between "Context" and "Question"
+    if context_start != -1 and question_start != -1:
+        return text[context_start + len("Context:"):question_start].strip()
+    else:
+        return "Either 'Context' or 'Question' not found in the text."
+
 def main():
     load_dotenv()
     st.set_page_config(page_title="The First ChatBot (Beta)", page_icon=":robot:")
@@ -196,11 +207,13 @@ def main():
             automatic_scores = []
             rogue_scores = []
             blue_scores = []
+            context=[]
             
             for question, expected_answer in zip(questions_df["Question"], questions_df["Expected Answer"]):
                 response = st.session_state.conversation.run(question)
-                print(response)
                 
+
+                context.append(extract_context(response))
                 helpful_answer_index = response.find('Helpful Answer:')
                 if helpful_answer_index != -1:
                     generated_answer = response[helpful_answer_index + len('Helpful Answer:'):].strip()
@@ -227,6 +240,7 @@ def main():
             questions_df['Automatic Score'] = automatic_scores
             questions_df['ROUGE Score'] = rogue_scores
             questions_df['BLEU Score'] = blue_scores
+            questions_df['Context'] = context
             st.write("Answers Generated:")
             st.dataframe(questions_df)
             csv_data = questions_df.to_csv(index=False)
