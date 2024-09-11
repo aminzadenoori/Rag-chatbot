@@ -30,6 +30,7 @@ from sentence_transformers import SentenceTransformer, util
 from InstructorEmbedding import INSTRUCTOR
 from transformers import AutoModel
 
+HFtoken=""
 
 global llm
 global user_question_temp
@@ -81,11 +82,11 @@ def get_conversation_chain(vectorstore, option):
     st.session_state.chat_history = []
     llm = None
     if option == "xgen-7b-8k-base":
-        llm = HuggingFaceHub(repo_id="Salesforce/xgen-7b-8k-base", model_kwargs={"temperature": 0.2, "max_length": 250}, huggingfacehub_api_token="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")
+        llm = HuggingFaceHub(repo_id="Salesforce/xgen-7b-8k-base", model_kwargs={"temperature": 0.2, "max_length": 250}, huggingfacehub_api_token=HFtoken)
     if option == "falcon-7b-instruct":
-        llm = HuggingFaceHub(repo_id="tiiuae/falcon-7b-instruct", model_kwargs={"temperature": 0.4, "max_length": 570}, huggingfacehub_api_token="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")
+        llm = HuggingFaceHub(repo_id="tiiuae/falcon-7b-instruct", model_kwargs={"temperature": 0.4, "max_length": 570}, huggingfacehub_api_token=HFtoken)
     if option == "Mistral-7B-Instruct-v0.3":
-        llm = HuggingFaceHub(repo_id="mistralai/Mistral-7B-Instruct-v0.3", model_kwargs={"temperature": 0.2}, huggingfacehub_api_token="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")
+        llm = HuggingFaceHub(repo_id="mistralai/Mistral-7B-Instruct-v0.3", model_kwargs={"temperature": 0.2}, huggingfacehub_api_token=HFtoken)
     memory = ConversationBufferMemory(memory_key='chat_history', return_messages=True)
     
     custom_prompt = PromptTemplate(
