@@ -30,7 +30,7 @@ from sentence_transformers import SentenceTransformer, util
 from InstructorEmbedding import INSTRUCTOR
 from transformers import AutoModel
 
-HFtoken=""
+HFtoken="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"
 
 global llm
 global user_question_temp
@@ -92,7 +92,7 @@ def get_conversation_chain(vectorstore, option):
     custom_prompt = PromptTemplate(
     input_variables=["question", "context"],
     template="""
-    Use the following pieces of context to answer the question at the end. If you don't know the answer, just say "I don't kow" and nothing more, don't try to make up an answer. 
+    Using the information provided, answer the question as accurately as possible. If the answer isn't clear from the context, respond with "I don't know" and avoid speculation.
 
     {context}
 

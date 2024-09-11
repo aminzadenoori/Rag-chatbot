@@ -1,146 +1,89 @@
-Mohammad Amin Zadenoori
-Contact Information
-•Location: Florence, Tuscany, Italy
-•Phone: +393397825862
-•Email: amin.zadenoori@gmail.com
-•LinkedIn: www.linkedin.com/in/mohammad-amin-zadenoori-4b9980ab
-•GitHub: github.com/aminzadenoori
-1 Professional Summary
++-----------------------------+-----------------------------+----------+--------+----------+---------+
+| Method                      | Category                    | Precision| Recall | F1-Score | Support |
 
 
 
-1 Professional Summary
-Innovative AI Researcher and Machine Learning Engineer with a PhD in Computer Engineering,
-specializing in advanced ML and Deep Learning applications in industrial sectors. Proven
++-----------------------------+-----------------------------+----------+--------+----------+---------+
+| Zero-Shot                   | Functional, Non-Quality     |     0.62 |   0.07 |     0.12 |     230 |
 
 
 
-expertise in developing and deploying sophisticated ML models using PyTorch and TensorFlow.
-Proficient in leveraging cutting-edge NLP techniques, including Large Language Models (LLMs)
+|                             | Functional, Quality         |     0.15 |   0.92 |     0.26 |      79 |
+|                             | Non-Functional, Non-Quality |     0.00 |   0.00 |     0.00 |      13 |
 
 
 
-and RAG architectures, to solve complex industrial challenges. Experienced in cloud-based ML
-deployment on AWS and Azure, ensuring scalable and efficient AI solutions.
-2 Key ML/AI Skills
-•Deep Learning & Neural Network Architectures
+|                             | Non-Functional, Quality     |     0.93 |   0.33 |     0.49 |     299 |
+|                             | Accuracy                    |          |        |     0.30 |     621 |
 
 
 
-•Natural Language Processing (NLP) with focus on LLMs
-•Computer Vision & Image Processing
-•Predictive Modeling & Time Series Analysis
-•ML Model Deployment & Scaling
-•A/B Testing & ML Experiment Design
+|                             | Macro Avg                   |     0.43 |   0.33 |     0.22 |     621 |
+|                             | Weighted Avg                |     0.70 |   0.30 |     0.31 |     621 |
 
 
 
-•ML Frameworks: PyTorch, TensorFlow, Keras, Scikit-learn
-•Big Data Processing: PySpark, Hadoop
-•MLOps: MLflow, KubeFlow, AirFlow
-3 Languages
-•English: Professional Working
-•Italian: Limited Working
-•Persian: Native or Bilingual
-4 Work Experience
++-----------------------------+-----------------------------+----------+--------+----------+---------+
+| Zero-Shot with Explanation  | Functional, Non-Quality     |     0.67 |   0.35 |     0.46 |     230 |
 
 
 
-4 Work Experience
-Machine Learning Engineer
-M.A.I.O.R., Florence, Italy July 2022 - Present
-•Engineered ML models for transport optimization, leveraging Random Forest, XGBoost,
-and Deep Learning architectures
+|                             | Functional, Quality         |     0.19 |   0.89 |     0.32 |      79 |
+|                             | Non-Functional, Non-Quality |     0.00 |   0.00 |     0.00 |      13 |
 
 
 
-and Deep Learning architectures
-•Developed a Flask-based web app with AWS deployment for scalable ML model access
-•Implemented open-source LLMs (GPT-Neo, Bloom) for an advanced ”Talk to PDF” cus-
-tomer support system
+|                             | Non-Functional, Quality     |     0.97 |   0.45 |     0.62 |     299 |
+|                             | Accuracy                    |          |        |     0.46 |     621 |
 
 
 
-tomer support system
-•Optimized trip scheduling algorithms using advanced ML techniques, significantly im-
-proving computational efficiency
-Computer Vision Engineer
-Sodi Scientifica Srl, Calenzano, Tuscany, Italy November 2022 - April 2023
+|                             | Macro Avg                   |     0.46 |   0.42 |     0.35 |     621 |
+|                             | Weighted Avg                |     0.74 |   0.46 |     0.51 |     621 |
 
 
 
-•Developed state-of-the-art object detection algorithms using LiDAR data for precise ve-
-hicle tracking
-1•Enhanced YOLO models to tackle complex object occlusion challenges in traffic monitor-
-ing
++-----------------------------+-----------------------------+----------+--------+----------+---------+
+| Few-Shot                    | Functional, Non-Quality     |     0.67 |   0.01 |     0.02 |     230 |
 
 
 
-ing
-•Utilized TensorFlow and PyTorch to implement and fine-tune CV models for real-time
-traffic analysis
-Data Scientist in Health Care
-STLAB (Software Technologies LAB), Florence, Italy February 2022 - July 2022
+|                             | Functional, Quality         |     0.14 |   1.00 |     0.25 |      79 |
+|                             | Non-Functional, Non-Quality |     0.00 |   0.00 |     0.00 |      13 |
 
 
 
-•Applied deep learning techniques to OCT images for accurate classification of retinal
-pathologies
-•Developed novel ML models for early detection of fungal retinal infections, significantly
-improving diagnostic accuracy
+|                             | Non-Functional, Quality     |     1.00 |   0.21 |     0.34 |     299 |
+|                             | Accuracy                    |          |        |     0.23 |     621 |
 
 
 
-improving diagnostic accuracy
-•Contributed to cutting-edge research in AI applications for ophthalmology
-Data Scientist
-Ghateh chain stores, Hamadan, Iran December 2016 - September 2018
+|                             | Macro Avg                   |     0.45 |   0.30 |     0.15 |     621 |
+|                             | Weighted Avg                |     0.75 |   0.23 |     0.20 |     621 |
 
 
 
-•Implemented advanced data visualization techniques using Microsoft Power BI to analyze
-purchase patterns across store branches
-•Developed predictive models using Scikit-learn to forecast purchase amounts for diverse
-customer segments
++-----------------------------+-----------------------------+----------+--------+----------+---------+
+| Few-Shot with Explanation   | Functional, Non-Quality     |     0.73 |   0.17 |     0.28 |     230 |
 
 
 
-customer segments
-ML-Driven Mobile App Developer
-Dr.words Project, Iran December 2016 - December 2017
-•Conceptualized and developed an award-winning E-learning mobile app integrating ML
-algorithms for personalized language learning
+|                             | Functional, Quality         |     0.16 |   0.94 |     0.28 |      79 |
+|                             | Non-Functional, Non-Quality |     0.00 |   0.00 |     0.00 |      13 |
 
 
 
-•Implemented NLP techniques to dynamically reorder word lessons based on individual
-user learning curves
-5 Education
-•PhD in Computer Engineering (ML Specialization) , Universit` a degli Studi di
-Firenze (2018 - 2021)
+|                             | Non-Functional, Quality     |     0.98 |   0.33 |     0.49 |     299 |
+|                             | Accuracy                    |          |        |     0.34 |     621 |
 
 
 
-Firenze (2018 - 2021)
-•Master’s Degree in Artificial Intelligence , Qazvin Islamic Azad University (2013 -
-2017)
-•Bachelor’s Degree in Information Technology , Hamedan University of Technology
-(2008 - 2012)
-•Data Scientist Nanodegree , Udacity (April 2021)
+|                             | Macro Avg                   |     0.47 |   0.36 |     0.26 |     621 |
+|                             | Weighted Avg                |     0.76 |   0.34 |     0.38 |     621 |
 
 
 
-6 ML-Focused Certifications
-•Convolutional Neural Networks
-•Structuring Machine Learning Projects
-•Introduction to Machine Learning in Production
-•Neural Networks and Deep Learning
-
-
-
-•Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimiza-
-tion
-2
++-----------------------------+-----------------------------+----------+--------+----------+---------+
 
 
 
