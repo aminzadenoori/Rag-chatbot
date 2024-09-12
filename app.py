@@ -92,7 +92,7 @@ def get_conversation_chain(vectorstore, option):
     custom_prompt = PromptTemplate(
     input_variables=["question", "context"],
     template="""
-    Using the information provided, answer the question as accurately as possible. If the answer isn't clear from the context, respond with "I don't know" and avoid speculation.
+    Using the information provided, answer the question as accurately as possible. Never eliminate parts of the answer, and after generating the answer, understand that it is in accordance with the answer. If the answer isn't clear from the context, respond with "I don't know" and avoid speculation.
 
     {context}
 
