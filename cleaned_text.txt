@@ -1,68 +1,44 @@
 MAIOR Driver Assignment is a web-based module, part of the MAIOR Operations suite, that manages traveling personnel of transportation companies or any personnel scheduled for predetermined activities or duties.
 
-
-
 The system begins with work and rest scheduling of operators and allows you to handle various requests or changes in duties or assignments, up to final accounting of actual work done for correct employee payment.
-
-
 
 The required data include operators' master data with all management attributes and the scheduled service on a calendar (runs, vehicle duties, driving duties, or duties to be covered).
 
-
-
 The module uses complex optimization algorithms to optimize staff allocation to operators, enabling the pursuit of business objectives like equitable workload distribution or cost savings.
-
-
 
 Uncovered duties can be manually or automatically assigned. All user operations are tracked and verified by the system, ensuring transparency and consistency with labor rules.
 
-
-
 MAIOR Driver Assignment allows configuration of various constraints, such as limiting assignments to certain lines, working hours, maximum daily/weekly/monthly platform time, and minimum rest hours between consecutive working days.
 
-
-
 Multiple labor contracts and personnel categorizations can be implemented simultaneously.
+
 The software supports creating rotating rosters and ensures accurate resource management even with policy modifications and organizational changes.
-
-
 
 All active constraints are checked in both automatic and manual assignments. The algorithm never violates the rules unless specifically instructed. Users are warned when an operation violates rules, but can proceed if the rule is not unbreakable. Violated rules can be listed, and who overrode them is tracked.
 
-
-
 The module also processes operator requests made through the Driver Portal, such as absence requests or duty swaps between operators.
+
 The system provides configurable KPIs to help users monitor their work and focus on pressing issues.
-Pages
-
-
 
 Pages
+
 Once logged in, the system opens to the main work page—the roster page.
+
 Through the top bar, other pages can be accessed:
+
 Rotation tables: Page dedicated to managing rotation tables.
 Settings: Page dedicated to setting user-changeable parameters.
-
-
-
 Roster
+
 Overview
-
-
 
 This page manages the assignment of duties and activities to operators. There's a toolbar with main commands on the left (see Roster toolbar commands). The roster displays operators as rows and dates as columns. Activities and duties assigned to an operator on a specific date are represented by rectangles.
 
-
-
 Below the roster are tabs containing useful information (see Bottom drawer). Double-click on a tab to view it.
 
-
-
 Above these tabs is the period navigator with rectangles showing dates of the open period. Click on a rectangle to navigate within the period, or use the scroll bar below.
+
 Hovering over a date rectangle displays information about the day:
-The date
-
-
 
 The date
 Total number of duties
@@ -71,67 +47,38 @@ Number of covered duties
 Number of standby activities
 Number of absence activities
 Number of operators without a duty or activity
-
-
-
 (Optional) Number of assigned activities of a given type (see Configure KPI)
 Clicking the arrows on the right of the toolbar opens a menu with commands:
-
-
 
 Show/Hide pinned: Show or hide the section of pinned rosters, displayed at the top and unaffected by filters.
 Focus on pinned: Highlight the pinned rosters section, hiding others.
 Show/Hide uncovered duties: Show or hide the section of uncovered duties.
-
-
-
 Focus on uncovered duties: Highlight uncovered duties, hiding others.
 Show/Hide unpinned: Show or hide the section of unpinned rosters.
 Focus on unpinned: Highlight unpinned rosters, hiding others.
 Roster toolbar commands
 
-
-
-Roster toolbar commands
 Pin/Unpin all filtered rosters: Adds or removes the result of the filtered roster to the pinned section.
 Change period: Opens a dialog to select the start date, end date, and adjoining read-only days (up to 14).
-
-
-
 Import duties: Opens a dialog to select a service to import.
 Import Regular Bidding: Imports operators' bid package selection.
 Assign table: Assigns activities in the table to operators for the selected period after importing duties and regular bidding.
-
-
-
 Import from Driver Portal: Opens a menu with commands:
 Import duty swapping from Driver Portal: Processes unhandled duty swap requests that don't violate rules.
-
-
-
 Check absence requests from Driver Portal: Allows checking and processing of unhandled absence requests.
 Check other requests from Driver Portal: Allows checking and processing of unhandled stop failure and miss-out requests.
-
-
-
 UNDO: Undoes the last operation (assigning/removing an activity).
 REDO: Redoes the last undone operation.
 Import Accrual values: Imports operators' accruals from a file with operator ID, accrual name, value, and date, separated by semicolons.
-
-
-
 Roster print: Offers options for monthly or weekly roster printing.
 Lock/Unlock days: Allows locking or unlocking days for payroll by date range, categories, and divisions.
-
-
-
 Configure KPI: Configures a KPI to monitor. If the KPI exceeds the threshold on a day, that date is highlighted.
 Uncovered duties
+
 In this section, all duties not yet assigned are listed. To assign a duty, drag it to the desired operator's row.
 
-
-
 Hovering over the duty displays information:
+
 Start and end time
 Work time
 Driving time
@@ -141,99 +88,59 @@ Category
 Day type
 The duty's pieces are listed with details like line/type, vehicle block, start/end nodes and times, and required qualifications.
 
-
-
 Right-clicking on an uncovered duty opens a menu:
+
 Last/First substring: Displays the first or last part of a long duty name.
 Split duty: Opens a window to split the duty into multiple duties based on selected pieces.
-
-
-
 Delete duty: Allows deletion of a duty with a selected reason; deleted duties appear in the Deleted duties section.
 Merge duties: Merges the selected duty with another uncovered duty that doesn't overlap.
-
-
-
 Assign duty: Opens a window to assign the duty to an operator without violating constraints.
 Roster commands
+
 Right-clicking on an operator opens a menu:
-
-
 
 Configure visible details: Select which operator information to display in the roster header, such as ID, name, division, total working time, etc.
 Pin/Unpin: Adds or removes the operator from the pinned section.
-
-
-
 Assign activity: Assigns a service or rest activity to the operator, specifying type, name, date, and times. Can replace or add to existing activities.
-
-
-
 Show employee data: Displays detailed information about the operator, including personal details, competencies, current assignments, and accruals. Historic data can be viewed or edited.
 Assigned activities commands
 
-
-
-Assigned activities commands
 Right-clicking on an assigned duty allows you to:
+
 Remove the assigned duty.
 Display the first or last part of a long duty name.
 Modify the selected service or rest activity.
 Bottom drawer
 
-
-
-Bottom drawer
 Tabs at the bottom of the window provide additional functions:
+
 Roster filters: Filter operators based on criteria like division; only matching operators are displayed.
-
-
-
 Uncovered duties: Displays uncovered duties in a table for searching and filtering; duties can be assigned by dragging them to an operator.
 Deleted duties: Lists deleted duties with reasons; duties can be restored to the uncovered duties section.
-
-
-
 Rules violation: Shows all rules violations in the open period; clicking an operator focuses on them.
 Fails: Lists duties not assigned during bulk operations, like assigning bid package duties.
 Bid Package
 
-
-
-Bid Package
 Bid packages are managed on this page. Users can select a bid period and package to view the corresponding table. Clicking the upload button allows creating or modifying a bid package.
 
-
-
 The file should have rows with exactly seven activities, each represented by:
+
 0: Blank activity
 1: Mandatory rest activity
 2: Scheduled rest activity
 3: Simple rest activity
 4: Duty
 5: Service activity
-
-
-
-4: Duty
-5: Service activity
 Except for 0, the number must be followed by the duty or activity name, e.g.:
+
 1MR 2SR 4Duty123 4Duty456 0 5ActivityX 3R
+
 To save changes, click the save icon. Clicking the "x" discards modifications.
-Settings
-
-
 
 Settings
+
 On the "Settings" page, you can view, modify, and create activity types.
-
-
 
 To view details about an activity type, click on its row. To edit attributes, click the pen icon on the right. Save changes with the save icon and close the editing area with the "x" icon.
 
-
-
 To create a new activity type, click the plus icon on the main table.
-
-
-

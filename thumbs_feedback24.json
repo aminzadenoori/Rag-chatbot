@@ -1,0 +1,18 @@
+{
+    "feedback_type": "faces",
+    "user_response": {
+        "User satisfaction: faces": ":5 - very positive:"
+    },
+    "data": null,
+    "model": null,
+    "collaborators": [],
+    "open": true,
+    "tags": null,
+    "git_commit": "b4f16d87faa24611f6dea92c8bbb7d05d47fd63d",
+    "timestamp": 1728045809,
+    "created_by": null,
+    "closed_on": null,
+    "closed_by": null,
+    "metadata": null,
+    "question": "how to add a route wewe ?"
+}

@@ -1,5 +1,4 @@
 import os
-import glob
 import streamlit as st
 from dotenv import load_dotenv
 from PyPDF2 import PdfReader
@@ -14,11 +13,6 @@ from langchain_community.llms import HuggingFaceHub
 from langchain.chains import LLMChain
 from langchain_core.prompts import PromptTemplate
 from trubrics.integrations.streamlit import FeedbackCollector
-from transformers import AutoModel
-from transformers import AutoModelForCausalLM
-import csv
-import io
-
 from langchain_community.llms import HuggingFacePipeline
 import json
 import pandas as pd
@@ -29,6 +23,8 @@ import torch
 from sentence_transformers import SentenceTransformer, util
 from InstructorEmbedding import INSTRUCTOR
 from transformers import AutoModel
+import atexit
+import glob
 
 HFtoken="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"
 
@@ -73,8 +69,15 @@ def get_text_chunks(text):
 
 def get_vectorstore(text_chunks):
 
-
-    embeddings = HuggingFaceInstructEmbeddings(model_name="hkunlp/instructor-base")
+    model_name = "hkunlp/instructor-base"
+    model_kwargs = {'device': 'cpu'}
+    encode_kwargs = {'normalize_embeddings': True}
+    embeddings = HuggingFaceInstructEmbeddings(
+    model_name=model_name,
+    model_kwargs=model_kwargs,
+    encode_kwargs=encode_kwargs
+)
+    # embeddings = HuggingFaceInstructEmbeddings(query_instruction="Represent the query for retrieval: ")
     vectorstore = FAISS.from_texts(texts=text_chunks, embedding=embeddings)
     return vectorstore
 
@@ -83,19 +86,20 @@ def get_conversation_chain(vectorstore, option):
     llm = None
     if option == "xgen-7b-8k-base":
         llm = HuggingFaceHub(repo_id="Salesforce/xgen-7b-8k-base", model_kwargs={"temperature": 0.2, "max_length": 250}, huggingfacehub_api_token=HFtoken)
-    if option == "falcon-7b-instruct":
+    elif option == "falcon-7b-instruct":
         llm = HuggingFaceHub(repo_id="tiiuae/falcon-7b-instruct", model_kwargs={"temperature": 0.4, "max_length": 570}, huggingfacehub_api_token=HFtoken)
-    if option == "Mistral-7B-Instruct-v0.3":
-        llm = HuggingFaceHub(repo_id="mistralai/Mistral-7B-Instruct-v0.3", model_kwargs={"temperature": 0.2}, huggingfacehub_api_token=HFtoken)
+    elif option == "Mistral-7B-Instruct-v0.3":
+        llm = HuggingFaceHub(repo_id="mistralai/Mistral-7B-Instruct-v0.3", model_kwargs={"temperature": 0.2,"max_new_tokens": 500,"max_new_length":500}, huggingfacehub_api_token=HFtoken)
+    elif option == "Meta-Llama-3.1-8B-Instruct":
+        llm = HuggingFaceHub(repo_id="meta-llama/Meta-Llama-3.1-8B-Instruct", model_kwargs={"temperature": 0.2,"max_new_tokens": 500,"max_new_length":500, "stop": ["\n\n", "Context:", "Question:", "Answer:"]}, huggingfacehub_api_token=HFtoken)
     memory = ConversationBufferMemory(memory_key='chat_history', return_messages=True)
     
     custom_prompt = PromptTemplate(
     input_variables=["question", "context"],
     template="""
-    Using the information provided, answer the question as accurately as possible. Never eliminate parts of the answer, and after generating the answer, understand that it is in accordance with the answer. If the answer isn't clear from the context, respond with "I don't know" and avoid speculation.
-
+    Use the information below to answer the user's question as accurately as possible. Provide only the answer without additional commentary or repetition. If the answer is not clear from the context, simply state "I don't know."
     {context}
-
+    
     Question:
     {question}
 
@@ -163,6 +167,37 @@ def extract_context(text):
     else:
         return "Either 'Context' or 'Question' not found in the text."
 
+def get_next_index():
+    if os.path.exists('counter.txt'):
+        with open('counter.txt', 'r') as f:
+            index = int(f.read())
+    else:
+        index = 0
+    index += 1
+    with open('counter.txt', 'w') as f:
+        f.write(str(index))
+    return index
+
+def collect_feedback_to_csv():
+    json_files = glob.glob('thumbs_feedback*.json')
+    data_list = []
+
+    for file in json_files:
+        with open(file, 'r') as f:
+            data = json.load(f)
+            user_response = data.get('user_response', {})
+            question = data.get('question', '')
+            user_satisfaction = user_response.get('User satisfaction: faces', '')
+
+            data_list.append({
+                'Question': question,
+                'User Satisfaction': user_satisfaction
+            })
+
+    df = pd.DataFrame(data_list)
+    df.to_csv('feedback_results.csv', index=False)
+
+atexit.register(collect_feedback_to_csv)
 def main():
     load_dotenv()
     st.set_page_config(page_title="The First ChatBot (Beta)", page_icon=":robot:")
@@ -175,15 +210,39 @@ def main():
     user_question = st.text_input("Ask a question about your documents:")
     if st.button("Answer"):
         handle_userinput(user_question)
+    # Get the next index
+    i = get_next_index()
+    feedback_filename = f"thumbs_feedback{i}.json"
+    
     feedback_collector = FeedbackCollector()
-    feedback_collector.st_feedback(feedback_type="faces", path="thumbs_feedback.json")
+    feedback_collector.st_feedback(feedback_type="faces", path=feedback_filename)
+
+    # Open and read the thumbs_feedback.json file
+    # Check if the file exists
+    if os.path.exists(feedback_filename):
+    # Open and read the thumbs_feedback.json file
+
+    # Initialize data if the file doesn't exist
+        data = []
+        with open(feedback_filename, 'r') as json_file:
+            data = json.load(json_file)
+
+
+
+        # Add the "question" key to the data
+        data["question"] = user_question
+
+    # Write the updated data back to the JSON file
+        with open(feedback_filename, 'w') as json_file:
+            json.dump(data, json_file, indent=4)
+
     if st.session_state.chat_history:
         csv_data = chat_history_to_txt()
         st.download_button("Download Chat History as CSV", csv_data, "results.txt", "text/csv")
     with st.sidebar:
         st.subheader("Your documents")
         uploaded_docs = st.file_uploader("Upload your documents here and click on 'Process'", accept_multiple_files=True, type=['pdf', 'txt'])
-        option = st.selectbox('Select a Large language model:', ['falcon-7b-instruct', 'xgen-7b-8k-base', 'google/flan-t5-large', "Mistral-7B-Instruct-v0.3"])
+        option = st.selectbox('Select a Large language model:', ["Mistral-7B-Instruct-v0.3","Meta-Llama-3.1-8B-Instruct"])
         if st.button("Process"):
             with st.spinner("Processing"):
                 pdf_docs = [doc for doc in uploaded_docs if doc.type == "application/pdf"]
@@ -222,25 +281,25 @@ def main():
                     generated_answer = response
                 generated_answers.append(generated_answer)
                 
-                # Calculate similarity score
-                embeddings1 = model.encode(generated_answer, convert_to_tensor=True)
-                embeddings2 = model.encode(expected_answer, convert_to_tensor=True)
-                similarity_score = util.pytorch_cos_sim(embeddings1, embeddings2).item()
-                automatic_scores.append(similarity_score)
+                # # Calculate similarity score
+                # embeddings1 = model.encode(generated_answer, convert_to_tensor=True)
+                # embeddings2 = model.encode(expected_answer, convert_to_tensor=True)
+                # similarity_score = util.pytorch_cos_sim(embeddings1, embeddings2).item()
+                # automatic_scores.append(similarity_score)
                 
-                # Calculate ROUGE score
-                rogue_score = calculate_rogue(generated_answer, expected_answer)
-                rogue_scores.append(rogue_score)
+                # # Calculate ROUGE score
+                # rogue_score = calculate_rogue(generated_answer, expected_answer)
+                # rogue_scores.append(rogue_score)
                 
-                # Calculate BLEU score
-                blue_score = calculate_blue(generated_answer, expected_answer)
-                blue_scores.append(blue_score)
+                # # Calculate BLEU score
+                # blue_score = calculate_blue(generated_answer, expected_answer)
+                # blue_scores.append(blue_score)
 
             questions_df['Generated answer by LLM'] = generated_answers
             questions_df['LLM'] = st.session_state.option
-            questions_df['Automatic Score'] = automatic_scores
-            questions_df['ROUGE Score'] = rogue_scores
-            questions_df['BLEU Score'] = blue_scores
+            # questions_df['Automatic Score'] = automatic_scores
+            # questions_df['ROUGE Score'] = rogue_scores
+            # questions_df['BLEU Score'] = blue_scores
             questions_df['Context'] = context
             st.write("Answers Generated:")
             st.dataframe(questions_df)

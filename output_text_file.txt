@@ -1,0 +1,222 @@
+Welcome in Driver Assignment!
+
+Overview
+
+Pages
+
+Rotation tables: page dedicated to the management of
+                        rotation tables
+
+Settings: page dedicated to the setting of the user's
+                        changable parameters
+
+Roster
+
+Overview
+
+The date
+
+The total number of duties
+
+The number of uncovered duties
+
+The number of covered duties
+
+The number of standby activities
+
+The number of absence activities
+
+The number of operators without a duty or activity
+
+(optional) The number of assigned activities of a given type (see configure KPI )
+
+Show/Hide pinned: It allows to show/hide the section of pinned rosters. This
+                            section is shown in the upper part of the screen. The pinned operators will always
+                            be visualized, ignoring any filter.
+
+Focus on pinned: Highlights the section of pinned rosters, hiding the others.
+
+Show/hide uncovered duties: It allows to show/hide the section of uncovered duties.
+
+Focus on uncovered duties: Highlights the section of uncovered duties, hiding the
+                            others.
+
+Show/hide unpinned: It allows to show/hide the section of unpinned rosters.
+
+Focus on unpinned: Highlights the section of unpinned rosters, hiding the others.
+
+Roster toolbar commands
+
+Import duty swapping from Driver Portal The software accepts and executes all the duty swapping requests not yet processed, this
+                        operation
+                        accepts every duty swap request that does not violate the given rule set, even the ones outside
+                        the opened period. After the command is executed, a log with the result will be displayed in a tab at the bottom of
+                        the page.
+
+Check absence requests from Driver Portal It opens a side area that allows to check the absence requests not yet processed.
+                        At the opening, the requests loaded are the ones belonging to the visualized period, it's
+                        possible to load other requests by changing the start or end period and by clicking on the
+                        refresh button. Requests are visualized ordered by date, from first to last. It's possible to order such
+                        requests for each one of the attributes. It's also possible to filter the requests by writing in
+                        the columns header. It is necessary to click one time to the row of the request to accept it and two times to deny
+                        it. By clicking a third time on the request row this come back to a state of to
+                            process . When at least one request has the state accepted or denied the option to load new
+                        requests is disabled and the save button gets enabled. Clicking on the save button the requests
+                        will be processed. The result is shown in one of the bottom drawer tabs. To close the side area click on the x in the up left corner.
+
+Check other requests from Driver Portal Open a side area that allow to check the stop failure and miss out requests not yet processed.
+                        At the opening, the requests loaded are the ones belonging to the visualized period, it's
+                        possible to load other requests by changing the start or end period and by clicking on the
+                        refresh button. Requests are visualized ordered by date, from first to last. It's possible to order such
+                        requests for each one of the attributes. It's also possible to filter the requests by writing in
+                        the columns header. It is necessary to click one time to the row of the request to accept it and two times to deny
+                        it. By clicking a third time on the request row this come back to a state of to
+                            process . When at least one request has the state accepted or denied the option to load new
+                        requests is disabled and the save button gets enabled. Clicking on the save button the requests
+                        will be processed. The result is shown in one of the bottom drawer tabs. To close the side area click on the x in the up left corner.
+
+Assign an activity to an operator
+
+Remove an activity from an operator
+
+The operator id
+
+The accrual name
+
+The accrual value
+
+The accrual date
+
+Monthly roster print Open a dialog that allows to select a month, a group of residences and a group of categories for
+                        which the user wants to print the roster.
+
+Weekly roster print Open a dialog that allows to select a day in the week the user wants to print, a group of
+                        residences and a group of categories for which the user wants to print the roster.
+
+Uncovered duties
+
+Covered duties
+
+Stand by activities
+
+Absence activities
+
+Operators without duties/activities
+
+Assigned activities of a specified type
+
+Uncovered duties
+
+Start and end time
+
+Work time
+
+Driving time
+
+Spread time
+
+Division
+
+Category
+
+Day type of belongings
+
+Line/Tipology
+
+Vehicle block
+
+Start node
+
+Start time
+
+End time
+
+End node
+
+A list of required abilitations
+
+Last/First substring
+
+Split duty
+
+Delete duty
+
+Merge duties
+
+Assign duty
+
+Roster commands
+
+Configure visible details
+
+Id number
+
+Surname
+
+Name
+
+Division
+
+Category
+
+Total working time
+
+Total driving time
+
+Total spread time
+
+total overtime
+
+Pin/Unpin
+
+Assign activity
+
+Show employee data
+
+Gender
+
+Date of birth
+
+Phone number
+
+Email
+
+Hire date
+
+Contract expiration date
+
+Driver license expiration date
+
+DOT expiration date
+
+The list of competences
+
+The current division
+
+The current category
+
+The current selected table
+
+The current group and index
+
+A list of accruals
+
+Assigned activities commnads
+
+Bottom drawer
+
+Bid Package
+
+0: Blank activity
+
+1: Mandatory rest activity
+
+2: Scheduled rest activity
+
+3: Simple rest activity
+
+4: Duty
+
+5: Service activity
+
+Settings

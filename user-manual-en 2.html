@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/css/user-manual.css}">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="/rostering/webservices/bdropxt/js/user-manual.js"></script>
+    <title>Driver Assignment User Manual</title>
+</head>
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="dropdown">
+            <a onclick="toggleSubMenu('introduction-nav-sub-menu')" class="dropbtn">Welcome
+                <span class="material-symbols-outlined">
+                    expand_more
+                </span>
+            </a>
+            <div id="introduction-nav-sub-menu" class="dropdown-content">
+                <a href="#introduction">Introduction</a>
+                <a href="#pages">Pages</a>
+            </div>
+            <a onclick="toggleSubMenu('roster-nav-sub-menu')" class="dropbtn">Roster
+                <span class="material-symbols-outlined">
+                    expand_more
+                </span>
+            </a>
+            <div id="roster-nav-sub-menu" class="dropdown-content">
+                <a href="#roster-overview">Overview</a>
+                <a href="#roster-toolbar">Toolbar</a>
+                <a href="#uncovered-duties">Uncovered duties</a>
+                <a href="#roster-commands">Roster commands</a>
+                <a href="#roster-bottom-drawer">Bottom drawer</a>
+            </div>
+            <a href="#bid-package-section">Bid Package</a>
+            <a href="#settings-section">Settings</a>
+        </div>
+    </div>
+
+    <div class="material-symbols-outlined hamburger-menu" onclick="openNav()">
+        menu
+    </div>
+
+    <div id="main">
+        <h1 class="title">Welcome in Driver Assignment!</h1>
+        <div id="introduction" class="chapter">
+            <div id="introduction" class="sub-section">
+                <h2 class="sub-title">Overview</h2>
+                MAIOR Driver Assignment is a web-based module, belonging to MAIOR Operations suite, that deals with the
+                management of the traveling personnel of transportation companies, or in general of personnel who must
+                be scheduled to cover predetermined activities or duties.<br>
+                The system starts with the work and rest scheduling of operators, and allows you to manage the various
+                requests or needs for changes in duties or assignments, up to dealing with the final accounting of what
+                has actually been done, to enable the correct pay of the employees themselves.<br>
+                The data needed by the system, in addition, of course, to the master data of the operators with all
+                their
+                attributes useful for management, are the scheduled service on a calendar, in terms of runs, vehicle
+                duties, and driving duties, or in general the duties to be covered.<br>
+                The module, through the use of complex optimization algorithms, allows users to
+                optimize the allocation of staff work to operators, enabling the pursuit of objectives
+                business, whether they be maximum equidistribution of workload rather than cost savings.<br>
+                Uncovered duties can be manually or automatically assigned. All the operations performed by the user are
+                tracked and verified by the system, guaranteeing a transparent way of working and full consistency with
+                the labor rules.<br>
+                MAIOR Driver Assignment allows the user to configure many kind of constraints, such as limiting the
+                assignments to certain lines, limiting the working hours, establishing a maximum daily, weekly, or
+                monthly platform time, and establishing a minimum number of rest hours between consecutive working
+                days.<br>
+                It is possible to implement, at the same time, multiple labor contracts and various personnel
+                categorizations.<br>
+                The software also supports the creation of rotating rosters and guarantees accurate and detailed
+                management of resources even when there are policy modifications and changes in the company
+                organization.<br>
+                All active constraints are checked in both the automatic and manual assignments. The algorithm
+                never violates the rules, unless specifically told otherwise. The user is instead warned every time an
+                operation violated the rules, but the system allows the user to violate a rule if this is not set as an
+                unbreakable one. It is possible to list all violated rules and to keep track of who did the forcing.<br>
+                The module also allows to process the operators requests made through the Driver Portal module, whether
+                they are absence requests or duty swap requests between operators.<br>
+                The system provides appropriate KPIs, configurable by the user, that enable him to keep track of the
+                work he is doing, drawing his attention to the most cogent problems.
+            </div>
+            <div id="pages" class="sub-section">
+                <h2 class="sub-title">Pages</h2>
+                Once logged in, the system opens to the main work page, that is the roster page.<br>
+                Through the top bar, the other pages can be accessed, namely:<br>
+                <ul>
+                    <li><b><a href="#bid-package-section">Rotation tables:</a></b> page dedicated to the management of
+                        rotation tables</li>
+                    <li><b><a href="#settings-section">Settings:</a></b> page dedicated to the setting of the user's
+                        changable parameters</li>
+                </ul>
+            </div>
+        </div>
+        <div id="roster-section" class="chapter">
+            <h2 class="title">Roster</h2>
+            <div id="roster-overview" class="sub-section">
+                <h2 class="sub-title">Overview</h2>
+                This page manages the assignment of duties and activities to operators. There is a toolbar with the main
+                commands on the left (see <a href="#roster-toolbar">roster toolbar commands</a>). There is the roster in
+                which the lines represents the operators and the columns represent the date. Activities and duties
+                assigned to an operator in a specific date are represented by rectangles.<br>
+                Under the roster there are some tabs containing useful information (see <a
+                    href="#roster-bottom-drawer">bottom drawer</a>). To see them simply double-click on one of the
+                tabs.<br>
+                Right above these tabs you can find the period navigator, identified by some rectangles containing the
+                dates of the open period, by clicking on one of those rectangles it's possible to move within the open
+                period, otherwise you can use the scroll bar immediately below.<br>
+                Hovering with the mouse over one of this rectangles will bring up some useful information about the
+                day:<br><br>
+                <div class="side-image">
+                    <img th:src="@{images/en/dayTooltip.png}" alt="dayTooltip">
+                    <ul>
+                        <li>The date</li>
+                        <li>The total number of duties</li>
+                        <li>The number of uncovered duties</li>
+                        <li>The number of covered duties</li>
+                        <li>The number of standby activities</li>
+                        <li>The number of absence activities</li>
+                        <li>The number of operators without a duty or activity</li>
+                        <li>(optional) The number of assigned activities of a given type (see <a
+                                href="#roster-toolbar-kpi">configure KPI</a>)</li>
+                    </ul>
+                </div>
+                <br><br>
+
+                By clicking on the arrows on the right of the toolbar it will appear a menu with some commands:<br><br>
+                <div class="side-image">
+                    <img th:src="@{images/en/pinUnpinMenu.png}" alt="pin-unpin menu">
+                    <ul>
+                        <li>
+                            <b>Show/Hide pinned:</b> It allows to show/hide the section of pinned rosters. This
+                            section is shown in the upper part of the screen. The pinned operators will always
+                            be visualized, ignoring any filter.
+                        </li>
+                        <li>
+                            <b>Focus on pinned:</b> Highlights the section of pinned rosters, hiding the others.
+                        </li>
+                        <li>
+                            <b>Show/hide uncovered duties:</b> It allows to show/hide the section of uncovered duties.
+                        </li>
+                        <li>
+                            <b>Focus on uncovered duties:</b> Highlights the section of uncovered duties, hiding the
+                            others.
+                        </li>
+                        <li>
+                            <b>Show/hide unpinned:</b> It allows to show/hide the section of unpinned rosters.
+                        </li>
+                        <li>
+                            <b>Focus on unpinned:</b> Highlights the section of unpinned rosters, hiding the others.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="roster-toolbar" class="sub-section">
+                <h2 class="sub-title">Roster toolbar commands</h2>
+                <span class="material-symbols-outlined" id="roster-toolbar-pin-unpin">
+                    push_pin
+                </span>
+                <b>Pin/Unpin all filtered rosters</b><br>
+                By clicking on this button the result of previously filtered roster (see <a
+                    href="#bottom-drawer-roster-filters">Filter roster</a>) will be added to the pinned section.<br>
+                It allows also to remove all pinned operators from the pinned section.<br><br>
+
+                <span class="material-symbols-outlined" id="roster-toolbar-calendar">
+                    date_range
+                </span>
+                <b>Change period</b><br>
+                Clicking opens the dialog below: <br>
+                <img th:src="@{images/en/changePeriod.png}" alt="changePeriod"><br>
+                Start date: initial date of the period.<br>
+                End date: final date of the period.<br>
+                Adjoining days (up to 14): number of read-only days, before and after the selected period. These days
+                cannot be edited.<br><br>
+
+                <span class="material-symbols-outlined" id="roster-toolbar-import-duties">
+                    assignment
+                </span>
+                <b>Import duties</b><br>
+                Clicking on this button opens a dialog that allows the user to select a service they want to
+                import.<br><br>
+
+                <span class="material-symbols-outlined" id="roster-toolbar-import-regular-bidding">
+                    groups
+                </span>
+                <b>Import Regular Bidding</b><br>
+                It allows to import the operators bid package selection (see <a href="#bid-package-section">Bid
+                    Package</a>).
+                Clicking on this button opens a dialog that allows the user to select a period and the bid package they
+                want to import.<br><br>
+
+                <span class="material-symbols-outlined" id="roster-toolbar-import-bid-package">
+                    schedule_send
+                </span>
+                <b>Assign table</b><br>
+                After importing duties and the regular bidding, clicking on this button allows the user to assign the
+                activities in the table to the operators in the corresponding selected period.<br><br>
+
+                <span class="material-symbols-outlined" id="roster-toolbar-import-from-driver-portal">
+                    checklist
+                </span>
+                <b>Import from Driver Portal</b><br>
+                Clicking on the button opens a menu with three distinct commands:<br>
+                <ul>
+                    <li>
+                        <b id="duty-swapping">Import duty swapping from Driver Portal</b><br>
+                        The software accepts and executes all the duty swapping requests not yet processed, this
+                        operation
+                        accepts every duty swap request that does not violate the given rule set, even the ones outside
+                        the opened period.<br>
+                        After the command is executed, a log with the result will be displayed in a tab at the bottom of
+                        the page.<br>
+                    </li>
+                    <li>
+                        <b id="driver-assignment-rest-requests">Check absence requests from Driver Portal</b><br>
+                        <img th:src="@{images/en/restRequest.png}" alt="restRequest"><br>
+                        It opens a side area that allows to check the absence requests not yet processed.
+                        At the opening, the requests loaded are the ones belonging to the visualized period, it's
+                        possible to load other requests by changing the start or end period and by clicking on the
+                        refresh button.<br>
+                        Requests are visualized ordered by date, from first to last. It's possible to order such
+                        requests for each one of the attributes. It's also possible to filter the requests by writing in
+                        the columns header.<br>
+                        It is necessary to click one time to the row of the request to accept it and two times to deny
+                        it. By clicking a third time on the request row this come back to a state of <i>to
+                            process</i>.<br>
+                        When at least one request has the state <i>accepted</i> or <i>denied</i> the option to load new
+                        requests is disabled and the save button gets enabled. Clicking on the save button the requests
+                        will be processed. The result is shown in one of the bottom drawer tabs.<br>
+                        To close the side area click on the <i>x</i> in the up left corner.
+                    </li>
+                    <li>
+                        <b id="driver-assignment-other-requests">Check other requests from Driver Portal</b><br>
+                        Open a side area that allow to check the stop failure and miss out requests not yet processed.
+                        At the opening, the requests loaded are the ones belonging to the visualized period, it's
+                        possible to load other requests by changing the start or end period and by clicking on the
+                        refresh button.<br>
+                        Requests are visualized ordered by date, from first to last. It's possible to order such
+                        requests for each one of the attributes. It's also possible to filter the requests by writing in
+                        the columns header.<br>
+                        It is necessary to click one time to the row of the request to accept it and two times to deny
+                        it. By clicking a third time on the request row this come back to a state of <i>to
+                            process</i>.<br>
+                        When at least one request has the state <i>accepted</i> or <i>denied</i> the option to load new
+                        requests is disabled and the save button gets enabled. Clicking on the save button the requests
+                        will be processed. The result is shown in one of the bottom drawer tabs.<br>
+                        To close the side area click on the <i>x</i> in the up left corner.
+                    </li>
+                </ul>
+
+                <span class="material-symbols-outlined" id="roster-toolbar-undo">
+                    undo
+                </span>
+                <b>UNDO</b><br>
+                It allows to undo the last done operation. Undoable operations are:
+                <ul>
+                    <li> Assign an activity to an operator </li>
+                    <li> Remove an activity from an operator </li>
+                </ul>
+
+                <span class="material-symbols-outlined" id="roster-toolbar-redo">
+                    redo
+                </span>
+                <b>REDO</b><br>
+                Allow to do again the last undoed operation.<br><br>
+
+                <span class="material-symbols-outlined" id="roster-toolbar-import-accruals">
+                    format_list_numbered
+                </span>
+                <b>Import Accrual values</b><br>
+                It allows to import operators accruals from a file. The file must contain, for each row:
+                <ul>
+                    <li>The operator id</li>
+                    <li>The accrual name</li>
+                    <li>The accrual value</li>
+                    <li>The accrual date</li>
+                </ul>
+                This values must be separated by a semicolon.<br><br>
+
+                <span class="material-symbols-outlined" id="roster-toolbar-print">
+                    print
+                </span>
+                <b>Roster print</b><br>
+                Clicking on this button opens a menu with two options:
+                <ul>
+                    <li>
+                        <b>Monthly roster print</b><br>
+                        <img th:src="@{images/en/monthlyPrint.png}" alt="configureKpi"><br>
+                        Open a dialog that allows to select a month, a group of residences and a group of categories for
+                        which the user wants to print the roster.
+                    </li>
+                    <li>
+                        <b>Weekly roster print</b><br>
+                        Open a dialog that allows to select a day in the week the user wants to print, a group of
+                        residences and a group of categories for which the user wants to print the roster.
+                    </li>
+                </ul>
+
+                <span class="material-symbols-outlined" id="roster-toolbar-lock-unlock">
+                    lock
+                </span>
+                <b>Lock/Unlock days</b><br>
+                Clicking on the button opens a dialog that allows the user to select a start and end date, a group of
+                categories and a group a divisions for which they want to lock or unlock for payroll.<br>
+                Locked day are visualized with a dashed grey background. Once a day is locked for a specified division
+                is no longer possible to work on operators or activities of that division.<br><br>
+
+                <span class="material-symbols-outlined" id="roster-toolbar-kpi">
+                    settings
+                </span>
+                <b>Configure Kpi</b><br>
+                <div class="side-image">
+                    <img th:src="@{images/en/configureKpi.png}" alt="configureKpi"><br>
+                    <div class="side-image-text">
+                        Clicking opens a dialog that allows to configure a kpi the user wants to check.
+                        If there is a day in which the selected kpi exceeds the treshold, the date is highlited in the
+                        period navigation. The kpi can be chosen between:
+                        <ul>
+                            <li>Uncovered duties</li>
+                            <li>Covered duties</li>
+                            <li>Stand by activities</li>
+                            <li>Absence activities</li>
+                            <li>Operators without duties/activities</li>
+                            <li>Assigned activities of a specified type</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div id="uncovered-duties" class="sub-section">
+                <h2 class="sub-title">Uncovered duties</h2>
+                In the uncovered duties section the user can find all the duties not yet assigned to any operator. To
+                assign a duty to an operator the user has to drag it on the row of the desired operator.<br>
+                Hovering the cursor in the right corner of the duty will make appear a tooltip with some useful
+                information: <br>
+                <img th:src="@{images/en/uncoveredDutyTooltip.png}" alt="uncoveredDutyTooltip"><br>
+                <div class="side-image">
+                    <div>
+                        <ul style="margin: 0px 15px;">
+                            <li> Start and end time </li>
+                            <li> Work time </li>
+                            <li> Driving time </li>
+                            <li> Spread time </li>
+                            <li> Division </li>
+                            <li> Category </li>
+                            <li> Day type of belongings </li>
+                        </ul>
+                        <br>
+                    </div>
+                    <div>
+                        After that the user can find the pieces list of the duty, and for each piece:
+                        <ul>
+                            <li> Line/Tipology </li>
+                            <li> Vehicle block </li>
+                            <li> Start node </li>
+                            <li> Start time </li>
+                            <li> End time </li>
+                            <li> End node </li>
+                            <li> A list of required abilitations </li>
+                        </ul>
+                    </div>
+                </div>
+                <br>
+                <div id="uncovered-duties-commands">
+                    Right clicking on an uncovered duties open a menù with some commands:
+                    <h4 id="uncovered-duties-last-first-substring">Last/First substring</h4>
+                    In case the duty's name is too long to be displayed this command allows to display the first or the
+                    last section on the duty's name.<br>
+                    <h4 id="uncovered-duties-split-duty">Split duty</h4>
+                    Clicking on this button open the side window in which the user can find the list of the duty pieces.
+                    By selecting one or more pieces the user can split the selected duty in two or more duties. The
+                    resulting duties will have as their starting piece the one chosen by the user.
+                    <h4 id="uncovered-duties-delete-duty">Delete duty</h4>
+                    Clicking on this button open a dialog that allow the user to select a deletion reasion. Once
+                    selected the duty gets deleted. The user can found the deleted duty in the <a
+                        href="#bottom-drawer-deleted-duties">deleted duties section</a> in the bottom drawer.<br>
+                    <h4 id="uncovered-duties-merge-duties">Merge duties</h4>
+                    Clicking on this button open the side window in which the user can find a list of uncovered duties
+                    that can be merged with the selected duty. A duty appears in this list only if it can be merged
+                    without overlap with the selected duty. Merging two duties will create a single uncovered duty.<br>
+                    <h4 id="uncovered-duties-assign-duty">Assign duty</h4>
+                    Clicking on this button open the side window in which the user can find a list of operators to whom
+                    the selected duty can be assigned. A driver appears in this list only if the selected duty
+                    assignment does not violate regulatory constraints.<br>
+                    Selecting a driver and clicking on assign will assign the duty to the driver and the system will
+                    bring up the selected driver.<br>
+                </div>
+            </div>
+            <div id="roster-commands" class="sub-section">
+                <h2 class="sub-title">Roster commands</h2>
+                Right-clicking on an operator will open a menu with some commands:
+                <h4 id="roster-command-configure-visible-details">Configure visible details</h4>
+                Clicking on this command opens a dialog that allows you to select which information of the operators you
+                want to display, this information will be dispayed in the header of the roster's row. The selectable
+                options are:
+                <ul>
+                    <li>Id number</li>
+                    <li>Surname</li>
+                    <li>Name</li>
+                    <li>Division</li>
+                    <li>Category</li>
+                    <li>Total working time</li>
+                    <li>Total driving time</li>
+                    <li>Total spread time</li>
+                    <li>total overtime</li>
+                </ul>
+                The times displayed will be those for the entire open period. The division and category displayed are
+                those of the first day of the open period, if the operator has more than one division or category in the
+                opened period an asterisk will be appended after the name.<br>
+                <h4 id="roster-command-pin-unpin">Pin/Unpin</h4>
+                Add or remove the operator to the pinned section<br>
+                <h4 id="roster-command-assign-activity">Assign activity</h4>
+                It allows the user to assign a service or rest activity to the selected operator. The user need to
+                specify the activity type and name, alongs with the date (preset to the day on which the user clicked)
+                and the start and end time of the activity (minimum 00:00, maximum 47:59). In case there is already
+                another activity on the selected date by clicking on the checkmark “replace assigned activity” the new
+                activity will replace the one already present. Conversely, if the user do not select the option the new
+                activity will be added to the existing one, creating a new multiple activity.<br>
+                In case the user decide to replace the assigned activity already present on the desired day, it is also
+                possible to inherit the schedules of that activity.<br>
+                At last is possible to assign a note to the new activity the user is assigning.<br>
+                <h4 id="roster-command-show-employee-data">Show employee data</h4>
+                Clicking on this button open the side window with some useful information about the operator.
+                <ul>
+                    <li>Gender</li>
+                    <li>Date of birth</li>
+                    <li>Phone number</li>
+                    <li>Email</li>
+                    <li>Hire date</li>
+                    <li>Contract expiration date</li>
+                    <li>Driver license expiration date</li>
+                    <li>DOT expiration date</li>
+                    <li>The list of competences</li>
+                    <li>The current division</li>
+                    <li>The current category</li>
+                    <li>The current selected table</li>
+                    <li>The current group and index</li>
+                    <li>A list of accruals</li>
+                </ul>
+                Among this information there are also some historicized, such as past categories or divisions to which
+                the the operator belongs.<br>
+                This information are highlited by an eye and a pen button on the corresponding row. By clicking on the
+                eye button the user can visualized all the historicized information. By clicking on the pen button the
+                user can add, remove or edit one or more of this data.<br>
+                <h4>Assigned activities commnads</h4>
+                Right-clicking on an assigned duty opens a menu, which allows to:<br>
+                Remove the assigned duty.<br>
+                To display the first or the last section on the dutys name if the duty name is too long to be
+                displayed.<br>
+                In the case of a service or rest activity there is another command that allow the user to modify the
+                selected activity.<br>
+            </div>
+            <div id="roster-bottom-drawer" class="sub-section">
+                <h2 class="sub-title">Bottom drawer</h2>
+                The user can find some tabs in the bottom part of the work window that allows him to gather information
+                or apply some filter on the operators and the uncovered duties.<br>
+                <span class="material-symbols-outlined" id="bottom-drawer-roster-filters">
+                    filter_list
+                </span>
+                <b>Roster filters</b><br>
+                In this tab there is a form that allow the user to do some filters on the visualized operators. Once
+                some value is written into one of these fields, only operators that meet the criterion will be
+                displayed. For example it is possible to select a division, in this way only the operators belonging to
+                that division will be displayed.<br>
+                <span class="material-symbols-outlined" id="bottom-drawer-uncovered-duties">
+                    assignment
+                </span>
+                <b>Uncovered duties</b>
+                In this tab are displayed all the uncovered duties in a table. It's possible to search and filter on
+                this table. By filtering on the table even the uncovered duties in the uncovered duties section will be
+                filtered, displaying only the ones that meet the specified criterion.<br>
+                It is possible to assign a duty from this tab by simply drag and drop it to the desired operator.<br>
+                <span class="material-symbols-outlined" id="bottom-drawer-deleted-duties">
+                    delete
+                </span>
+                <b>Deleted duties</b><br>
+                In this tab are displayed all the deleted duties belongings to the open period, along with their
+                deletion reason.
+                By selecting one or more deleted duties and by clicking on the restore button (<span
+                    class="material-symbols-outlined">restore_from_trash </span>) the selected duties will be restored
+                in the uncovered duties section.<br>
+                <span class="material-symbols-outlined" id="bottom-drawer-rule-violation">
+                    error_outline
+                </span>
+                <b>Rules violation</b><br>
+                In this tab are displayed all the rules violation in the open period. By clicking on an operator the
+                system will focus on them.<br>
+                <span class="material-symbols-outlined" id="bottom-drawer-fails">
+                    warning
+                </span>
+                <b>Fails</b><br>
+                In this tab are displayed all duties that were not assigned during a massive operation. For example when
+                the operator try to assign the duties of a bid package.<br>
+            </div>
+        </div>
+        <div id="bid-package-section" class="chapter">
+            <h2 class="title">Bid Package</h2>
+            <div class="sub-section">
+                <img th:src="@{images/en/bidPackage.png}" alt="bidPackage"><br>
+                The bid packages are managed in this page. The user can select a bid period and a bid package within
+                that bid period to visualize the corresponding table. By clicking on the upload button the user can
+                either create a new bid package or modify the visualized one.<br>
+                The file must be divided in rows, each row must contain exactly 7 activities, each activity can be one
+                of the following:
+                <ul>
+                    <li>0: Blank activity</li>
+                    <li>1: Mandatory rest activity</li>
+                    <li>2: Scheduled rest activity</li>
+                    <li>3: Simple rest activity</li>
+                    <li>4: Duty</li>
+                    <li>5: Service activity</li>
+                </ul>
+                In all cases, except for the 0, the number must be followed by the duty or activity name, for
+                example:<br><br>
+                1MR 2SR 4Duty123 4Duty456 0 5ActivityX 3R
+                <br><br>
+                To save new or modified bid package the user can click on the save icon, clicking on the "x" icon every
+                modification will be discarded.<br><br>
+            </div>
+        </div>
+        <div id="settings-section" class="chapter">
+            <h2 class="title">Settings</h2>
+            In the "settings" page is possible to visualize, modify and create activity types:<br>
+            <img th:src="@{images/en/settings.png}" alt="settings"><br>
+            To visualize the details about an activity type simply click on the corresponding row, and to edit its
+            attributes click on the pen icon on the right. Once the editing is complete the user can save using the save
+            icon and close the bottom area by clicking on the x icon.<br>
+            To create a new activity type click on the plus icon on the main table.<br>
+        </div>
+    </div>
+</body>
+
+</html>

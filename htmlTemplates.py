@@ -1,27 +1,43 @@
 css = '''
 <style>
+.chat-container {
+    background-image: url('/Users/amin/ask-multiple-pdfs/background.png');
+    background-size: cover;
+    background-position: center;
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+
 .chat-message {
-    padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 1rem; display: flex
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    display: flex;
 }
+
 .chat-message.user {
-    background-color: #2b313e
+    background-color: #2b313e;
 }
+
 .chat-message.bot {
-    background-color: #475063
+    background-color: #475063;
 }
+
 .chat-message .avatar {
-  width: 20%;
+    width: 20%;
 }
+
 .chat-message .avatar img {
-  max-width: 78px;
-  max-height: 78px;
-  border-radius: 50%;
-  object-fit: cover;
+    max-width: 78px;
+    max-height: 78px;
+    border-radius: 50%;
+    object-fit: cover;
 }
+
 .chat-message .message {
-  width: 80%;
-  padding: 0 1.5rem;
-  color: #fff;
+    width: 80%;
+    padding: 0 1.5rem;
+    color: #fff;
 }
 '''
 
